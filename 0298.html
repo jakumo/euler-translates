@@ -1,0 +1,106 @@
+Subject:
+Выборочная амнезия.
+
+Body:
+<div class="problem_content">  
+<p>Лэрри и Робин играют в игру на запоминание последовательности случайных чисел от 1 до 10 включительно, которые во время игры называются по одному. Каждый игрок может запомнить до пяти названных чисел. Если названное число присутствует в памяти игрока, он получает одно очко. В противном случае игрок добавляет это число в свою память, стирая одно из имеющихся там чисел, если вся его память заполнена.</p> 
+ 
+<p>Оба игрока начинают с пустой памятью. Оба игрока запоминают каждое отсутствующее в памяти число, но при этом используют разные стратегии, чтобы решить, какое число стереть из памяти:<br /> 
+Лэрри стирает то число, которое дольше всех не было названо.<br /> 
+Робин стирает то число, которое дольше всех находилось в его памяти.</p> 
+ 
+<p>Пример такой игры:<br /></p>
+<table class="p298"> 
+<tr> 
+  <th>Ход</th> 
+  <th>Названное<br />число</th> 
+  <th style="text-align:right">Память<br />Лэрри</th> 
+  <th>Очки<br />Лэрри</th> 
+  <th style="text-align:right">Память<br />Робина</th> 
+  <th>Очки<br />Робина</th> 
+</tr> 
+<tr> 
+  <td>1</td> 
+  <td>1</td> 
+  <td style="text-align:right">1</td> 
+  <td>0</td> 
+  <td style="text-align:right">1</td> 
+  <td>0</td> 
+</tr> 
+<tr> 
+  <td>2</td> 
+  <td>2</td> 
+  <td style="text-align:right">1,2</td> 
+  <td>0</td> 
+  <td style="text-align:right">1,2</td> 
+  <td>0</td> 
+</tr> 
+<tr> 
+  <td>3</td> 
+  <td>4</td> 
+  <td style="text-align:right">1,2,4</td> 
+  <td>0</td> 
+  <td style="text-align:right">1,2,4</td> 
+  <td>0</td> 
+</tr> 
+<tr> 
+  <td>4</td> 
+  <td>6</td> 
+  <td style="text-align:right">1,2,4,6</td> 
+  <td>0</td> 
+  <td style="text-align:right">1,2,4,6</td> 
+  <td>0</td> 
+</tr> 
+<tr> 
+  <td>5</td> 
+  <td>1</td> 
+  <td style="text-align:right">1,2,4,6</td> 
+  <td>1</td> 
+  <td style="text-align:right">1,2,4,6</td> 
+  <td>1</td> 
+</tr> 
+<tr> 
+  <td>6</td> 
+  <td>8</td> 
+  <td style="text-align:right">1,2,4,6,8</td> 
+  <td>1</td> 
+  <td style="text-align:right">1,2,4,6,8</td> 
+  <td>1</td> 
+</tr> 
+<tr> 
+  <td>7</td> 
+  <td>10</td> 
+  <td style="text-align:right">1,4,6,8,10</td> 
+  <td>1</td> 
+  <td style="text-align:right">2,4,6,8,10</td> 
+  <td>1</td> 
+</tr> 
+<tr> 
+  <td>8</td> 
+  <td>2</td> 
+  <td style="text-align:right">1,2,6,8,10</td> 
+  <td>1</td> 
+  <td style="text-align:right">2,4,6,8,10</td> 
+  <td>2</td> 
+</tr> 
+<tr> 
+  <td>9</td> 
+  <td>4</td> 
+  <td style="text-align:right">1,2,4,8,10</td> 
+  <td>1</td> 
+  <td style="text-align:right">2,4,6,8,10</td> 
+  <td>3</td> 
+</tr> 
+<tr> 
+  <td>10</td> 
+  <td>1</td> 
+  <td style="text-align:right">1,2,4,8,10</td> 
+  <td>2</td> 
+  <td style="text-align:right">1,4,6,8,10</td> 
+  <td>3</td> 
+</tr></table>
+ 
+<p>Если обозначить очки Лэрри <var>L</var>, а очки Робина <var>R</var>, каково ожидаемое значение |<var>L</var>-<var>R</var>| после 50 ходов? Дайте ответ, округленный до восьмого знака после запятой в виде x.xxxxxxxx .</p> 
+</div>
+
+<a target="_blank" href="http://projecteuler.net/index.php?section=problems&amp;id=298">Оригинал</a>

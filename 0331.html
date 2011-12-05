@@ -1,0 +1,44 @@
+Subject:
+Флип Флоп.
+
+Body:
+<div class="problem_content">
+<p>На квадратном поле расставлены <var>N</var><img src='http://projecteuler.net/images/symbol_times.gif' width='9'
+height='9' alt='&times;' border='0' style='vertical-align:middle;'
+/><var>N</var> фишек. У каждой фишки есть белая сторона и черная сторона.</p>
+
+<p>Во время очередного хода происходит выбор фишки, после чего все фишки из соответствующей строки или колонны
+переворачиваются: т.е. переворачивается 2<img src='http://projecteuler.net/images/symbol_times.gif' width='9'
+height='9'
+alt='&times;' border='0' style='vertical-align:middle;' /><var>N</var>-1 фишек.
+Игра завершается, когда все фишки повернуты белой стороной к верху.
+Ниже представлен пример игры на поле размерами 5<img src='http://projecteuler.net/images/symbol_times.gif' width='9'
+height='9' alt='&times;' border='0'
+style='vertical-align:middle;' />5 клеток.</p>
+
+<div align='center'><img
+src="http://projecteuler.net/project/images/p_331_crossflips3.gif" alt=""
+/></div>
+
+<p>Можно доказать, что 3 - минимальное число ходов, необходимое для завершения игры.</p>
+
+<p>На игровом поле размерами <var>N</var><img src='http://projecteuler.net/images/symbol_times.gif' width='9'
+height='9' alt='&times;' border='0' style='vertical-align:middle;'
+/><var>N</var> нижняя левая фишка имеет
+координаты (0,0);<br />
+нижняя правая фишка - координаты (<var>N</var>-1,0), а верхняя левая - (0,<var>N</var>-1). </p>
+
+<p>Обозначим через C<sub><var>N</var></sub> следующую конфигурацию игрового поля размерами <var>N</var><img src='http://projecteuler.net/images/symbol_times.gif'
+width='9' height='9' alt='&times;'
+border='0' style='vertical-align:middle;' /><var>N</var> клеток:<br /> Фишка с координатами (<var>x</var>,<var>y</var>), удовлетворяющими неравенство <img style="vertical-align:middle"
+src="http://projecteuler.net/project/images/p_331_crossflips1.gif" alt="" />, повернута к верху черной стороной, в противном случае - белой стороной. К примеру, конфигурация C<sub>5</sub> показана на рисунке выше.</p>
+
+<p>Пусть T(<var>N</var>) - минимальное число ходов, необходимых для завершения игры с исходной конфигурации поля C<sub><var>N</var></sub>.
+Если конфигурация C<sub><var>N</var></sub> не может привести к завершению игры, то T(<var>N</var>)=0.<br /> Как было показано, T(5)=3. Кроме того, известно, что T(10)=29 и T(1 000)=395253.</p>
+
+<p>Найдите <img style="vertical-align:middle"
+src="http://projecteuler.net/project/images/p_331_crossflips2.gif" alt=""
+/>.</p>
+</div>
+
+<a target="_blank" href="http://projecteuler.net/index.php?section=problems&amp;id=331">Оригинал</a>

@@ -1,0 +1,45 @@
+Subject:
+Круговая логика.
+
+Body:
+<div class="problem_content">
+<p> <i>Таблица истинности</i> логики с <var>k</var>-входами - это порядок присвоения одного выходного бита
+
+<var>k</var> входным битам (двоичным цифрам, 0 [false] или 1 [true]). К примеру, двоичная 2-хвходовая таблица
+
+истинности для операций логического И (AND), а также исключающего ИЛИ (XOR):</p>
+<div style="text-align:center; margin-left:150px; margin-right:150px;">
+<table cellspacing="0" cellpadding="2" border="1" align="left">
+<tr style="background-color:#c1daf9;">
+<td width="30" align="center"><var>x</var></td>
+<td width="30" align="center"><var>y</var></td>
+<td><var>x</var> AND <var>y</var></td></tr>
+<tr><td align="center">0</td><td align="center">0</td><td align="center">0</td></tr>
+<tr><td align="center">0</td><td align="center">1</td><td align="center">0</td></tr>
+<tr><td align="center">1</td><td align="center">0</td><td align="center">0</td></tr>
+<tr><td align="center">1</td><td align="center">1</td><td align="center">1</td></tr>
+</table>
+<table cellspacing="0" cellpadding="2" border="1" align="right">
+<tr style="background-color:#c1daf9;">
+<td width="30" align="center"><var>x</var></td>
+<td width="30" align="center"><var>y</var></td>
+<td><var>x</var> XOR <var>y</var></td></tr>
+<tr><td align="center">0</td><td align="center">0</td><td align="center">0</td></tr>
+<tr><td align="center">0</td><td align="center">1</td><td align="center">1</td></tr>
+<tr><td align="center">1</td><td align="center">0</td><td align="center">1</td></tr>
+<tr><td align="center">1</td><td align="center">1</td><td align="center">0</td></tr>
+</table>
+</div><br clear="all" />
+<p>Сколько 6-входовых двоичных таблиц истинности, &tau;, удовлетворят следующей формуле</p>
+<div style="text-align:center;">
+&tau;(<var>a</var>, <var>b</var>, <var>c</var>, <var>d</var>, <var>e</var>, <var>f</var>) AND &tau;(<var>b</var>,
+
+<var>c</var>, <var>d</var>, <var>e</var>, <var>f</var>, <var>a</var> XOR (<var>b</var> AND <var>c</var>)) = 0
+</div><br />
+<p>для всех возможных 6-разрядных входов (<var>a</var>, <var>b</var>, <var>c</var>, <var>d</var>, <var>e</var>,
+
+<var>f</var>)?
+</p>
+</div>
+
+<a target="_blank" href="http://projecteuler.net/index.php?section=problems&amp;id=209">Оригинал</a>

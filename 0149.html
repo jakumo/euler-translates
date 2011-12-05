@@ -1,0 +1,107 @@
+Subject:
+Поиск под-последовательностей с максимальной суммой.
+
+Body:
+<div class="problem_content">
+<p>Бросив взгляд в таблицу ниже, легко убедиться в том, что максимально возможная сумма соседних
+
+чисел в любом направлении (горизонтальном, вертикальном, диагональном и анти-диагональном) <span
+
+style="white-space:nowrap">равна 16 (= 8 + 7 + 1).</span></p>
+
+<div style="text-align:center">
+<table border="1" cellpadding="6" cellspacing="0" style="margin:auto"><tbody
+
+align="right"><tr><td><img src='http://projecteuler.net/images/symbol_minus.gif' width='9'
+
+height='3' alt='&minus;' border='0' style='vertical-align:middle;' />2</td ><td
+
+>5</td><td>3</td><td>2</td></tr>
+<tr><td>9</td><td><img src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3'
+
+alt='&minus;' border='0' style='vertical-align:middle;' />6</td><td>5</td><td>1</td></tr>
+<tr><td>3</td><td>2</td><td>7</td><td>3</td></tr>
+<tr><td><img src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3'
+
+alt='&minus;' border='0' style='vertical-align:middle;' />1</td><td>8</td><td><img
+
+src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0'
+
+style='vertical-align:middle;' />4</td><td>&nbsp; 8</td></tr></tbody></table>
+</div>
+
+<p>Теперь, давайте повторим поиск, но на этот раз в гораздо более крупных масштабах:</p>
+
+<p>Для начала, сгенерируем четыре миллиона псевдо-случайных чисел с помощью особой формы, того, что
+
+известно под названием "Запаздывающий Генератор Фибоначчи":</p>
+
+<p>Для 1 <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;'
+
+border='0' style='vertical-align:middle;' /> <i>k</i> <img
+
+src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0'
+
+style='vertical-align:middle;' /> 55, <i>s</i><img src="" style="display:none;" alt="_("
+
+/><sub><i>k</i></sub><img src="" style="display:none;" alt=")" /> = [100003 <img
+
+src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0'
+
+style='vertical-align:middle;' /> 200003<i>k</i> + 300007<i>k</i><img src="" style="display:none;"
+
+alt="^(" /><sup>3</sup><img src="" style="display:none;" alt=")" />] (modulo 1000000) <img
+
+src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0'
+
+style='vertical-align:middle;' /> 500000.<br />
+Для 56 <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;'
+
+border='0' style='vertical-align:middle;' /> <i>k</i> <img
+
+src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0'
+
+style='vertical-align:middle;' /> 4000000, <i>s</i><img src="" style="display:none;" alt="_("
+
+/><sub><i>k</i></sub><img src="" style="display:none;" alt=")" /> = [<i>s</i><img src=""
+
+style="display:none;" alt="_(" /><sub><i>k<img
+
+src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0'
+
+style='vertical-align:middle;' />24</i></sub><img src="" style="display:none;" alt=")" /> +
+
+<i>s</i><img src="" style="display:none;" alt="_(" /><sub><i>k<img
+
+src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0'
+
+style='vertical-align:middle;' />55</i></sub><img src="" style="display:none;" alt=")" /> +
+
+1000000] (modulo 1000000) <img src='http://projecteuler.net/images/symbol_minus.gif' width='9'
+
+height='3' alt='&minus;' border='0' style='vertical-align:middle;' /> 500000.</p>
+
+<p>Таким образом, <i>s</i><img src="" style="display:none;" alt="_(" /><sub>10</sub><img src=""
+
+style="display:none;" alt=")" /> = <img src='http://projecteuler.net/images/symbol_minus.gif'
+
+width='9' height='3' alt='&minus;' border='0' style='vertical-align:middle;' />393027 и
+
+<i>s</i><img src="" style="display:none;" alt="_(" /><sub>100</sub><img src=""
+
+style="display:none;" alt=")" /> = 86613.</p>
+
+<p>Затем члены <i>s</i> упорядочиваются в виде таблицы размерами
+
+2000<img src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;'
+
+border='0' style='vertical-align:middle;' />2000, при этом первыми 2000 числами заполняется первая
+
+строка, следущими 2000 числами - вторая строка, и т.д.</p>
+
+<p>Наконец, найдите наибольшую сумму (любого числа) соседних записей по любому направления (по
+
+горизонтали, по вертикали, по диагонали или по анти-диагонали).</p>
+</div>
+
+<a target="_blank" href="http://projecteuler.net/index.php?section=problems&amp;id=149">Оригинал</a>

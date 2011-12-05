@@ -1,0 +1,71 @@
+Subject:
+Ползунки.
+
+Body:
+<div class="problem_content">
+<p>Наверняка вам знакома игра <i>Fifteen Puzzle</i>. Вместо пронумерованных плиток, мы воспользуемся семью красными
+
+плитками и восьми синих.</p>
+<p>Ходы обозначаются заглавной начальной буквой направления (Left, Right, Up, Down), в котором плитку передвигают,
+
+т.е. начав с конфигурации (<b>S</b>), и выполнив следующую последовательность перемещений <b>LULUR</b>, мы получим
+
+конфигурацию (<b>E</b>):</p>
+<div style="text-align: center;">
+<table cellspacing='0' cellpadding='2' border='0' align='center'>
+<tr><td width = '25'>(<b>S</b>)</td><td width='100'><img
+
+src="http://projecteuler.net/project/images/p_244_start.gif" alt="" /></td><td width = '25'>, (<b>E</b>)</td><td
+
+width='100'><img src="http://projecteuler.net/project/images/p_244_example.gif" alt="" /></td></tr>
+</table>
+
+</div>
+<p>Контрольная сумма каждого пути рассчитывается следующим образом (псевдо-код):</p>
+<div style="margin-left: 100px;">
+checksum = 0<br />
+checksum = (checksum <img src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;'
+
+border='0' style='vertical-align:middle;' /> 243 + <var>m</var><img src="" style="display:none;" alt="_("
+
+/><sub>1</sub><img src="" style="display:none;" alt=")" />) mod 100&thinsp;000&thinsp;007<br />
+checksum = (checksum <img src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;'
+
+border='0' style='vertical-align:middle;' /> 243 + <var>m</var><img src="" style="display:none;" alt="_("
+
+/><sub>2</sub><img src="" style="display:none;" alt=")" />) mod 100&thinsp;000&thinsp;007<br />
+&nbsp;&nbsp;&nbsp;&hellip;<br />
+checksum = (checksum <img src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;'
+
+border='0' style='vertical-align:middle;' /> 243 + <var>m</var><img src="" style="display:none;" alt="_("
+
+/><sub><var>n</var></sub><img src="" style="display:none;" alt=")" />) mod 100&thinsp;000&thinsp;007<br />
+</div>
+где <var>m</var><img src="" style="display:none;" alt="_(" /><sub><var>k</var></sub><img src=""
+
+style="display:none;" alt=")" /> является ASCII-кодом <var>k</var>-той буквы в последовательности переходов.
+
+Соответствующие ASCII-коды направлений:
+
+<div style='text-align:center;'>
+<table cellspacing='0' cellpadding='2' border='1' align='center'>
+<tr><td width='30'><b>L</b></td><td width='30'>76</td></tr>
+<tr><td><b>R</b></td><td>82</td></tr>
+<tr><td><b>U</b></td><td>85</td></tr>
+<tr><td><b>D</b></td><td>68</td></tr>
+</table>
+</div>
+<p>Для приведенной выше последовательности <b>LULUR</b> контрольная сумма составит 19761398.</p>
+<p>А теперь, начав с конфигурации (<b>S</b>), найдите кратчайший путь к конфигурации (<b>T</b>).</p>
+<div style="text-align: center;">
+<table cellspacing='0' cellpadding='2' border='0' align='center'>
+<tr><td width = '25'>(<b>S</b>)</td><td width='100'><img
+
+src="http://projecteuler.net/project/images/p_244_start.gif" alt="" /></td><td width = '25'>, (<b>T</b>)</td><td
+width='100'><img src="http://projecteuler.net/project/images/p_244_target.gif" alt="" /></td></tr>
+</table>
+</div>
+<p>Чему равна сумма всех контрольных сумм для кратчайших путей?</p>
+</div>
+
+<a target="_blank" href="http://projecteuler.net/index.php?section=problems&amp;id=244">Оригинал</a>

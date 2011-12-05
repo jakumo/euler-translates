@@ -1,0 +1,100 @@
+Subject:
+Пересечения.
+
+Body:
+<div class="problem_content">
+<p>Отрезок однозначно определяется своими двумя конечными точками.<br /> Рассматривая два отрезкана геометрической
+
+плоскости, возможны три варианта:<br />
+у отрезков нет общих точек, есть одна общая точка или бесконечное множество общих точек.</p>
+<p>Более того, если у двух отрезков одна общая точка, то возможно, что эта общая точка является одним из концов
+
+либо одного отрезка, либо обоих. Если общая точка двух отрезков не является конечной точкой ни одного из них, то
+
+такая точка лежит на обоих отрезках.<br />
+Будем называть общую точку T двух отрезков L<img src="" style="display:none;" alt="_(" /><sub>1</sub><img src=""
+
+style="display:none;" alt=")" /> и L<img src="" style="display:none;" alt="_(" /><sub>2</sub><img src=""
+
+style="display:none;" alt=")" />  истинной точкой пересечения отрезков L<img src="" style="display:none;" alt="_("
+
+/><sub>1</sub><img src="" style="display:none;" alt=")" /> и L<img src="" style="display:none;" alt="_("
+
+/><sub>2</sub><img src="" style="display:none;" alt=")" />, если T является единственной общей точкой отрезков
+
+L<img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" /> и L<img
+
+src="" style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;" alt=")" />, и, одновременно,
+
+Т лежит на обоих отрезках (не являясь концов ни одного из них).
+</p>
+<p>Рассмотрим три отрезка: L<img src="" style="display:none;" alt="_(" /><sub>1</sub><img src=""
+
+style="display:none;" alt=")" />, L<img src="" style="display:none;" alt="_(" /><sub>2</sub><img src=""
+
+style="display:none;" alt=")" />, и L<img src="" style="display:none;" alt="_(" /><sub>3</sub><img src=""
+
+style="display:none;" alt=")" />:</p>
+<p style="margin-left:20px;">L<img src="" style="display:none;" alt="_(" /><sub>1</sub><img src=""
+
+style="display:none;" alt=")" />: от (27, 44) до (12, 32)<br />
+L<img src="" style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;" alt=")" />: от (46, 53)
+
+до (17, 62)<br />
+L<img src="" style="display:none;" alt="_(" /><sub>3</sub><img src="" style="display:none;" alt=")" />: от (46, 70)
+
+до (22, 40)</p>
+<p>Нетрудно убедиться в том, что у отрезков L<img src="" style="display:none;" alt="_(" /><sub>2</sub><img src=""
+
+style="display:none;" alt=")" /> и L<img src="" style="display:none;" alt="_(" /><sub>3</sub><img src=""
+
+style="display:none;" alt=")" /> есть истинная точка пересечения. Отметим, что, т.к. одна из конечных точек L<img
+
+src="" style="display:none;" alt="_(" /><sub>3</sub><img src="" style="display:none;" alt=")" />: (22,40) лежит на
+
+отрезке L<img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" />, она
+
+не является истинной точкой пересечения. У отрезков L<img src="" style="display:none;" alt="_(" /><sub>1</sub><img
+
+src="" style="display:none;" alt=")" /> и L<img src="" style="display:none;" alt="_(" /><sub>2</sub><img src=""
+
+style="display:none;" alt=")" /> нет общих точек. Таким образом, у этих трех отрезков есть одна истинная точка
+
+пересечения.</p>
+<p>Теперь, повторим то же самое для 5000 отрезков. Для этого, сгенерируем 20000 случайных чисел, воспользовавашись
+
+так называемым алгоритмом &quot;Блюма-Блюма-Шуба&quot;.</p>
+<p style="margin-left:50px;">s<img src="" style="display:none;" alt="_(" /><sub>0</sub><img src=""
+
+style="display:none;" alt=")" /> = 290797<br /><br />
+s<img src="" style="display:none;" alt="_(" /><sub>n+1</sub><img src="" style="display:none;" alt=")" /> = s<img
+
+src="" style="display:none;" alt="_(" /><sub>n</sub><img src="" style="display:none;" alt=")" /><img
+
+src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;' border='0'
+
+style='vertical-align:middle;' />s<img src="" style="display:none;" alt="_(" /><sub>n</sub><img src=""
+
+style="display:none;" alt=")" /> (modulo 50515093)<br /><br />
+t<img src="" style="display:none;" alt="_(" /><sub>n</sub><img src="" style="display:none;" alt=")" /> = s<img
+
+src="" style="display:none;" alt="_(" /><sub>n</sub><img src="" style="display:none;" alt=")" /> (modulo 500)</p>
+<p>Для построения каждого отрезка, воспользуемся четырьмя последовательными числами t<img src=""
+
+style="display:none;" alt="_(" /><sub>n</sub><img src="" style="display:none;" alt=")" />. Это значит, что первый
+
+отрезок определяется следующими координатами:</p>
+<p>от (t<img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" />,
+
+t<img src="" style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;" alt=")" />) до (t<img
+
+src="" style="display:none;" alt="_(" /><sub>3</sub><img src="" style="display:none;" alt=")" />, t<img src=""
+
+style="display:none;" alt="_(" /><sub>4</sub><img src="" style="display:none;" alt=")" />)</p>
+<p>Первые четыре числа, сгенерированные с помощью этого алгоритма, будут равны: 27, 144, 12 и 232. Таким образом,
+
+первый отрезок будет задаваться точками (27,144) и (12,232).</p>
+<p>Сколько отличных истинных точек пересечения можно найти у 5000 отрезков?</p>
+</div>
+
+<a target="_blank" href="http://projecteuler.net/index.php?section=problems&amp;id=165">Оригинал</a>

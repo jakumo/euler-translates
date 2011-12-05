@@ -1,0 +1,74 @@
+Subject:
+Модифицированная последовательность Коллатца.
+
+Body:
+<div class="problem_content">
+<p>Модифицированную последовательность Коллатца, состояющую из целых чисел, получают из начального значения a<img src=""
+
+style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" /> следующим образом:</p>
+<p>
+<var>a<img src="" style="display:none;" alt="_(" /><sub>n+1</sub><img src="" style="display:none;" alt=")" /></var> =
+
+<var>a<img src="" style="display:none;" alt="_(" /><sub>n</sub><img src="" style="display:none;" alt=")" /></var>/3 если
+
+<var>a<img src="" style="display:none;" alt="_(" /><sub>n</sub><img src="" style="display:none;" alt=")" /></var>
+
+делится на 3 без остатка. Обозначим это событие большим шагом вниз, "D".</p>
+<p>
+<var>a<img src="" style="display:none;" alt="_(" /><sub>n+1</sub><img src="" style="display:none;" alt=")" /></var> =
+
+(4<var>a<img src="" style="display:none;" alt="_(" /><sub>n</sub><img src="" style="display:none;" alt=")" /></var> +
+
+2)/3 если, при делении на 3, <var>a<img src="" style="display:none;" alt="_(" /><sub>n</sub><img src=""
+
+style="display:none;" alt=")" /></var> дает в остатке 1. Обозначим это событие шагом вверх, "U".
+</p>
+<p>
+<var>a<img src="" style="display:none;" alt="_(" /><sub>n+1</sub><img src="" style="display:none;" alt=")" /></var> =
+
+(2<var>a<img src="" style="display:none;" alt="_(" /><sub>n</sub><img src="" style="display:none;" alt=")" /></var> -
+
+1)/3 если, при делении на 3, <var>a<img src="" style="display:none;" alt="_(" /><sub>n</sub><img src=""
+
+style="display:none;" alt=")" /></var> дает в остатке 2. Обозначим это событие малым шагом вниз, "d".
+</p>
+<p>
+Последовательность прерывается, когда некий <var>a<img src="" style="display:none;" alt="_(" /><sub>n</sub><img src=""
+
+style="display:none;" alt=")" /></var> = 1.</p>
+<p>
+Для любого заданного целого числа, мы можем перечислить последовательность всех шагов.<br />
+Например, если <var>a</var><img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;"
+
+alt=")" />=231, то последовательности {<var>a<img src="" style="display:none;" alt="_(" /><sub>n</sub><img src=""
+
+style="display:none;" alt=")" /></var>}={231,77,51,17,11,7,10,14,9,3,1} соответствуют шаги "DdDddUUdDD".
+</p>
+<p>
+Разумеется, существуют другие последовательности, начало которых совпадает с упомянутой выше "DdDddUUdDD....".<br />
+например, если <var>a</var><img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;"
+
+alt=")" />=1004064, то получится следующая последовательность шагов DdDddUUdDDDdUDUUUdDdUUDDDUdDD.<br />
+Между прочим, 1004064 является наименьшим возможным значением <var>a</var><img src="" style="display:none;" alt="_("
+
+/><sub>1</sub><img src="" style="display:none;" alt=")" /> <img src='http://projecteuler.net/images/symbol_gt.gif'
+
+width='10' height='10' alt='&gt;' border='0' style='vertical-align:middle;' /> 10<img src="" style="display:none;"
+
+alt="^(" /><sup>6</sup><img src="" style="display:none;" alt=")" />, соответствующая последовательность шагов которого
+
+начинается с DdDddUUdDD.
+</p>
+<p>
+Чему равно наименьшее значение <var>a</var><img src="" style="display:none;" alt="_(" /><sub>1</sub><img src=""
+
+style="display:none;" alt=")" /> <img src='http://projecteuler.net/images/symbol_gt.gif' width='10' height='10'
+
+alt='&gt;' border='0' style='vertical-align:middle;' /> 10<img src="" style="display:none;" alt="^(" /><sup>15</sup><img
+
+src="" style="display:none;" alt=")" />, которому соответствует последовательность шагов, начинающаяся с
+
+"UDDDUdddDDUDDddDdDddDDUDDdUUDd"?
+</p></div>
+
+<a target="_blank" href="http://projecteuler.net/index.php?section=problems&amp;id=277">Оригинал</a>

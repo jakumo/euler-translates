@@ -1,0 +1,27 @@
+Subject:
+Ним.
+
+Body:
+<div class="problem_content">
+<p><i>Ним</i> &mdash; это игра с кучками камней, в которой двое игроков по очереди убирают любое количество камней из любой кучки, пока не останется ни одного камня.</p>
+
+<p>Мы рассмотрим версию нормальной игры с тремя кучками, которая проходит следующим образом:<br />
+- в начале игры имеется три кучки камней;<br />
+- во время своего хода игрок убирает любое положительное число камней из любой одной кучки;<br />
+- первый игрок, который не сможет сделать ход (потому что не останется камней), проигрывает.</p>
+
+<p>Если (<var>n</var><img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" />,<var>n</var><img src="" style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;" alt=")" />,<var>n</var><img src="" style="display:none;" alt="_(" /><sub>3</sub><img src="" style="display:none;" alt=")" />) указывает позицию в игре с кучками размеров <var>n</var><img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" />, <var>n</var><img src="" style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;" alt=")" /> и <var>n</var><img src="" style="display:none;" alt="_(" /><sub>3</sub><img src="" style="display:none;" alt=")" />, то существует простая функция <var>X</var>(<var>n</var><img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" />,<var>n</var><img src="" style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;" alt=")" />,<var>n</var><img src="" style="display:none;" alt="_(" /><sub>3</sub><img src="" style="display:none;" alt=")" />) &mdash; которую вы можете разыскать или попытаться вывести самостоятельно &mdash; которая возвращает:</p>
+<ul><li>ноль, если при совершенной стратегии игрок, чья очередь делать ход, в конце концов проиграет; или</li>
+<li>ненулевой результат, если при совершенной стратегии игрок, чья очередь делать ход, в конце концов выиграет.</li></ul>
+
+<p>Например, <var>X</var>(1,2,3) = 0, потому что, независимо от действий текущего игрока, его противник может ответить ходом, который оставит кучки равных размеров, и тогда каждый ход текущего игрока может повторяться его противником, пока не останется камней; то есть текущий игрок проигрывает. Для иллюстрации:<br />
+- текущий игрок ходит в позицию (1,2,1),<br />
+- противник ходит в (1,0,1),<br />
+- текущий игрок ходит в (0,0,1),<br />
+- противник ходит в (0,0,0) и выигрывает.</p>
+
+<p>Для скольки положительных целых <var>n</var>&thinsp;<img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' />&thinsp;2<img src="" style="display:none;" alt="^(" /><sup>30</sup><img src="" style="display:none;" alt=")" /> выполняется <var>X</var>(<var>n</var>,2<var>n</var>,3<var>n</var>) = 0 ?
+</p>
+</div>
+
+<a target="_blank" href="http://projecteuler.net/index.php?section=problems&amp;id=301">Оригинал</a>

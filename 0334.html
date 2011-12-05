@@ -1,0 +1,100 @@
+Subject:
+Рассыпание бобов.
+
+Body:
+<div class="problem_content">
+<p>В раю Платона существует бесконечное количество мисок, выложенных в прямую линию.<br /> В каждой миске либо конечное число бобов, либо нет бобов вообще.<br /> Ребенок играет в игру, в которой разрешен только один вид хода:
+забрать два боба из любой миски
+и переложить их в одну из двух соседних мисок.<br /> Игра закончится, когда в каждой миске либо один боб, либо ни одного.</p>
+
+<p>К примеру, рассмотрим две рядом расположенные миски, в которых лежат, соответственно, 2 и 3 боба.
+Все остальные миски - пустые. Следующими восьмью ходами можно завершить игру:</p>
+
+<div align='center'><img
+src="http://projecteuler.net/project/images/p_334_beans.gif" alt="" /></div>
+
+<p>Заданы следующие последовательности:</p><table class="formula" style="margin-left:50px;"> <tr>
+   <td>
+      <var>t</var><sub><i>0</i></sub> = 123456.
+   </td>
+</tr></table>
+
+<table class="formula" style="margin-left:50px;"> <tr>
+   <td>
+      <var>t</var><sub><i>i</i></sub> =
+   </td>
+   <td><img src="http://projecteuler.net/project/images/p_334_cases.gif" alt="" /></td>
+   <td>
+   <table class="formula">
+      <tr>
+      <td></td>
+      <td>
+         <table class="frac">
+         <tr><td><var>t</var><sub><i>i-1</i></sub></td></tr>
+         <tr><td class="overline">2</td></tr>
+         </table>
+      </td>
+      <td>
+         ,
+      </td>
+      <td></td>
+      <td>
+         если <var>t</var><sub><i>i-1</i></sub> четно
+      </td>
+      </tr>
+      <tr>
+      <td><img src="http://projecteuler.net/project/images/p_334_lfloor.gif" alt=""
+/></td>
+      <td>
+         <table class="frac">
+         <tr><td><var>t</var><sub><i>i-1</i></sub></td></tr>
+         <tr><td class="overline">2</td></tr>
+         </table>
+      </td>
+      <td>
+         <img src="http://projecteuler.net/project/images/p_334_rfloor.gif" alt="" />
+      </td>
+      <td>
+         926252,
+      </td>
+      <td>
+         если <var>t</var><sub><i>i-1</i></sub> нечетно
+      </td>
+      </tr>
+   </table>
+   </td>
+</tr>
+<tr>
+   <td></td>
+   <td></td>
+   <td>
+      где <img src='http://projecteuler.net/images/symbol_lfloor.gif'
+width='6' height='16'
+      alt='&lfloor;' border='0' style='vertical-align:middle;'
+/><var>x</var><img
+      src='http://projecteuler.net/images/symbol_rfloor.gif' width='6'
+height='16' alt='&rfloor;'
+      border='0' style='vertical-align:middle;' /> - функция округления вниз
+   </td>
+</tr>
+<tr>
+   <td></td>
+   <td></td>
+   <td>
+      а <img src="http://projecteuler.net/project/images/p_334_oplus.gif" alt=""
+/> оператор поэлементного исключающего ИЛИ.
+   </td>
+</tr></table>
+
+<table class="formula" style="margin-left:50px;"> <tr>
+   <td>
+      <var>b</var><sub><i>i</i></sub> = ( <var>t</var><sub><i>i</i></sub> mod 2<sup>11</sup>) + 1.
+   </td>
+</tr></table>
+
+<p>Первые два члена этой последовательности равны <var>b</var><sub><i>1</i></sub> = 289 и <var>b</var><sub><i>2</i></sub> = 145.<br /> Если начать с <var>b</var><sub><i>1</i></sub> и <var>b</var><sub><i>2</i></sub> бобами в двух соседних мисках, то для завершения игры потребуется 3419100 ходов.</p>
+
+<p>Теперь, рассмотрим 1500 мисок, выстроенных в линию, в каждой из которых, соответственно, лежат <var>b</var><sub><i>1</i></sub>, <var>b</var><sub><i>2</i></sub>,..., <var>b</var><sub><i>1500</i></sub> бобов.
+Остальные миски - пустые. Найдите, сколько ходов необходимо сделать, чтобы завершить игру.</p> </div>
+
+<a target="_blank" href="http://projecteuler.net/index.php?section=problems&amp;id=334">Оригинал</a>

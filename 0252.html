@@ -1,0 +1,45 @@
+Subject:
+Выпуклые отверстия.
+
+Body:
+<div class="problem_content">
+<p>
+При данном множестве точек на плоскости, определим выпуклое отверстие как выпуклый многоугольник, имеющий в качестве вершин любые из данных точек и не содержащий данные точки внутри себя (в дополнение к этому, данные точки могут лежать на сторонах многоугольника).
+</p>
+<p>
+К примеру, рисунок ниже показывает множество из двадцати точек и несколько выпуклых отверстий. Выпуклое отверстие, обозначенное красным семиугольником, имеет площадь 1 049 694.5 единиц площади, что является самой большой возможной площадью для выпуклого отверстия при данном множестве точек.
+</p>
+<div style="text-align:center;">
+<img src="http://projecteuler.net/project/images/p_252_convexhole.gif" alt="" /></div>
+
+<p>В нашем примере мы использовали первые 20 точек (<var>T</var><img src="" style="display:none;" alt="_(" /><sub>2<var>k</var><img src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0' style='vertical-align:middle;' />1</sub><img src="" style="display:none;" alt=")" />,&thinsp;<var>T</var><img src="" style="display:none;" alt="_(" /><sub>2<var>k</var></sub><img src="" style="display:none;" alt=")" />), for <var>k</var>&thinsp;=&thinsp;1,2,&hellip;,20, полученных с помощью следующего генератора псевдослучайных чисел:</p>
+
+<center><table class="p252">
+  <tr>
+    <td style="text-align:right"><var>S</var><img src="" style="display:none;" alt="_(" /><sub>0</sub><img src="" style="display:none;" alt=")" /></td>
+    <td>=<img src="" style="display:none;" alt="_(" /><sub>&nbsp;</sub><img src="" style="display:none;" alt=")" /></td>
+    <td>290797<img src="" style="display:none;" alt="_(" /><sub>&nbsp;</sub><img src="" style="display:none;" alt=")" /></td>
+  </tr><tr>
+    <td><var>S</var><img src="" style="display:none;" alt="_(" /><sub><var>n</var>+1</sub><img src="" style="display:none;" alt=")" /></td>
+
+    <td>=<img src="" style="display:none;" alt="_(" /><sub>&nbsp;</sub><img src="" style="display:none;" alt=")" /></td>
+    <td><var>S</var><img src="" style="display:none;" alt="_(" /><sub><var>n</var></sub><img src="" style="display:none;" alt=")" /><img src="" style="display:none;" alt="^(" /><sup>2</sup><img src="" style="display:none;" alt=")" /> mod 50515093</td>
+  </tr><tr>
+    <td style="text-align:right"><var>T</var><img src="" style="display:none;" alt="_(" /><sub><var>n</var></sub><img src="" style="display:none;" alt=")" /></td>
+    <td>=<img src="" style="display:none;" alt="_(" /><sub>&nbsp;</sub><img src="" style="display:none;" alt=")" /></td>
+
+    <td>(&thinsp;<var>S</var><img src="" style="display:none;" alt="_(" /><sub><var>n</var></sub><img src="" style="display:none;" alt=")" /> mod 2000&thinsp;) <img src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0' style='vertical-align:middle;' /> 1000<img src="" style="display:none;" alt="^(" /><sup>&nbsp;</sup><img src="" style="display:none;" alt=")" /></td>
+  </tr>
+</table></center>
+
+<p>
+<i>К примеру,</i> (527,&thinsp;144), (<img src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0' style='vertical-align:middle;' />488,&thinsp;732), (<img src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0' style='vertical-align:middle;' />454,&thinsp;<img src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0' style='vertical-align:middle;' />947), &hellip;
+
+</p>
+<p>
+Какова максимальная площадь выпуклого отверстия при данном множестве из первых 500 точек такой псевдослучайной последовательности?<br /> Укажите ответ, включая одну цифру после запятой.
+</p>
+
+</div>
+
+<a target="_blank" href="http://projecteuler.net/index.php?section=problems&amp;id=252">Оригинал</a>

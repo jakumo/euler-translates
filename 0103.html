@@ -1,0 +1,61 @@
+Subject:
+Исследование множеств, обладающих свойством специальных подмножеств-сумм.
+
+Body:
+<div class="problem_content">
+<p>Пусть S(A) представляет собой сумму элементов множества А размером <i>n</i>. Будем называть его
+специальным множеством суммы, если для любых двух непустых и непересекающихся подмножеств B и C справедливо
+следующее:</p>
+<ol style="list-style-type:lower-roman;">
+<li>S(B) <img src='http://projecteuler.net/images/symbol_ne.gif' width='11' height='10' alt='&ne;'
+
+border='0' style='vertical-align:middle;' /> S(C); т.е. суммы элементов подмножеств не могут быть
+
+равными.</li>
+<li>Если в B больше элементов, чем в C, то S(B) <img
+
+src='http://projecteuler.net/images/symbol_gt.gif' width='10' height='10' alt='&gt;' border='0'
+style='vertical-align:middle;' /> S(C).</li>
+</ol>
+<p>Если минимизировать сумму S(A) при заданном значении <i>n</i>, получим оптимальное специальное множество
+-сумму. Ниже даны первые пять оптимальные специальные подмножества-суммы.</p>
+<p style="margin-left:50px;"><i>n</i> = 1: {1}<br />
+<i>n</i> = 2: {1, 2}<br />
+<i>n</i> = 3: {2, 3, 4}<br />
+<i>n</i> = 4: {3, 5, 6, 7}<br />
+<i>n</i> = 5: {6, 9, 11, 12, 13}</p>
+<p><i>Похоже на то,</i> что для заданного оптимального множества A = {<i>a</i><img src=""
+
+style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" />,
+
+<i>a</i><img src="" style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;"
+
+alt=")" />, ... , <i>a</i><img src="" style="display:none;" alt="_(" /><sub>n</sub><img src=""
+
+style="display:none;" alt=")" />}, следующим оптимальным множеством будет множество вида B =
+
+{<i>b</i>, <i>a</i><img src="" style="display:none;" alt="_(" /><sub>1</sub><img src=""
+
+style="display:none;" alt=")" />+<i>b</i>, <i>a</i><img src="" style="display:none;" alt="_("
+
+/><sub>2</sub><img src="" style="display:none;" alt=")" />+<i>b</i>, ... ,<i>a</i><img src=""
+
+style="display:none;" alt="_(" /><sub>n</sub><img src="" style="display:none;" alt=")"
+
+/>+<i>b</i>}, где <i>b</i> - &quot;средний&quot; элемент предыдущей строки.</p>
+<p>Применяя данное &quot;правило&quot;, можно было бы ожидать, что оптимальным множеством при 
+
+<i>n</i> = 6 станет A = {11, 17, 20, 22, 23, 24}, у которого S(A) = 117. Однако, данное множество
+
+не является оптимальным, поскольку мы всего-лишь применили алгоритм нахождения близкого к
+
+оптимальному множества. Оптимальным множеством при for <i>n</i> = 6 будет A = {11, 18, 19, 20, 22,
+
+25}, у которого S(A) = 115, а соответствующая ему последовательность: 111819202225.</p>
+<p>Дано, что A является оптимальным специальным множеством-суммой при <i>n</i> = 7. Найдите для данного множества последовательность.</p>
+<p class="info">Примечание: Данная задача имеет также отношение к задачам <a
+
+href="105.html">№105</a> и <a href="106.html">№106</a>.</p>
+</div>
+
+<a target="_blank" href="http://projecteuler.net/index.php?section=problems&amp;id=103">Оригинал</a>

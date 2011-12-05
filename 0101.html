@@ -1,0 +1,141 @@
+Subject:
+Обнаружить оптимальную полиномиальную функцию, с помощью которой можно получить первые  <i>k</i> членов заданной последовательности.
+
+Body:
+<div class="problem_content">
+<p>Если нам известны первые <var>k</var> членов некоторой последовательности, то это еще не значит,
+
+что мы сможем с уверенностью определить значение следующего члена, поскольку существует бесконечное
+
+множество полиномиальных функций, которыми можно описать такую последовательность.</p>
+<p>К примеру, рассмотрим последовательность чисел-кубов. Такую последовательность можно определить
+
+образующей функцией: <br /><var>u</var><img src="" style="display:none;" alt="_("
+
+/><sub><var>n</var></sub><img src="" style="display:none;" alt=")" /> = <var>n</var><img src=""
+
+style="display:none;" alt="^(" /><sup>3</sup><img src="" style="display:none;" alt=")" />: 1, 8, 27,
+
+64, 125, 216, ...</p>
+<p>Предположим, что нам известны только два первых члена такой последовательности. Руководствуясь
+
+принципом &quot;чем проще, тем лучше&quot;, мы предполагаем линейную зависимость и предсказываем
+
+следующее значение равным 15 (общая разность равна 7). Даже если нам известны первые три члена
+
+последовательности, согласно тому же принципу простоты, следует предположить квадратичную
+
+зависимость.</p>
+
+<p>Определим OP(<var>k</var>, <var>n</var>) как <var>n</var><img src="" style="display:none;"
+
+alt="^(" /><sup>ный</sup><img src="" style="display:none;" alt=")" /> член оптимальной
+
+полиномиальной образующей функции для первых <var>k</var> членов последовательности. Очевидно, что 
+
+OP(<var>k</var>, <var>n</var>) даст точные значения членов последовательности при <var>n</var> <img
+
+src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0'
+
+style='vertical-align:middle;' /> <var>k</var>, а <i>первым неверным членом</i> (FIT - First
+
+Incorrect Term) будет OP(<var>k</var>, <var>k</var>+1), который в дальнейшем мы будем называть
+
+<i>плохим OP</i> (BOP - Bad OP).</p>
+
+<p>В частности, если бы нам был известен только первый член последовательности, наиболее разумным
+
+было бы предположить постоянство; т.е. при <var>n</var> <img
+
+src='http://projecteuler.net/images/symbol_ge.gif' width='10' height='12' alt='&ge;' border='0'
+
+style='vertical-align:middle;' /> 2, OP(1, <var>n</var>) = <var>u</var><img src=""
+
+style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" />.</p>
+<p>Таким образом, получим следующие значения OP(<var>k</var>, <var>n</var>) для последовательности
+
+кубов:</p>
+<div style='margin-left:50px;'>
+<table>
+<tr>
+<td>OP(1, <var>n</var>) = 1</td>
+<td>1, <span style='color:red;'><b>1</b></span>, 1, 1, ...</td>
+</tr>
+<tr>
+<td>OP(2, <var>n</var>) = 7<var>n</var><img src='http://projecteuler.net/images/symbol_minus.gif'
+
+width='9' height='3' alt='&minus;' border='0' style='vertical-align:middle;' />6</td>
+<td>1, 8, <span style='color:red;'><b>15</b></span>, ...</td>
+</tr>
+<tr>
+<td>OP(3, <var>n</var>) = 6<var>n</var><img src="" style="display:none;" alt="^(" /><sup>2</sup><img
+
+src="" style="display:none;" alt=")" /><img src='http://projecteuler.net/images/symbol_minus.gif'
+
+width='9' height='3' alt='&minus;' border='0' style='vertical-align:middle;'
+
+/>11<var>n</var>+6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>1, 8, 27, <span style='color:red;'><b>58</b></span>, ...</td>
+</tr>
+<tr>
+<td>OP(4, <var>n</var>) = <var>n</var><img src="" style="display:none;" alt="^(" /><sup>3</sup><img
+
+src="" style="display:none;" alt=")" /></td>
+<td>1, 8, 27, 64, 125, ...</td>
+</tr>
+</table>
+</div>
+<p>Понятно, что при <var>k</var> <img src='http://projecteuler.net/images/symbol_ge.gif' width='10'
+
+height='12' alt='&ge;' border='0' style='vertical-align:middle;' /> 4 не существует ни одной BOP-
+
+последовательности.</p>
+<p>Рассмотрим сумму значений FIT, которые образованы BOP-последовательностями (отмечены выше <span
+
+style='color:красным;'><b>red</b></span> above). Получим: 1 + 15 + 58 = 74.</p>
+<p>Дана следующая полиномиальная образующая функция 10-й степени:</p>
+<p style='text-align:center;'><var>u</var><img src="" style="display:none;" alt="_("
+
+/><sub><var>n</var></sub><img src="" style="display:none;" alt=")" /> = 1 <img
+
+src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0'
+
+style='vertical-align:middle;' /> <var>n</var> + <var>n</var><img src="" style="display:none;"
+
+alt="^(" /><sup>2</sup><img src="" style="display:none;" alt=")" /> <img
+
+src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0'
+
+style='vertical-align:middle;' /> <var>n</var><img src="" style="display:none;" alt="^("
+
+/><sup>3</sup><img src="" style="display:none;" alt=")" /> + <var>n</var><img src=""
+
+style="display:none;" alt="^(" /><sup>4</sup><img src="" style="display:none;" alt=")" /> <img
+
+src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0'
+
+style='vertical-align:middle;' /> <var>n</var><img src="" style="display:none;" alt="^("
+
+/><sup>5</sup><img src="" style="display:none;" alt=")" /> + <var>n</var><img src=""
+
+style="display:none;" alt="^(" /><sup>6</sup><img src="" style="display:none;" alt=")" /> <img
+
+src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0'
+
+style='vertical-align:middle;' /> <var>n</var><img src="" style="display:none;" alt="^("
+
+/><sup>7</sup><img src="" style="display:none;" alt=")" /> + <var>n</var><img src=""
+
+style="display:none;" alt="^(" /><sup>8</sup><img src="" style="display:none;" alt=")" /> <img
+
+src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0'
+
+style='vertical-align:middle;' /> <var>n</var><img src="" style="display:none;" alt="^("
+
+/><sup>9</sup><img src="" style="display:none;" alt=")" /> + <var>n</var><img src=""
+
+style="display:none;" alt="^(" /><sup>10</sup><img src="" style="display:none;" alt=")" /></p>
+<p>Найдите сумму значений FIT, образованные BOP-последовательностями.</p>
+</div>
+
+<a target="_blank" href="http://projecteuler.net/index.php?section=problems&amp;id=101">Оригинал</a>

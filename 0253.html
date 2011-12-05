@@ -1,0 +1,53 @@
+Subject:
+Уборка.
+
+Body:
+<div class="problem_content">
+<p>У маленького мальчика есть &ldquo;числовая гусеница&rdquo;, состоящая из сорока пронумерованых кусочков, которые, будучи соединены в линию, образуют возрастающий числовой ряд от 1 до 40.</p>
+
+<p>Каждую ночь отец мальчика подбирает разбросанные по комнате кусочки гусеницы. Он берет случайные кусочки и размещает их в правильном порядке.<br /> В процессе такого собирания гусеницы сначала образуются отдельные сегменты, которые потом объединяются.<br /> Количество сегментов начинается с нуля (ни одного кусочка), потом увеличивается до одиннадцати или двенадцати, потом снова падает, пока не завершится одним сегментом (все кусочки размещены).</p>
+
+<p>Например:</p>
+<div align='center'>
+<table cellspacing='0' cellpadding='2' border='1' align='center'>
+<tr style='background-color:#c1daf9;'>
+<td width='80' align='center'><b>Подобранный кусочек</b></td>
+<td width='80' align='center'><b>Текущее количество сегментов</b></td></tr>
+<tr><td align='center'>12</td><td align='center'>1</td></tr>
+<tr><td align='center'>4</td><td align='center'>2</td></tr>
+<tr><td align='center'>29</td><td align='center'>3</td></tr>
+
+<tr><td align='center'>6</td><td align='center'>4</td></tr>
+<tr><td align='center'>34</td><td align='center'>5</td></tr>
+<tr><td align='center'>5</td><td align='center'>4</td></tr>
+<tr><td align='center'>35</td><td align='center'>4</td></tr>
+<tr><td align='center'>&hellip;</td><td align='center'>&hellip;</td></tr>
+</table></div>
+
+<p>Пусть <var>M</var> будет максимальным количеством сегментов, образованных в результате случайной уборки разобранной гусеницы.<br />
+
+Для гусеницы, состоящей из десяти кусочков, количество вариантов для каждого <var>M</var> равно</p>
+<div align='center'>
+<table cellspacing='0' cellpadding='2' border='1' align='center'>
+<tr style='background-color:#c1daf9;'>
+<td width='50' align='center'><b><var>M</var></b></td>
+<td width='90' align='center'><b>Варианты</b></td></tr>
+<tr><td align='center'>1</td><td align='right'>512&nbsp; &nbsp;&nbsp; &nbsp;</td></tr>
+
+<tr><td align='center'>2</td><td align='right'>250912&nbsp; &nbsp;&nbsp; &nbsp;</td></tr>
+<tr><td align='center'>3</td><td align='right'>1815264&nbsp; &nbsp;&nbsp; &nbsp;</td></tr>
+<tr><td align='center'>4</td><td align='right'>1418112&nbsp; &nbsp;&nbsp; &nbsp;</td></tr>
+<tr><td align='center'>5</td><td align='right'>144000&nbsp; &nbsp;&nbsp; &nbsp;</td></tr>
+
+</table>
+</div>
+
+<p>поэтому наиболее вероятное значение <var>M</var> равно 3, а среднее значение равно <img src="" style="display:none;" alt="^(" /><sup>385643</sup><img src="" style="display:none;" alt=")" />&frasl;<img src="" style="display:none;" alt="_(" /><sub>113400</sub><img src="" style="display:none;" alt=")" /> = 3.400732, округленное до шестого знака после запятой.</p>
+
+<p>Наиболее вероятное значение <var>M</var> для гусеницы из сорока кусочков равно 11; а какое тогда будет среднее значение <var>M</var>?</p>
+
+<p>Дайте ответ, округленный до шести знаков после запятой.</p>
+
+</div>
+
+<a target="_blank" href="http://projecteuler.net/index.php?section=problems&amp;id=253">Оригинал</a>

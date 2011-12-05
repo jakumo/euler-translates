@@ -1,0 +1,84 @@
+Subject:
+Разрезание бумаги в клеточку.
+
+Body:
+<div class="problem_content">
+<p>Возьмем прямоугольный лист бумаги в клеточку размерами <var>w</var> <img
+
+src='http://projecteuler.net/images/symbol_times.gif'
+width='9' height='9' alt='&times;' border='0' style='vertical-align:middle;' /> <var>h</var>. Шаг
+
+клетки составляет 1.<br />
+Если разрезать такой лист по линии клеток и совместить полученные куски без перекрытия, то можно
+
+образовать прямоугольники других размеров.</p>
+<p>К примеру, из листа рамерами 9 <img src='http://projecteuler.net/images/symbol_times.gif'
+
+width='9' height='9' alt='&times;'
+border='0' style='vertical-align:middle;' /> 4 , можно создать прямоугольники размерами 18 <img
+
+src='images/symbol_times.gif' width='9'
+height='9' alt='&times;' border='0' style='vertical-align:middle;' /> 2, 12 <img
+
+src='http://projecteuler.net/images/symbol_times.gif'
+width='9' height='9' alt='&times;' border='0' style='vertical-align:middle;' /> 3 и 6 <img
+
+src='http://projecteuler.net/images/symbol_times.gif'
+width='9' height='9' alt='&times;' border='0' style='vertical-align:middle;' /> 6, если разрезать
+
+и сопоставить полученные куски, как это показано ниже:</p>
+
+<div align='center'>
+<img src="http://projecteuler.net/project/images/p_338_gridpaper.gif" alt="" /><br />
+</div>
+
+<p>Аналогично, из листа размерами 9 <img src='http://projecteuler.net/images/symbol_times.gif'
+
+width='9' height='9' alt='&times;' border='0'
+style='vertical-align:middle;' /> 8 , можно образовать прямоугольники размерами 18 <img
+
+src='http://projecteuler.net/images/symbol_times.gif' width='9'
+height='9' alt='&times;' border='0' style='vertical-align:middle;' /> 4 и 12 <img
+
+src='http://projecteuler.net/images/symbol_times.gif' width='9'
+height='9' alt='&times;' border='0' style='vertical-align:middle;' /> 6 .</p>
+
+<p>Для пары чисел <var>w</var> и <var>h</var> определим F(<var>w</var>,<var>h</var>) как
+
+количество отличных прямоугольников, которые можно образовать из
+листа бумаги размерами <var>w</var> <img src='http://projecteuler.net/images/symbol_times.gif'
+
+width='9' height='9' alt='&times;' border='0'
+style='vertical-align:middle;' /> <var>h</var> .<br />
+Например, F(2,1) = 0, F(2,2) = 1, F(9,4) = 3 и F(9,8) = 2. <br />
+Учтите, что прямоугольники конгруэнтные заданному не учитываются в F
+
+(<var>w</var>,<var>h</var>).<br />
+Также учтите, что прямоугольник размерами <var>w</var> <img
+
+src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9'
+alt='&times;' border='0' style='vertical-align:middle;' /> <var>h</var> и прямоугольник размерами
+
+<var>h</var>
+<img src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;'
+
+border='0' style='vertical-align:middle;'/>
+<var>w</var> не считаются отличными.</p>
+
+<p>Для целых значений <var>N</var> определим G(<var>N</var>) в виде суммы F
+
+(<var>w</var>,<var>h</var>) для всех тех пар <var>w</var> и <var>h</var>, которые
+удовлетворяют требованию 0 <img src='http://projecteuler.net/images/symbol_lt.gif' width='10'
+
+height='10' alt='&lt;' border='0' style='vertical-align:middle;' /> <var>h</var>
+<img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;'
+
+border='0' style='vertical-align:middle;' /> <var>w</var>
+<img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;'
+
+border='0' style='vertical-align:middle;' /> <var>N</var>.<br />
+Можно доказать, что G(10) = 55, G(10<sup>3</sup>) = 971745 и G(10<sup>5</sup>) = 9992617687.</p>
+<p>Найдите G(10<sup>12</sup>). Ответ приведите по модулю 10<sup>8</sup>.</p>
+</div>
+
+<a target="_blank" href="http://projecteuler.net/index.php?section=problems&amp;id=338">Оригинал</a>

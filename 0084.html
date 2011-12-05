@@ -1,0 +1,125 @@
+Subject:
+Найдите три самых популярных клетки в игре "Монополия" используя два четырехгранных кубика.
+
+Body:
+<div class="problem_content">
+<p>Стандартная доска игры <i>Монополия</i> выглядит следующим образом:</p>
+<div style='text-align:center;'>
+<table cellspacing='1' cellpadding='5' border='0' style='background-color:#333333;' align='center'>
+<tr>
+<td style='background-color:#ffffff;'>GO</td>
+<td style='background-color:#ffffff;'>A1</td>
+
+<td style='background-color:#ffffff;'>CC1</td>
+<td style='background-color:#ffffff;'>A2</td>
+<td style='background-color:#ffffff;'>T1</td>
+<td style='background-color:#ffffff;'>R1</td>
+<td style='background-color:#ffffff;'>B1</td>
+<td style='background-color:#ffffff;'>CH1</td>
+<td style='background-color:#ffffff;'>B2</td>
+<td style='background-color:#ffffff;'>B3</td>
+<td style='background-color:#ffffff;'>JAIL</td>
+
+</tr>
+<tr>
+<td style='background-color:#ffffff;'>H2</td>
+<td colspan='9'>&nbsp;</td>
+<td style='background-color:#ffffff;'>C1</td>
+</tr>
+<tr>
+<td style='background-color:#ffffff;'>T2</td>
+<td colspan='9'>&nbsp;</td>
+<td style='background-color:#ffffff;'>U1</td>
+</tr>
+<tr>
+<td style='background-color:#ffffff;'>H1</td>
+
+<td colspan='9'>&nbsp;</td>
+<td style='background-color:#ffffff;'>C2</td>
+</tr>
+<tr>
+<td style='background-color:#ffffff;'>CH3</td>
+<td colspan='9'>&nbsp;</td>
+<td style='background-color:#ffffff;'>C3</td>
+</tr>
+<tr>
+<td style='background-color:#ffffff;'>R4</td>
+<td colspan='9'>&nbsp;</td>
+<td style='background-color:#ffffff;'>R2</td>
+
+</tr>
+<tr>
+<td style='background-color:#ffffff;'>G3</td>
+<td colspan='9'>&nbsp;</td>
+<td style='background-color:#ffffff;'>D1</td>
+</tr>
+<tr>
+<td style='background-color:#ffffff;'>CC3</td>
+<td colspan='9'>&nbsp;</td>
+<td style='background-color:#ffffff;'>CC2</td>
+</tr>
+<tr>
+<td style='background-color:#ffffff;'>G2</td>
+
+<td colspan='9'>&nbsp;</td>
+<td style='background-color:#ffffff;'>D2</td>
+</tr>
+<tr>
+<td style='background-color:#ffffff;'>G1</td>
+<td colspan='9'>&nbsp;</td>
+<td style='background-color:#ffffff;'>D3</td>
+</tr>
+<tr>
+<td style='background-color:#ffffff;'>G2J</td>
+<td style='background-color:#ffffff;'>F3</td>
+<td style='background-color:#ffffff;'>U2</td>
+
+<td style='background-color:#ffffff;'>F2</td>
+<td style='background-color:#ffffff;'>F1</td>
+<td style='background-color:#ffffff;'>R3</td>
+<td style='background-color:#ffffff;'>E3</td>
+<td style='background-color:#ffffff;'>E2</td>
+<td style='background-color:#ffffff;'>CH2</td>
+<td style='background-color:#ffffff;'>E1</td>
+<td style='background-color:#ffffff;'>FP</td>
+</tr>
+
+</table>
+</div>
+<p>Игрок начинает на клетке GO и складывает выпавшие на двух шестигранных кубиках числа, чтобы определить количество клеток, которое он должен пройти по часовой стрелке. Пользуясь только этим правилом, вероятность посещения каждой клетки равна 2,5 %. Однако попадание на G2J (Отправляйтесь в тюрьму), CC (Общественный фонд) и CH (Шанс) меняет распределение.</p>
+<p>В дополнение к G2J и одной карте в CC и в CH, которые приказывают игроку отправиться в тюрьму, также если игрок выкидывает три дубля подряд, он не двигается в свой третий ход, а отправляется сразу в тюрьму.</p>
+<p>В начале игры карты CC и CH перемешиваются. Когда игрок попадает на клетку CC или CH, он берет верхнюю карту с соответствующей колоды и, после выполнения указанных на ней инструкций, возвращает ее в низ колоды. В каждой колоде 16 карт, однако для решения этой задачи важны только карты, связанные с перемещением игрока. Любые другие инструкции игнорируются и игрок остается на той же клетке.</p>
+<ul>
+<li>Общественный фонд (2/16 карт):
+<ol>
+<li>Пройдите к GO</li>
+<li>Идите в JAIL</li>
+</ol>
+</li>
+
+<li>Шанс (10/16 карт):
+<ol>
+<li>Пройдите к GO</li>
+<li>Идите в JAIL</li>
+<li>Идите на C1</li>
+<li>Идите на E3</li>
+<li>Идите на H2</li>
+<li>Идите на R1</li>
+<li>Пройдите к следующей R (железнодорожная станция)</li>
+<li>Пройдите к следующей R</li>
+
+<li>Пройдите к следующей U (коммунальное предприятие)</li>
+<li>Вернитесь назад на 3 клетки</li>
+</ol>
+</li>
+</ul>
+<p>Суть этой задачи заключается в вероятности посещения одной конкретной летки. То есть, вероятность оказаться на этой клетки по завершению хода. Поэтому ясно, что, за исключением G2J, чья вероятность посещения равна нулю, клетка CH будет иметь наименьшую вероятность посещения, потому что в 5/8 случаев игроку придется переместиться на другую клетку, а нас интересует именно клетка, на которой завершится ход игрока. Мы также не будем разделять попадание в тюрьму как посетитель или как заключенный, также не берем во внимание правило, что выкинув дубль, игрок выходит из тюрьмы - предположим, что игроки платят за выход из тюрьмы на следующий же ход после попадания в нее.</p>
+<p>Начиная с GO и последовательно нумеруя клетки от 00 до 39, мы можем соединить эти двузначные числа, чтобы получить соответствующую определенному множеству клеток строку.</p>
+<p>Статистически можно доказать, что три наиболее популярных клетки будут JAIL (6,24%) = Клетка 10, E3 (3,18%) = Клетка 24, и GO (3,09%) = Клетка 00. Итак, их можно перечислить как строку из шести цифр: 102400.</p>
+
+<p>Найдите такую шестизначную строку, если игроки будут использовать вместо двух шестигранных кубиков два четырехгранных.</p>
+
+</div>
+
+
+<a target="_blank" href="http://projecteuler.net/index.php?section=problems&amp;id=84">Оригинал</a>

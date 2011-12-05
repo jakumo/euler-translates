@@ -1,0 +1,260 @@
+Subject:
+Нахождение числа способов покрытия ряда плитками разного размера.
+
+Body:
+<div class="problem_content">
+<p>Комбинируя черные квадратные плитки с продолговатыми разноцветными: красными длиной две единицы,
+
+зелеными длиной три единицы и синими плитками длиной четыре единицы, можно покрыть ряд длиной в
+
+пять единиц ровно пятнадцатью различными способами.</p>
+<table cellpadding="10" cellspacing="0" border="0" align="center">
+<tr>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+</tr>
+</table>
+</td>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td colspan="2" style="background-color:#cc0000"><img
+
+src="http://projecteuler.net/images/spacer.gif" width="44" height="20" alt="" /></td>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+</tr>
+</table>
+</td>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+<td colspan="2" style="background-color:#cc0000"><img
+
+src="http://projecteuler.net/images/spacer.gif" width="44" height="20" alt="" /></td>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+</tr>
+</table>
+</td>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+<td colspan="2" style="background-color:#cc0000"><img
+
+src="http://projecteuler.net/images/spacer.gif" width="44" height="20" alt="" /></td>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+<td colspan="2" style="background-color:#cc0000"><img
+
+src="http://projecteuler.net/images/spacer.gif" width="44" height="20" alt="" /></td>
+</tr>
+</table>
+</td>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td colspan="2" style="background-color:#cc0000"><img
+
+src="http://projecteuler.net/images/spacer.gif" width="44" height="20" alt="" /></td>
+<td colspan="2" style="background-color:#cc0000"><img
+
+src="http://projecteuler.net/images/spacer.gif" width="44" height="20" alt="" /></td>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+</tr>
+</table>
+</td>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td colspan="2" style="background-color:#cc0000"><img
+
+src="http://projecteuler.net/images/spacer.gif" width="44" height="20" alt="" /></td>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+<td colspan="2" style="background-color:#cc0000"><img
+
+src="http://projecteuler.net/images/spacer.gif" width="44" height="20" alt="" /></td>
+</tr>
+</table>
+</td>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+<td colspan="2" style="background-color:#cc0000"><img
+
+src="http://projecteuler.net/images/spacer.gif" width="44" height="20" alt="" /></td>
+<td colspan="2" style="background-color:#cc0000"><img
+
+src="http://projecteuler.net/images/spacer.gif" width="44" height="20" alt="" /></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td colspan="3" style="background-color:#00cc00"><img
+
+src="http://projecteuler.net/images/spacer.gif" width="68" height="20" alt="" /></td>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+</tr>
+</table>
+</td>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+<td colspan="3" style="background-color:#00cc00"><img
+
+src="http://projecteuler.net/images/spacer.gif" width="68" height="20" alt="" /></td>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+</tr>
+</table>
+</td>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+<td colspan="3" style="background-color:#00cc00"><img
+
+src="http://projecteuler.net/images/spacer.gif" width="68" height="20" alt="" /></td>
+</tr>
+</table>
+</td>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td colspan="2" style="background-color:#cc0000"><img
+
+src="http://projecteuler.net/images/spacer.gif" width="44" height="20" alt="" /></td>
+<td colspan="3" style="background-color:#00cc00"><img
+
+src="http://projecteuler.net/images/spacer.gif" width="68" height="20" alt="" /></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td colspan="3" style="background-color:#00cc00"><img
+
+src="http://projecteuler.net/images/spacer.gif" width="68" height="20" alt="" /></td>
+<td colspan="2" style="background-color:#cc0000"><img
+
+src="http://projecteuler.net/images/spacer.gif" width="44" height="20" alt="" /></td>
+</tr>
+</table>
+</td>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td colspan="4" style="background-color:#0000cc"><img
+
+src="http://projecteuler.net/images/spacer.gif" width="92" height="20" alt="" /></td>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+</tr>
+</table>
+</td>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td style="background-color:#000000"><img src="http://projecteuler.net/images/spacer.gif"
+
+width="20" height="20" alt="" /></td>
+<td colspan="4" style="background-color:#0000cc"><img
+
+src="http://projecteuler.net/images/spacer.gif" width="92" height="20" alt="" /></td>
+</tr>
+</table>
+</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<p>Сколькими способами можно покрыть плиткой ряд длиной в пятьдесят единиц?</p>
+<p class="info">Примечание: Эта задача похожа на  <a href="116.html">116-ю задачу</a>.</p>
+</div>
+
+<a target="_blank" href="http://projecteuler.net/index.php?section=problems&amp;id=117">Оригинал</a>

@@ -1,0 +1,49 @@
+Subject:
+Сколько ставок выйграл 1-й игрок при игре в покер?
+
+Body:
+<div class="problem_content">
+<p>В карточной игре покер, ставка состоит из пяти карт, которые оцениваются снизу вверх следующим образом:</p>
+<ul>
+<li><b>Старшая карта</b>: Карта наибольшего достоинства.</li>
+<li><b>Одна пара</b>: Две карты одного достоинства.</li>
+<li><b>Две пары</b>: Две различные пары карт</li>
+<li><b>Тройка</b>: Три карты одного достоинства.</li>
+<li><b>Стрейт</b>: Все пять карт по порядку, любые масти.</li>
+<li><b>Флаш</b>: Все пять карт одной масти.</li>
+<li><b>Фул-хаус</b>: Три карты одного достоинства и одна пара карт.</li>
+<li><b>Каре</b>: Четыре карты одного достоинства.</li>
+<li><b>Стрейт-флаш</b>: Любые пять карт одной масти по порядку.</li>
+<li><b>Роял-флаш</b>: Десятка, Валет, Дама, Король и Туз одной масти.</li>
+</ul>
+<p>Достоинство карт оценивается по порядку:<br />2, 3, 4, 5, 6, 7, 8, 9, 10, Валет, Дама, Король, Туз.</p>
+<p>Если у двух игроков получились ставки одного порядка, то выигрывает тот, у кого карты старше; к примеру, две восьмерки выигрывают две пятерки (см. пример 1 ниже). Если же достоинства карт у игроков одинаковы, к примеру, у обоих игроков пара Дам, то сравнивают карту наивысшего достоинства (см. пример 4 ниже); если же и эти карты одинаковы, сравнивают следующие две и т.д.</p>
+<p>Допустим, два игрока сыграли 5 ставок следующим образом:</p>
+<div style="text-align:center;">
+<table>
+<tr>
+<td><b>Ставка</b></td><td>&nbsp;</td><td><b>1-й игрок</b></td><td>&nbsp;</td><td><b>2-й игрок</b></td><td>&nbsp;</td><td><b>Победитель</b></td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><b>1</b></td><td>&nbsp;</td><td><b><span style="color:red">5♥</span>&#160;5♣&#160;6♠&#160;7♠&#160;<span style="color:red">K♦</span></b><br /><div class="info">Пара пятерок</div></td><td>&nbsp;</td><td><b>2♣&#160;3♠&#160;8♠&#160;<span style="color:red">8♦</span>&#160;<span style="color:red">T♦</span></b><br /><div class="info">Пара восьмерок</div></td><td>&nbsp;</td><td style="vertical-align:top;">2-й игрок</td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><b>2</b></td><td>&nbsp;</td><td><b><span style="color:red">5♦</span>&#160;8♣&#160;9♠&#160;J♠&#160;A♣</b><br /><div class="info">Старшая карта Туз</div></td><td>&nbsp;</td><td><b>2♣&#160;5♣&#160;<span style="color:red">7♦</span>&#160;8♠&#160;<span style="color:red">Q♥</span></b><br /><div class="info">Старшая карта Дама</div></td><td>&nbsp;</td><td style="vertical-align:top;">1-й игрок</td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><b>3</b></td><td>&nbsp;</td><td><b><span style="color:red">2♦</span>&#160;9♣&#160;A♠&#160;<span style="color:red">A♥</span>&#160;A♣</b><br /><div class="info">Три туза</div></td><td>&nbsp;</td><td><b><span style="color:red">3♦</span>&#160;<span style="color:red">6♦</span>&#160;<span style="color:red">7♦</span>&#160;<span style="color:red">T♦</span>&#160;<span style="color:red">Q♦</span></b><br /><div class="info">Флаш, Бубны</div></td><td>&nbsp;</td><td style="vertical-align:top;">2-й игрок</td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><b>4</b></td><td>&nbsp;</td><td><b><span style="color:red">4♦</span>&#160;6♣&#160;<span style="color:red">9♥</span>&#160;<span style="color:red">Q♥</span>&#160;Q♣</b><br /><div class="info">Пара Дам<br />Старшая карта Девятка</div></td><td>&nbsp;</td><td><b><span style="color:red">3♦</span>&#160;<span style="color:red">6♦</span>&#160;<span style="color:red">7♥</span>&#160;<span style="color:red">Q♦</span>&#160;Q♠</b><br /><div class="info">Пара Дам<br />Старшая карта Семерка</div></td><td>&nbsp;</td><td style="vertical-align:top;">1-й игрок</td>
+</tr>
+<tr>
+<td style="vertical-align:top;"><b>5</b></td><td>&nbsp;</td><td><b><span style="color:red">2♥</span>&#160;<span style="color:red">2♦</span>&#160;4♣&#160;<span style="color:red">4♦</span>&#160;4♠</b><br /><div class="info">Фул-хаус<br />Три Четверки</div></td><td>&nbsp;</td><td><b>3♣&#160;<span style="color:red">3♦</span>&#160;3♠&#160;9♠&#160;<span style="color:red">9♦</span></b><br /><div class="info">Фул-хаус<br />Три Тройки</div></td><td>&nbsp;</td><td style="vertical-align:top;">1-й игрок</td>
+</tr>
+</table>
+</div>
+<p>Файл <a href="http://projecteuler.net/project/poker.txt">poker.txt</a> содержит одну тысячу различных ставок для игры двумя игроками. В каждой строке файла приведены десять карт (отделенные отдельными пробелами): первые пять - карты 1-го игрока, оставшиеся пять - карты 2-го игрока. Можете считать, что все ставки верны (нет неверных символов или повторов карт), ставки каждого игрока не следуют в определенном порядке, и что при каждой ставке есть безусловный победитель.</p>
+<p>Сколько ставок выйграет 1-й игрок?</p>
+</div>
+
+
+<a target="_blank" href="http://projecteuler.net/index.php?section=problems&amp;id=54">Оригинал</a>

@@ -1,0 +1,135 @@
+Subject:
+Поиск наименьших чисел произведения-суммы среди множеств различных размеров.
+
+Body:
+<div class="problem_content">
+<p>Каждое натуральное число N, которое можно записать как в виде суммы, так и в виде произведения
+
+по крайней мере двух натуральных чисел {<i>a</i><img src="" style="display:none;" alt="_("
+
+/><sub>1</sub><img src="" style="display:none;" alt=")" />, <i>a</i><img src=""
+
+style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;" alt=")" />, ... ,
+
+<i>a</i><img src="" style="display:none;" alt="_(" /><sub><i>k</i></sub><img src=""
+
+style="display:none;" alt=")" />}, называется числом произведения-суммы: N = <i>a</i><img src=""
+
+style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" /> +
+
+<i>a</i><img src="" style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;"
+
+alt=")" /> + ... + <i>a</i><img src="" style="display:none;" alt="_(" /><sub><i>k</i></sub><img
+
+src="" style="display:none;" alt=")" /> = <i>a</i><img src="" style="display:none;" alt="_("
+
+/><sub>1</sub><img src="" style="display:none;" alt=")" /> <img
+
+src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;' border='0'
+
+style='vertical-align:middle;' /> <i>a</i><img src="" style="display:none;" alt="_("
+
+/><sub>2</sub><img src="" style="display:none;" alt=")" /> <img
+
+src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;' border='0'
+
+style='vertical-align:middle;' /> ... <img src='http://projecteuler.net/images/symbol_times.gif'
+
+width='9' height='9' alt='&times;' border='0' style='vertical-align:middle;' /> <i>a</i><img src=""
+
+style="display:none;" alt="_(" /><sub><i>k</i></sub><img src="" style="display:none;" alt=")"
+
+/>.</p>
+<p>К примеру, 6 = 1 + 2 + 3 = 1 <img src='http://projecteuler.net/images/symbol_times.gif'
+
+width='9' height='9' alt='&times;' border='0' style='vertical-align:middle;' /> 2 <img
+
+src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;' border='0'
+
+style='vertical-align:middle;' /> 3.</p>
+<p>Для заданного множества размером <i>k</i>, мы будем называть наименьшее число N, обладающее
+
+данным свойством наименьшим числом произведения-суммы. Наименьшие числа произведения-суммы,
+
+принадлежащие множествам размеров <i>k</i> = 2, 3, 4, 5 и 6, являются следующие числа.</p>
+<p style='margin-left:50px;'><i>k</i>=2: 4 = 2 <img
+
+src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;' border='0'
+
+style='vertical-align:middle;' /> 2 = 2 + 2<br />
+<i>k</i>=3: 6 = 1 <img src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9'
+
+alt='&times;' border='0' style='vertical-align:middle;' /> 2 <img
+
+src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;' border='0'
+
+style='vertical-align:middle;' /> 3 = 1 + 2 + 3<br />
+<i>k</i>=4: 8 = 1 <img src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9'
+
+alt='&times;' border='0' style='vertical-align:middle;' /> 1 <img
+
+src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;' border='0'
+
+style='vertical-align:middle;' /> 2 <img src='http://projecteuler.net/images/symbol_times.gif'
+
+width='9' height='9' alt='&times;' border='0' style='vertical-align:middle;' /> 4 = 1 + 1 + 2 +
+
+4<br />
+<i>k</i>=5: 8 = 1 <img src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9'
+
+alt='&times;' border='0' style='vertical-align:middle;' /> 1 <img
+
+src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;' border='0'
+
+style='vertical-align:middle;' /> 2 <img src='http://projecteuler.net/images/symbol_times.gif'
+
+width='9' height='9' alt='&times;' border='0' style='vertical-align:middle;' /> 2 <img
+
+src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;' border='0'
+
+style='vertical-align:middle;' /> 2  = 1 + 1 + 2 + 2 + 2<br />
+<i>k</i>=6: 12 = 1 <img src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9'
+
+alt='&times;' border='0' style='vertical-align:middle;' /> 1 <img
+
+src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;' border='0'
+
+style='vertical-align:middle;' /> 1 <img src='http://projecteuler.net/images/symbol_times.gif'
+
+width='9' height='9' alt='&times;' border='0' style='vertical-align:middle;' /> 1 <img
+
+src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;' border='0'
+
+style='vertical-align:middle;' /> 2 <img src='http://projecteuler.net/images/symbol_times.gif'
+
+width='9' height='9' alt='&times;' border='0' style='vertical-align:middle;' /> 6 = 1 + 1 + 1 + 1 +
+
+2 + 6</p>
+<p>Отсюда следует, что сумма всех минимальных чисел произведения-суммы при 2<img
+
+src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0'
+
+style='vertical-align:middle;' /><i>k</i><img src='http://projecteuler.net/images/symbol_le.gif'
+
+width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' />6 равна 4+6+8+12 =
+
+30; обратите внимание на то, что число 8 учитывалось в сумме лишь один раз.</p>
+<p>Т.к. множеством минимальных чисел произведения-суммы при 2<img
+
+src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0'
+
+style='vertical-align:middle;' /><i>k</i><img src='http://projecteuler.net/images/symbol_le.gif'
+
+width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' />12 является {4, 6, 8,
+
+12, 15, 16}, то их сумма равна 61.</p>
+<p>Какова сумма всех минимальных чисел произведения-суммы при 2<img
+
+src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0'
+
+style='vertical-align:middle;' /><i>k</i><img src='http://projecteuler.net/images/symbol_le.gif'
+
+width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' />12000?</p>
+</div> 
+
+<a target="_blank" href="http://projecteuler.net/index.php?section=problems&amp;id=88">Оригинал</a>

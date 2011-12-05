@@ -1,0 +1,137 @@
+Subject:
+Нахождение значений бесконечных полиномиальных рядов с коэффициентами в виде чисел Фибоначчи.
+
+Body:
+<div class="problem_content">
+<p>Рассмотрим бесконечный полиномиальный ряд A<img src="" style="display:none;" alt="_("
+
+/><sub>F</sub><img src="" style="display:none;" alt=")" />(<i>x</i>) = <i>x</i>F<img src=""
+
+style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" /> +
+
+<i>x</i><img src="" style="display:none;" alt="^(" /><sup>2</sup><img src="" style="display:none;"
+
+alt=")" />F<img src="" style="display:none;" alt="_(" /><sub>2</sub><img src=""
+
+style="display:none;" alt=")" /> + <i>x</i><img src="" style="display:none;" alt="^("
+
+/><sup>3</sup><img src="" style="display:none;" alt=")" />F<img src="" style="display:none;"
+
+alt="_(" /><sub>3</sub><img src="" style="display:none;" alt=")" /> + ..., где F<img src=""
+
+style="display:none;" alt="_(" /><sub><i>k</i></sub><img src="" style="display:none;" alt=")" /> -
+
+<i>k</i>-ый член последовательности Фибоначчи: 1, 1, 2, 3, 5, 8, ... ; Т.е., F<img src=""
+
+style="display:none;" alt="_(" /><sub><i>k</i></sub><img src="" style="display:none;" alt=")" /> =
+
+F<img src="" style="display:none;" alt="_(" /><sub><i>k</i><img
+
+src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0'
+
+style='vertical-align:middle;' />1</sub><img src="" style="display:none;" alt=")" /> + F<img src=""
+
+style="display:none;" alt="_(" /><sub><i>k</i><img
+
+src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0'
+
+style='vertical-align:middle;' />2</sub><img src="" style="display:none;" alt=")" />, F<img src=""
+
+style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" /> = 1 и
+
+F<img src="" style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;" alt=")"
+
+/> = 1.</p>
+<p>В данной задаче нас интересуют такие значения <i>x</i>, при которых A<img src=""
+
+style="display:none;" alt="_(" /><sub>F</sub><img src="" style="display:none;" alt=")" />(<i>x</i>)
+
+является положительным целым числом.</p>
+<table cellpadding='0' cellspacing='0' border='0'>
+<tr>
+<td>Удивительно, но A<img src="" style="display:none;" alt="_(" /><sub>F</sub><img src=""
+
+style="display:none;" alt=")" />(1/2)</td>
+<td>&nbsp;=&nbsp;</td>
+<td>(1/2).1 + (1/2)<img src="" style="display:none;" alt="^(" /><sup>2</sup><img src=""
+
+style="display:none;" alt=")" />.1 + (1/2)<img src="" style="display:none;" alt="^("
+
+/><sup>3</sup><img src="" style="display:none;" alt=")" />.2 + (1/2)<img src=""
+
+style="display:none;" alt="^(" /><sup>4</sup><img src="" style="display:none;" alt=")" />.3 +
+
+(1/2)<img src="" style="display:none;" alt="^(" /><sup>5</sup><img src="" style="display:none;"
+
+alt=")" />.5 + ...</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;=&nbsp;</td>
+<td>1/2 + 1/4 + 2/8 + 3/16 + 5/32 + ...</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;=&nbsp;</td>
+<td>2</td>
+</tr>
+</table>
+<p>Соответствующие значения <i>x</i> для первых пяти натуральных чисел приведены в таблице
+
+ниже.</p>
+<div style='text-align:center;'>
+<table cellspacing='0' cellpadding='2' border='1' align='center'>
+<tr style='background-color:#c1daf9;'>
+<td><b><i>x</i></b></td><td width='50'><b>A<img src="" style="display:none;" alt="_("
+
+/><sub>F</sub><img src="" style="display:none;" alt=")" />(<i>x</i>)</b></td>
+</tr>
+<tr>
+<td><img src='http://projecteuler.net/images/symbol_radic.gif' width='14' height='16' alt='&radic;'
+
+border='0' style='vertical-align:middle;' />2<img
+
+src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0'
+
+style='vertical-align:middle;' />1</td><td>1</td>
+</tr>
+<tr>
+<td>1/2</td><td>2</td>
+</tr>
+<tr>
+<td>(<img src='http://projecteuler.net/images/symbol_radic.gif' width='14' height='16'
+
+alt='&radic;' border='0' style='vertical-align:middle;' />13<img
+
+src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0'
+
+style='vertical-align:middle;' />2)/3</td><td>3</td>
+</tr>
+<tr>
+<td>(<img src='http://projecteuler.net/images/symbol_radic.gif' width='14' height='16'
+
+alt='&radic;' border='0' style='vertical-align:middle;' />89<img
+
+src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0'
+
+style='vertical-align:middle;' />5)/8</td><td>4</td>
+</tr>
+<tr>
+<td>(<img src='http://projecteuler.net/images/symbol_radic.gif' width='14' height='16'
+
+alt='&radic;' border='0' style='vertical-align:middle;' />34<img
+
+src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0'
+
+style='vertical-align:middle;' />3)/5</td><td>5</td>
+</tr>
+</table>
+</div>
+<p>Если <i>x</i> - рациональное число, то будем называть A<img src="" style="display:none;" alt="_
+
+(" /><sub>F</sub><img src="" style="display:none;" alt=")" />(<i>x</i>) золотым слитком, т.к. такие
+значения встречаются все реже и реже; так, например,  10-й золотой слиток равен 74049690.</p>
+<p>Найдите 15-й золотой слиток.</p>
+</div>
+
+<a target="_blank" href="http://projecteuler.net/index.php?section=problems&amp;id=137">Оригинал</a>

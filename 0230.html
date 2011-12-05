@@ -1,0 +1,34 @@
+Subject:
+Слова Фибоначчи.
+
+Body:
+<div class="problem_content">
+<p>Для любых двух строк A и B, составленных из цифр, определим F<img src="" style="display:none;" alt="_(" /><sub>A,B</sub><img src="" style="display:none;" alt=")" /> как последовательность (A,B,AB,BAB,ABBAB,...), в которой каждый следующий элемент слагается из двух предыдущих.</p>
+<p>Далее, определим D<img src="" style="display:none;" alt="_(" /><sub>A,B</sub><img src="" style="display:none;" alt=")" />(<var>n</var>) как <var>n</var>-ю цифру первого элемента F<img src="" style="display:none;" alt="_(" /><sub>A,B</sub><img src="" style="display:none;" alt=")" />, который содержит по крайней мере <var>n</var> цифр.</p>
+
+<p>Пример:</p>
+<p>Пусть A=1415926535, B=8979323846. Мы хотим найти, к примеру, D<img src="" style="display:none;" alt="_(" /><sub>A,B</sub><img src="" style="display:none;" alt=")" />(35).</p>
+
+<p>Первыми элементами F<img src="" style="display:none;" alt="_(" /><sub>A,B</sub><img src="" style="display:none;" alt=")" /> являются:<br />
+1415926535<br />
+8979323846<br />
+14159265358979323846<br />
+897932384614159265358979323846<br />
+1415926535897932384689793238461415<span style="color: #FF0000"><b>9</b></span>265358979323846<br />
+</p>
+
+<p>Тогда D<img src="" style="display:none;" alt="_(" /><sub>A,B</sub><img src="" style="display:none;" alt=")" />(35) - это 35-я цифра пятого элемента - 9.</p>
+<p>Теперь в качестве A возьмем первые сто цифр числа &pi; после запятой:</p>
+<p>14159265358979323846264338327950288419716939937510 <br />
+58209749445923078164062862089986280348253421170679 </p>
+
+<p>а в качестве B - следующие сто цифр:</p>
+<p>82148086513282306647093844609550582231725359408128 <br />
+48111745028410270193852110555964462294895493038196 .</p>
+
+<p>Найдите <img src='http://projecteuler.net/images/symbol_sum.gif' width='11' height='14' alt='&sum;' border='0' style='vertical-align:middle;' /><img src="" style="display:none;" alt="_(" /><sub><var>n</var> = 0,1,...,17</sub><img src="" style="display:none;" alt=")" /> &nbsp; 10<img src="" style="display:none;" alt="^(" /><sup><var>n</var></sup><img src="" style="display:none;" alt=")" /><img src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;' border='0' style='vertical-align:middle;' /> D<img src="" style="display:none;" alt="_(" /><sub>A,B</sub><img src="" style="display:none;" alt=")" />((127+19<var>n</var>)<img src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;' border='0' style='vertical-align:middle;' />7<img src="" style="display:none;" alt="^(" /><sup><var>n</var></sup><img src="" style="display:none;" alt=")" />) .</p>
+
+</div>
+
+
+<a target="_blank" href="http://projecteuler.net/index.php?section=problems&amp;id=230">Оригинал</a>

@@ -1,0 +1,32 @@
+Subject:
+Цикличные последовательности переходов на графах Серпинского.
+
+Body:
+<div class="problem_content">
+<p><b>Граф Серпинского</b> 1-го порядка (<var>S</var><img src="" style="display:none;"
+ alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" />) является равносторонним треугольником.<br />
+<var>S</var><img src="" style="display:none;" alt="_(" /><sub><var>n</var>+1</sub><img src=""
+ style="display:none;" alt=")" /> можно получить из <var>S</var><img src="" style="display:none;"
+  alt="_(" /><sub><var>n</var></sub><img src="" style="display:none;" alt=")" />, расположив три копии
+   <var>S</var><img src="" style="display:none;" alt="_(" /><sub><var>n</var></sub><img src=""
+    style="display:none;" alt=")" /> так, чтобы каждая пара копий имела один общий угол.
+</p>
+<div align='center'><img alt='' src="http://projecteuler.net/project/images/p_312_sierpinskyAt.gif" /></div>
+<p>Пусть C(<var>n</var>) - число цикличных последовательностей, состоящих из переходов через все вершины <var>S</var>
+<img src="" style="display:none;" alt="_(" /><sub><var>n</var></sub><img src="" style="display:none;" alt=")" />,
+при этом через каждую вершину последовательность проходит только один раз.<br />
+К примеру, C(3) = 8, т.к. всего можно нарисовать восемь таких цикличных последовательностей на <var>S</var><img src="" style="display:none;"
+ alt="_(" /><sub>3</sub><img src="" style="display:none;" alt=")" />, как это показано ниже:
+</p>
+<div align='center'><img alt='' src="http://projecteuler.net/project/images/p_312_sierpinsky8t.gif" /></div>
+<p>Можно доказать, что:<br />
+C(1) = C(2) = 1<br />
+C(5) = 71328803586048<br />
+C(10 000) mod 10<img src="" style="display:none;" alt="^(" /><sup>8</sup><img src="" style="display:none;" alt=")" /> = 37652224<br />
+C(10 000) mod 13<img src="" style="display:none;" alt="^(" /><sup>8</sup><img src="" style="display:none;" alt=")" /> = 617720485<br />
+</p>
+<p>Найдите C(C(C(10 000))) mod 13<img src="" style="display:none;" alt="^(" /><sup>8</sup><img src="" style="display:none;" alt=")" />.
+</p>
+</div>
+
+<a target="_blank" href="http://projecteuler.net/index.php?section=problems&amp;id=312">Оригинал</a>

@@ -1,0 +1,59 @@
+Subject:
+Исследование целых чисел Гаусса.
+
+Body:
+<div class="problem_content">
+<p>Как известно, уравнение <var>x</var><img src="" style="display:none;" alt="^(" /><sup>2</sup><img src="" style="display:none;" alt=")" />=-1 не имеет решений в области действительных значений <var>x</var>.
+<br />
+Однако, если ввести мнимое число <var>i</var>, то у такого уравнения будет два решения: <var>x=i</var> и <var>x=-i</var>.
+<br />
+Если продолжить, то уравнение (<var>x</var>-3)<img src="" style="display:none;" alt="^(" /><sup>2</sup><img src="" style="display:none;" alt=")" />=-4 имеет два комплексных решения: <var>x</var>=3+2<var>i</var> и <var>x</var>=3-2<var>i</var>.
+<br />
+<var>x</var>=3+2<var>i</var> и <var>x</var>=3-2<var>i</var>, которые называют сопряженными друг другу.
+<br />
+Числа вида <var>a</var>+<var>bi</var> принято называть комплексными числами.
+<br />
+В общем случае, числа <var>a</var>+<var>bi</var> и <var>a</var><img src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0' style='vertical-align:middle;' /><var>bi</var> являются комплексно-сопряженными.</p>
+<p>Число Гаусса - это такое комплексное число <var>a</var>+<var>bi</var>, для которого <var>a</var> и <var>b</var> являются целыми числами.
+<br />
+Правильные числа также являются числами Гаусса (при <var>b</var>=0).
+<br />
+Для того чтобы отличить такие числа от целых Гауссовых чисел, у которых  <var>b</var> <img src='http://projecteuler.net/images/symbol_ne.gif' width='11' height='10' alt='&ne;' border='0' style='vertical-align:middle;' /> 0, будем называть их &quot;рациональными целыми числами.&quot;
+<br />
+Целое число Гаусса называют делителем рационального целого числа, если результат деления также будет целым Гауссовым числом.
+<br />
+К примеру, если мы разделим 5 на 1+2<var>i</var>, то полученное выражение <img src="http://projecteuler.net/project/images/p_153_formule1.gif" border="0" style="vertical-align:middle" alt="" /> можно упростить следующим способом:
+<br />
+Домножим числитель и знаменатель дроби на комплексно сопряженное значение числа 1+2<var>i</var>: 1<img src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0' style='vertical-align:middle;' />2<var>i</var>.
+<br />
+Получим
+<img src="http://projecteuler.net/project/images/p_153_formule2.gif" border="0" alt="" style="vertical-align:middle;" />.
+<br />
+Таким образом, 1+2<var>i</var> является делителем числа 5.
+<br />
+Обратите внимание, что 1+<var>i</var> не является делителем числа 5, поскольку <img src="http://projecteuler.net/project/images/p_153_formule5.gif" border="0" style="vertical-align:middle;" alt="" />.
+<br />
+Также отметим: если целое число Гаусса (<var>a</var>+<var>bi</var>) является делителем рационального целого числа <var>n</var>, то комплексно-сопряженное ему число (<var>a</var><img src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0' style='vertical-align:middle;' /><var>bi</var>) также будет являться делителем <var>n</var>.</p>
+<p>Между прочим, для числа 5 существует 6 делителей с положительной вещественной частью: {1, 1 + 2<var>i</var>, 1 <img src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0' style='vertical-align:middle;' /> 2<var>i</var>, 2 + <var>i</var>, 2 <img src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0' style='vertical-align:middle;' /> <var>i</var>, 5}.
+<br />
+Ниже приведена таблица всех делителей для первых пяти положительных рациональных целых чисел:</p>
+<table align="center" border="1">
+<tr><td width="20">
+<var>n</var></td><td> Делители целых Гауссовых чисел<br />
+с положительной веществ. частью</td><td>Сумма s(<var>n</var>)<br /> этих делителей</td></tr><tr>
+<td>1</td><td>1</td><td>1</td>
+</tr><tr>
+<td>2</td><td>1, 1+<var>i</var>, 1-<var>i</var>, 2</td><td>5</td>
+</tr><tr>
+<td>3</td><td>1, 3</td><td>4</td>
+</tr><tr>
+<td>4</td><td>1, 1+<var>i</var>, 1-<var>i</var>, 2, 2+2<var>i</var>, 2-2<var>i</var>,4</td><td>13</td>
+</tr><tr>
+<td>5</td><td>1, 1+2<var>i</var>, 1-2<var>i</var>, 2+<var>i</var>, 2-<var>i</var>, 5</td><td>12</td>
+</tr></table>
+<p>В таком случае, для делителей с положительными вещественными частями, мы можем найти следующую сумму: <img src="http://projecteuler.net/project/images/p_153_formule6.gif" border="0" style="vertical-align:middle" alt="" />.</p>
+<p>При 1 <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> <var>n</var> <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> 10<img src="" style="display:none;" alt="^(" /><sup>5</sup><img src="" style="display:none;" alt=")" />, <img src='http://projecteuler.net/images/symbol_sum.gif' width='11' height='14' alt='&sum;' border='0' style='vertical-align:middle;' /> s(<var>n</var>)=17924657155.</p>
+<p>Чему равна сумма <img src='http://projecteuler.net/images/symbol_sum.gif' width='11' height='14' alt='&sum;' border='0' style='vertical-align:middle;' /> s(<var>n</var>), если 1 <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> <var>n</var> <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> 10<img src="" style="display:none;" alt="^(" /><sup>8</sup><img src="" style="display:none;" alt=")" />?</p>
+</div>
+
+<a target="_blank" href="http://projecteuler.net/index.php?section=problems&amp;id=153">Оригинал</a>
