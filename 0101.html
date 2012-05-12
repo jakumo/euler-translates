@@ -1,5 +1,5 @@
-Subject:
-Обнаружить оптимальную полиномиальную функцию, с помощью которой можно получить первые  <i>k</i> членов заданной последовательности.
+﻿Subject:
+Найдите оптимальную полиномиальную функцию, с помощью которой можно получить первые <i>k</i> членов заданной последовательности
 
 Body:
 <div class="problem_content">
@@ -27,9 +27,7 @@ style="display:none;" alt="^(" /><sup>3</sup><img src="" style="display:none;" a
 
 зависимость.</p>
 
-<p>Определим OP(<var>k</var>, <var>n</var>) как <var>n</var><img src="" style="display:none;"
-
-alt="^(" /><sup>ный</sup><img src="" style="display:none;" alt=")" /> член оптимальной
+<p>Определим OP(<var>k</var>, <var>n</var>) как <var>n</var>-ый член оптимальной
 
 полиномиальной образующей функции для первых <var>k</var> членов последовательности. Очевидно, что 
 
@@ -37,11 +35,7 @@ OP(<var>k</var>, <var>n</var>) даст точные значения члено
 
 src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0'
 
-style='vertical-align:middle;' /> <var>k</var>, а <i>первым неверным членом</i> (FIT - First
-
-Incorrect Term) будет OP(<var>k</var>, <var>k</var>+1), который в дальнейшем мы будем называть
-
-<i>плохим OP</i> (BOP - Bad OP).</p>
+style='vertical-align:middle;' /> <var>k</var>, а <i>первым неверным членом</i> будет OP(<var>k</var>, <var>k</var>+1). В таком случае полиномиальную функцию назовем <i>плохой</i>.</p>
 
 <p>В частности, если бы нам был известен только первый член последовательности, наиболее разумным
 
@@ -87,12 +81,10 @@ src="" style="display:none;" alt=")" /></td>
 </div>
 <p>Понятно, что при <var>k</var> <img src='http://projecteuler.net/images/symbol_ge.gif' width='10'
 
-height='12' alt='&ge;' border='0' style='vertical-align:middle;' /> 4 не существует ни одной BOP-
+height='12' alt='&ge;' border='0' style='vertical-align:middle;' /> 4 не существует ни одной плохой полиномиальной функции.</p>
+<p>Рассмотрим сумму значений первых неверных членов, которые образованы плохими полиномиальными функциями (отмечены выше <span
 
-последовательности.</p>
-<p>Рассмотрим сумму значений FIT, которые образованы BOP-последовательностями (отмечены выше <span
-
-style='color:красным;'><b>red</b></span> above). Получим: 1 + 15 + 58 = 74.</p>
+style='color:red;'><b>красным</b></span>). Получим: 1 + 15 + 58 = 74.</p>
 <p>Дана следующая полиномиальная образующая функция 10-й степени:</p>
 <p style='text-align:center;'><var>u</var><img src="" style="display:none;" alt="_("
 
@@ -135,5 +127,5 @@ style='vertical-align:middle;' /> <var>n</var><img src="" style="display:none;" 
 /><sup>9</sup><img src="" style="display:none;" alt=")" /> + <var>n</var><img src=""
 
 style="display:none;" alt="^(" /><sup>10</sup><img src="" style="display:none;" alt=")" /></p>
-<p>Найдите сумму значений FIT, образованные BOP-последовательностями.</p>
+<p>Найдите сумму значений первых неверных членов, которые образованы плохими полиномиальными функциями.</p>
 </div>
