@@ -1,5 +1,5 @@
-Subject:
-Связанность сети.
+﻿Subject:
+Связанность сети
 
 Body:
 <div class="problem_content">
@@ -14,14 +14,14 @@ Body:
 <tr><td align='center'>...</td><td align='center'>...</td><td align='center'>...</td></tr>
 </table>
 </div>
-<p>Телефонный номер звонящего и вызываемый номер записи № n, соответственно, являются Caller(n) = S<img src="" style="display:none;" alt="_(" /><sub>2n-1</sub><img src="" style="display:none;" alt=")" /> и Called(n) = S<img src="" style="display:none;" alt="_(" /><sub>2n</sub><img src="" style="display:none;" alt=")" />, где S<img src="" style="display:none;" alt="_(" /><sub>1,2,3,...</sub><img src="" style="display:none;" alt=")" /> образуются "Генератором Фибоначчи с задержкой":</p>
+<p>В строке № n телефонный номер звонящего и вызываемый номер являются Caller(n) = S<img src="" style="display:none;" alt="_(" /><sub>2n-1</sub><img src="" style="display:none;" alt=")" /> и Called(n) = S<img src="" style="display:none;" alt="_(" /><sub>2n</sub><img src="" style="display:none;" alt=")" /> соответственно, где S<img src="" style="display:none;" alt="_(" /><sub>1,2,3,...</sub><img src="" style="display:none;" alt=")" /> образуются "Генератором Фибоначчи с задержкой":</p>
 
 <p>При 1 <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> k <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> 55, S<img src="" style="display:none;" alt="_(" /><sub>k</sub><img src="" style="display:none;" alt=")" /> = [100003 - 200003k + 300007k<img src="" style="display:none;" alt="^(" /><sup>3</sup><img src="" style="display:none;" alt=")" />] (modulo 1000000)<br />
-При 56 <img src='http://projecteuler.net/http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> k, S<img src="" style="display:none;" alt="_(" /><sub>k</sub><img src="" style="display:none;" alt=")" /> = [S<img src="" style="display:none;" alt="_(" /><sub>k-24</sub><img src="" style="display:none;" alt=")" /> + S<img src="" style="display:none;" alt="_(" /><sub>k-55</sub><img src="" style="display:none;" alt=")" />] (modulo 1000000)</p>
+При 56 <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> k, S<img src="" style="display:none;" alt="_(" /><sub>k</sub><img src="" style="display:none;" alt=")" /> = [S<img src="" style="display:none;" alt="_(" /><sub>k-24</sub><img src="" style="display:none;" alt=")" /> + S<img src="" style="display:none;" alt="_(" /><sub>k-55</sub><img src="" style="display:none;" alt=")" />] (modulo 1000000)</p>
 
-<p>Если Caller(n) = Called(n), то предполагается, что пользователь ошибся в наборе номера, и вызов не происходит; в противном случае, вызов успешно производится.</p>
+<p>Если Caller(n) = Called(n), то предполагается, что пользователь ошибся в наборе номера, и вызов не происходит. В противном случае вызов происходит успешно.</p>
 
-<p>От начала записей, оговорим, что любая пара пользователей  X и Y - друзья, если X звонит Y или наоборот. Аналогично, X будет другом друга Z, если X является другом Y, который, в свою очередь является другом  Z; и так далее, с образованием более длинных цепочек.</p>
+<p>Оговорим, что начиная с первой строки, любая пара пользователей  X и Y - друзья, если X звонит Y или наоборот. Аналогично, X будет другом друга Z, если X является другом Y, который, в свою очередь является другом  Z; и так далее, с образованием более длинных цепочек.</p>
 
 <p>Номер премьер-министра 524287. После скольких удачных звонков, не считая неправильный набор, 99% пользователей (включая самого премьер-министра), окажутся друзьями премьер-министра, друзьями его друзей и т.д.?</p>
 </div>
