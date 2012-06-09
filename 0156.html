@@ -1,5 +1,5 @@
-Subject:
-Подсчет цифр.
+﻿Subject:
+Подсчет цифр
 
 Body:
 <div class="problem_content">
@@ -7,11 +7,11 @@ Body:
 <br />
 0 1 2 3 4 5 6 7 8 9 10 11 12....
 </p>
-<p>Рассмотрим цифру <var>d</var>=1. После того, как мы запишем каждое из <var>n</var> чисел, мы обновляем счетчик
+<p>Рассмотрим цифру <var>d</var>=1. Записывая по порядку каждое из <var>n</var> чисел, мы обновляем счетчик
 
-единиц, и полученное значение обозначаем через <var>f</var>(<var>n</var>,1). В таком случае, первые
+единиц, и полученное значение назовем <var>f</var>(<var>n</var>,1). В таком случае, первые
 
-значения<var>f</var>(<var>n</var>,1) будут следующими:</p>
+значения <var>f</var>(<var>n</var>,1) будут следующими:</p>
 <div style='text-align:center;'>
 <table style='text-align:center;' align='center'>
 <tr>
@@ -47,7 +47,7 @@ Body:
 <br />
 Таким образом, первыми двумя решениями уравнения <var>f</var>(<var>n</var>,1)=<var>n</var> будут <var>n</var>=0
 
-и<var>n</var>=1. Следующее решение равно <var>n</var>=199981.</p>
+и <var>n</var>=1. Следующее решение равно <var>n</var>=199981.</p>
 <p>Аналогичным образом, значение функции <var>f</var>(<var>n,d</var>) равно числу встретившихся цифр <var>d</var>,
 
 при записи всех целых чисел от 0 до <var>n</var>.
@@ -57,9 +57,7 @@ Body:
 height='10' alt='&ne;' border='0' style='vertical-align:middle;' /> 0, первое решение уравнения <var>f</var>
 
 (<var>n,d</var>)=<var>n</var> равно 0.</p>
-<p>Пусть <var>s</var>(<var>d</var>) является суммой всех решений, для которых <var>f</var>(<var>n,d</var>)
-
-=<var>n</var>.
+<p>Пусть <var>s</var>(<var>d</var>) является суммой всех решений, для которых <var>f</var>(<var>n,d</var>)=<var>n</var>.
 <br />
 Известно, что <var>s</var>(1)=22786974071.</p>
 <p>Найдите <img src='http://projecteuler.net/images/symbol_sum.gif' width='11' height='14' alt='&sum;' border='0'
@@ -71,8 +69,8 @@ src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&
 align:middle;' /> d <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;'
 
 border='0' style='vertical-align:middle;' /> 9.</p>
-<p>Примечание: если, для некоторых значений <var>n</var>, функция <var>f</var>(<var>n,d</var>)=<var>n</var>
- при более, чем одном значении <var>d</var>, то полученное значение <var>n</var> прибавляется вновь при каждой
+<p>Примечание: если при некоторых значениях <var>n</var> функция <var>f</var>(<var>n,d</var>) равна <var>n</var>
+ для более, чем одного значения <var>d</var>, то полученное значение <var>n</var> прибавляется вновь при каждой
 
 цифре <var>d</var>, для которой <var>f</var>(<var>n,d</var>)=<var>n</var>.</p>
 </div>
