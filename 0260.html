@@ -1,25 +1,25 @@
-Subject:
-Игра в камушки.
+﻿Subject:
+Игра в камушки
 
 Body:
 <div class="problem_content">
-<p>В игру играют двумя игроками с помощью трех кучек камушков.<br />
-Когда приходит его черед, игрок берет один или более камушков из кучки. Однако, выбирая камушки из более, чем одной кучки, игрок должен взять такое же количество камушков из других указанных кучек.</p>
+<p>В игру играют два игрока с помощью трех кучек камушков.<br />
+Когда приходит его ход, игрок берет один или более камушков из кучки. Однако, беря камушки из более, чем одной кучки, игрок должен взять такое же количество камушков из всех выбранных кучек.</p>
 
 <p>Другими словами, игрок выбирает N>0 камушков, взяв:</p>
 <ul><li>N камушков из одной кучки; или</li>
-<li>N камушков из каждой из двух кучек (всего 2N); или</li>
+<li>N камушков из каждой из любых двух кучек (всего 2N); или</li>
 <li>N камушков из каждой из трех кучек (всего 3N).</li></ul>
 Победит тот игрок, который возьмет последний камушек.
 
-<p>Под <i>выйгрышной конфигурацией</i> подразумевается такая, в которой первый игрок может сразу победить.<br />
-К примеру, (0,0,13), (0,11,11) и (5,5,5) являются выйгрышными конфигурациями, т.к. игрок может сразу взять все камушки.</p>
+<p>Под <i>выигрышной конфигурацией</i> подразумевается такая, в которой первый игрок может сразу победить.<br />
+К примеру, (0,0,13), (0,11,11) и (5,5,5) являются выигрышными конфигурациями, т.к. игрок может сразу взять все камушки.</p>
 
-<p>Под <i>проигрышной конфигурацией</i> подразумевается такая, в которой второй игрок сразу выйграет, вне зависимости от того, что сделает первый игрок.<br />
-К примеру, конфигурации (0,1,2) и (1,3,3) являются проигрышными, т.к. в результате любого разрешенного шага первого игрока выйграет второй игрок.</p>
+<p>Под <i>проигрышной конфигурацией</i> подразумевается такая, в которой второй игрок сразу выиграет, вне зависимости от того, что сделает первый игрок.<br />
+К примеру, конфигурации (0,1,2) и (1,3,3) являются проигрышными, т.к. в результате любого разрешенного шага первого игрока выиграет второй игрок.</p>
 
-<p>Рассмотрим все проигрышные конфигурации (x<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" />,y<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" />,z<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" />) где x<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" /> <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> y<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" /> <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> z<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" /> <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> 100.<br />
+<p>Рассмотрим все проигрышные конфигурации (x<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" />,y<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" />,z<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" />), где x<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" /> <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> y<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" /> <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> z<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" /> <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> 100.<br />
 Можно убедиться, что для них &Sigma;(x<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" />+y<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" />+z<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" />) = 173895.</p>
-<p>Найдите &Sigma;(x<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" />+y<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" />+z<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" />), где (x<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" />,y<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" />,z<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" />) - диапазон всех проигрышных конфигураций,<br />
+<p>Найдите &Sigma;(x<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" />+y<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" />+z<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" />), где (x<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" />,y<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" />,z<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" />) - диапазон всех проигрышных конфигураций<br />
 при x<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" /> <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> y<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" /> <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> z<img src="" style="display:none;" alt="_(" /><sub>i</sub><img src="" style="display:none;" alt=")" /> <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> 1000.</p>
 </div>
