@@ -1,5 +1,5 @@
-Subject:
-Флип Флоп.
+﻿Subject:
+Флип Флоп
 
 Body:
 <div class="problem_content">
@@ -7,7 +7,7 @@ Body:
 height='9' alt='&times;' border='0' style='vertical-align:middle;'
 /><var>N</var> фишек. У каждой фишки есть белая сторона и черная сторона.</p>
 
-<p>Во время очередного хода происходит выбор фишки, после чего все фишки из соответствующей строки или колонны
+<p>Во время очередного хода происходит выбор фишки, после чего все фишки в соответствующем ряду и колонне
 переворачиваются: т.е. переворачивается 2<img src='http://projecteuler.net/images/symbol_times.gif' width='9'
 height='9'
 alt='&times;' border='0' style='vertical-align:middle;' /><var>N</var>-1 фишек.
@@ -20,7 +20,7 @@ style='vertical-align:middle;' />5 клеток.</p>
 src="http://projecteuler.net/project/images/p_331_crossflips3.gif" alt=""
 /></div>
 
-<p>Можно доказать, что 3 - минимальное число ходов, необходимое для завершения игры.</p>
+<p>Можно доказать, что 3 - минимальное число ходов, необходимое для завершения этой игры.</p>
 
 <p>На игровом поле размерами <var>N</var><img src='http://projecteuler.net/images/symbol_times.gif' width='9'
 height='9' alt='&times;' border='0' style='vertical-align:middle;'
@@ -31,7 +31,7 @@ height='9' alt='&times;' border='0' style='vertical-align:middle;'
 <p>Обозначим через C<sub><var>N</var></sub> следующую конфигурацию игрового поля размерами <var>N</var><img src='http://projecteuler.net/images/symbol_times.gif'
 width='9' height='9' alt='&times;'
 border='0' style='vertical-align:middle;' /><var>N</var> клеток:<br /> Фишка с координатами (<var>x</var>,<var>y</var>), удовлетворяющими неравенство <img style="vertical-align:middle"
-src="http://projecteuler.net/project/images/p_331_crossflips1.gif" alt="" />, повернута к верху черной стороной, в противном случае - белой стороной. К примеру, конфигурация C<sub>5</sub> показана на рисунке выше.</p>
+src="http://projecteuler.net/project/images/p_331_crossflips1.gif" alt="" />, повернута кверху черной стороной, в противном случае - белой стороной. К примеру, конфигурация C<sub>5</sub> показана на рисунке выше.</p>
 
 <p>Пусть T(<var>N</var>) - минимальное число ходов, необходимых для завершения игры с исходной конфигурации поля C<sub><var>N</var></sub>.
 Если конфигурация C<sub><var>N</var></sub> не может привести к завершению игры, то T(<var>N</var>)=0.<br /> Как было показано, T(5)=3. Кроме того, известно, что T(10)=29 и T(1 000)=395253.</p>

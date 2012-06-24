@@ -1,5 +1,5 @@
-Subject:
-Кодирование квадрадерева (простой алгоритм сжатия).
+﻿Subject:
+Кодирование квадрадерева (простой алгоритм сжатия)
 
 Body:
 <div class="problem_content">
@@ -18,7 +18,7 @@ src="" style="display:none;" alt=")" />;</li>
 style="display:none;" alt="^(" /><sup><var>n</var></sup><img src="" style="display:none;" alt=")" /><img
 src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;' border='0'
 style='vertical-align:middle;' />2<img src="" style="display:none;" alt="^(" /><sup><var>n</var></sup><img
-src="" style="display:none;" alt=")" /> делится на 4 под-блока размерами 2<img src=""
+src="" style="display:none;" alt=")" /> делится на 4 подблока размерами 2<img src=""
 style="display:none;" alt="^(" /><sup><var>n</var>-1</sup><img src="" style="display:none;" alt=")" /><img
 src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;' border='0'
 style='vertical-align:middle;' />2<img src="" style="display:none;" alt="^(" /><sup><var>n</var>-
@@ -29,16 +29,16 @@ style='vertical-align:middle;' />2<img src="" style="display:none;" alt="^(" /><
 <li>"11" указывает на то, что текущий блок содержит только белые пиксели.</li></ul>
 <p>Рассмотрим следующее изображение размерами 4<img src='http://projecteuler.net/images/symbol_times.gif'
 width='9' height='9' alt='&times;' border='0' style='vertical-align:middle;' />4 (цветными отметками
-указаны места, в которых можно осуществить деление на под-блоки):</p>
+указаны места, в которых можно осуществить деление на подблоки):</p>
 <div align='center'><img src="http://projecteuler.net/project/images/p_287_quadtree.gif" alt='' /></div>
 <p>Это изображение можно описать различными последовательностями, к примеру:<br />"<span
 style='color:red;'><b>0</b></span><span style='color:blue;'><b>0</b></span>10101010<span
 style='color:green;'><b>0</b></span>1011111011<span style='color:orange;'><b>0</b></span>10101010",
-длинною 30 символов, или же<br />
+длиною 30 символов, или же<br />
 "<span style='color:red;'><b>0</b></span>10<span style='color:green;'><b>0</b></span>101111101110",
-длинною 16 символов, и это наиболее короткая последовательность для заданного изображения.</p>
+длиною 16 символов, и это - самая короткая возможная последовательность для заданного изображения.</p>
 <p>Для положительного целого числа <var>N</var> определим <var>D<img src="" style="display:none;" alt="_("
-/><sub>N</sub><img src="" style="display:none;" alt=")" /></var> как изображение размерами 2<img src=""
+/><sub>N</sub><img src="" style="display:none;" alt=")" /></var>, как изображение размерами 2<img src=""
 style="display:none;" alt="^(" /><sup><var>N</var></sup><img src="" style="display:none;" alt=")" /><img
 src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;' border='0'
 style='vertical-align:middle;' />2<img src="" style="display:none;" alt="^(" /><sup><var>N</var></sup><img
@@ -54,7 +54,7 @@ style="display:none;" alt=")" />&thinsp;<img src='http://projecteuler.net/images
 height='12' alt='&le;' border='0' style='vertical-align:middle;' />&thinsp;2<img src=""
 style="display:none;" alt="^(" /><sup>2<var>N</var>-2</sup><img src="" style="display:none;" alt=")" /> то
 пиксель окрашен в черный цвет,</li>
-<li>в противном случае, пиксель окрашен в белый цвет.</li></ul>
-<p>Какова длинна самой короткой последовательности, описывающей изображение <var>D</var><img src=""
+<li>в противном случае пиксель окрашен в белый цвет.</li></ul>
+<p>Какова длина самой короткой последовательности, описывающей изображение <var>D</var><img src=""
 style="display:none;" alt="_(" /><sub>24</sub><img src="" style="display:none;" alt=")" />&thinsp;?</p>
 </div>
