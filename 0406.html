@@ -1,0 +1,37 @@
+﻿Subject:
+Игра в угадывание
+
+Body:
+<div class="problem_content">
+
+<p>Мы пытаемся найти неизвестное число, выбранное из множества целых чисел {1, 2, ..., <var>n</var>}, задавая вопросы. 
+С каждым числом (вопросом), которое мы спрашиваем, мы получаем один из трех возможных ответов:<br />
+<ul>
+<li> "Названное вами число меньше загаданного" (и с вас взимается плата <var>a</var>), или</li>
+<li> "Названное вами число больше загаданного" (и с вас взимается плата <var>b</var>), или</li>
+<li> "Да, это - оно!" (и игра завершается).</li>
+</ul></p>
+
+<p>При данных значениях <var>n</var>, <var>a</var> и <var>b</var>, <i>оптимальная стратегия</i> приведет к наименьшим затратам в <u>худшем возможном случае</u>.</p>
+
+<p>Например, если <var>n</var> = 5, <var>a</var> = 2 и <var>b</var> = 3, тогда мы можем начать, назвав "<b>2</b>" в качестве нашей первой попытки.</p>
+
+<p>Если нам сообщают, что 2 больше загаданного числа (за плату <var>b</var>=3), тогда мы уверены, что "<b>1</b>" - это загаданное число (всего потратив <span style='color:blue;'><b>3</b></span>).<br />
+Если нам сообщают, что 2 меньше загаданного числа (за плату <var>a</var>=2), тогда наша следующая попытка будет "<b>4</b>".<br />
+Если нам сообщают, что 4 больше загаданного числа (за плату <var>b</var>=3), тогда мы уверены, что "<b>3</b>" - это загаданное число (всего потратив 2+3=<span style='color:blue;'><b>5</b></span>).<br />
+Если нам сообщают, что 4 меньше загаданного числа (за плату <var>a</var>=2), тогда мы уверены, что "<b>5</b>" - это загаданное число (всего потратив 2+2=<span style='color:blue;'><b>4</b></span>).<br />
+Итак, при этой стратегии затраты в худшем возможном случае составят <span style='color:red;'><b>5</b></span>. Можно также показать, что это - самая маленькая затрата в худшем возможном случае, которую можно достичь. 
+Таким образом, мы только что описали оптимальную стратегию для данных значений <var>n</var>, <var>a</var> и <var>b</var>.</p>
+
+<p>Пусть C(<var>n</var>, <var>a</var>, <var>b</var>) будет затратами в худшем возможном случае при оптимальной стратегии для данных значений <var>n</var>, <var>a</var> и <var>b</var>.</p>
+
+<p>Вот несколько примеров:<br />
+C(5, 2, 3) = 5<br />
+C(500, <img src='http://projecteuler.net/images/symbol_radic.gif' width='14' height='16' alt='&radic;' border='0' style='vertical-align:middle;' />2, <img src='http://projecteuler.net/images/symbol_radic.gif' width='14' height='16' alt='&radic;' border='0' style='vertical-align:middle;' />3) = 13.22073197...<br />
+C(20000, 5, 7) = 82<br />
+C(2000000, <img src='http://projecteuler.net/images/symbol_radic.gif' width='14' height='16' alt='&radic;' border='0' style='vertical-align:middle;' />5, <img src='http://projecteuler.net/images/symbol_radic.gif' width='14' height='16' alt='&radic;' border='0' style='vertical-align:middle;' />7) = 49.63755955...</p>
+
+<p>Пусть F<sub><var>k</var></sub> будет числами Фибоначчи: F<sub><var>k</var></sub> = F<sub><var>k</var>-1</sub> + F<sub><var>k</var>-2</sub> с начальными значениями F<sub>1</sub> = F<sub>2</sub> = 1.<br />Найдите <img src='http://projecteuler.net/images/symbol_sum.gif' width='11' height='14' alt='&sum;' border='0' style='vertical-align:middle;' /><sub>1<img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /><var>k</var><img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' />30</sub>&nbsp;C(10<sup>12</sup>, <img src='http://projecteuler.net/images/symbol_radic.gif' width='14' height='16' alt='&radic;' border='0' style='vertical-align:middle;' /><var>k</var>, <img src='http://projecteuler.net/images/symbol_radic.gif' width='14' height='16' alt='&radic;' border='0' style='vertical-align:middle;' />F<sub><var>k</var></sub>), и приведите полученный ответ округленным до 8 знаков после десятичной точки.</p>
+
+
+</div>
