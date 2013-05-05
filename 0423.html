@@ -1,0 +1,26 @@
+﻿Subject:
+Последовательные броски кубика
+
+Body:
+<div class="problem_content">
+
+<p>Пусть <var>n</var> будет положительным целым числом.<br />
+6-гранный кубик бросают <var>n</var> раз. Пусть <var>c</var> будет количеством пар последовательных бросков с одинаковым результатом.</p>
+
+<p>Например, если <var>n</var> = 7 и были выброшены числа (1,1,5,6,6,6,3), тогда одинаковый результат имеют следующие пары последовательных бросков:<br />
+(<u>1,1</u>,5,6,6,6,3)<br />
+(1,1,5,<u>6,6</u>,6,3)<br />
+(1,1,5,6,<u>6,6</u>,3)<br />
+Посему, <var>c</var> = 3 для (1,1,5,6,6,6,3).</p>
+
+<p>Определим C(<var>n</var>) как количество возможных реузальтатов <var>n</var> бросков 6-гранного кубика таких, что <var>c</var> не превышает &pi;(<var>n</var>).<sup>1</sup><br />
+Например, C(3) = 216, C(4) = 1290, C(11) = 361912500 и C(24) = 4727547363281250000.</p>
+
+<p>Определим S(<var>L</var>) как <img src='http://projecteuler.net/images/symbol_sum.gif' width='11' height='14' alt='&sum;' border='0' style='vertical-align:middle;' /> C(<var>n</var>) для 1 <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> <var>n</var> <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> <var>L</var>.<br />
+Например, S(50) mod 1&nbsp;000&nbsp;000&nbsp;007 = 832833871.</p>
+
+<p>Найдите S(50&nbsp;000&nbsp;000) mod 1&nbsp;000&nbsp;000&nbsp;007.</p>
+
+<p><sup>1</sup> &pi; обозначает <b>функцию распределения простых чисел</b>, т.е. &pi;(<var>n</var>) - это количество простых чисел <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> <var>n</var>.</p>
+
+</div>
