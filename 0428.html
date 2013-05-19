@@ -1,0 +1,35 @@
+﻿Subject:
+Ожерелье из кругов
+
+Body:
+<div class="problem_content">
+
+<p>Пусть <var>a</var>, <var>b</var> и <var>c</var> - положительные числа.<br/>
+Пусть W, X, Y, Z будут четырьмя точками, лежащими на одной прямой и такими, что |WX| = <var>a</var>, |XY| = <var>b</var>, |YZ| = <var>c</var> и |WZ| = <var>a</var> + <var>b</var> + <var>c</var>.<br/>
+Пусть C<sub>in</sub> будет кругом с диаметром XY.<br/>
+Пусть C<sub>out</sub> будет кругом с диаметром WZ.<br/>
+</p>
+
+<p>
+Тройка (<var>a</var>, <var>b</var>, <var>c</var>) называется <em>тройкой-ожерельем</em>, если возможно построить <var>k</var> <img src='http://projecteuler.net/images/symbol_ge.gif' width='10' height='12' alt='&ge;' border='0' style='vertical-align:middle;' /> 3 различных кругов C<sub>1</sub>, C<sub>2</sub>, ..., C<sub><var>k</var></sub> таких, что:
+<ul>
+<li>C<sub><var>i</var></sub> не имеет общих внутренних точек с любым из C<sub><var>j</var></sub> для 1 <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> <var>i</var>, <var>j</var> <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> <var>k</var> и <var>i</var> <img src='http://projecteuler.net/images/symbol_ne.gif' width='11' height='10' alt='&ne;' border='0' style='vertical-align:middle;' /> <var>j</var>,
+<li>C<sub><var>i</var></sub> касается C<sub>in</sub> и C<sub>out</sub> для 1 <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> <var>i</var> <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> <var>k</var>,
+<li>C<sub><var>i</var></sub> касается C<sub><var>i</var>+1</sub> для 1 <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> <var>i</var> < <var>k</var>, и
+<li>C<sub><var>k</var></sub> касается C<sub>1</sub>.
+</ul></p>
+
+<p>
+Например, (5, 5, 5) и (4, 3, 21) являются тройками-ожерельями, в то время как можно показать, что (2, 2, 5) таковой не является.
+</p>
+<p align='center'><img src='http://projecteuler.net/project/images/p428_necklace.png'></p>
+
+<p>
+Пусть T(<var>n</var>) будет количеством троек-ожерелий (<var>a</var>, <var>b</var>, <var>c</var>) таких, что <var>a</var>, <var>b</var> и <var>c</var> - положительные числа и <var>b</var> <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> <var>n</var>.
+Например, T(1)&nbsp;=&nbsp;9, T(20)&nbsp;=&nbsp;732 и T(3000)&nbsp;=&nbsp;438106.
+</p>
+<p>
+Найдите T(1&nbsp;000&nbsp;000&nbsp;000).
+</p>
+
+</div>
