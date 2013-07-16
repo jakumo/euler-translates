@@ -1,0 +1,27 @@
+﻿Subject:
+Жесткие графы
+
+Body:
+<div class="problem_content">
+
+<p>Напомним, что граф - это совокупность вершин и ребер, соединяющих эти вершины, и что две вершины, соединенные ребром, называются соседними.<br/>
+Графы могут быть представлены в Евклидовом пространстве путем назначения каждой вершине точки Евклидового пространства.<br/>
+<strong>Гибкий</strong> граф - это представление графа, в котором возможно непрерывно перемещать одну или более вершин таким образом, что расстояние между как минимум двумя несоседними вершинами изменяется, в то время как расстояния между всеми парами соседних вершин остаются неизменными.<br/>
+<strong>Жесткий</strong> граф - это представление графа, которое не является гибким.<br/>
+Иными словами, граф является жестким, если при замене его вершин на свободно вращающиеся шарниры, а его ребер - на стержни, никакая часть графа не сможет двигаться независимо от остальных частей.
+</p>
+<p><strong>Графы-решетки</strong>, представленные на Евклидовой плоскости, не являются жесткими, как показывает следующая анимация:<br/>
+<img src="http://projecteuler.net/project/images/p434_rigid.gif" /></p>
+<p>Однако, их возможно сделать жесткими, добавив диагональные ребра в ячейках. Например, для графа-сетки 2 <img src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;' border='0' style='vertical-align:middle;' /> 3 существует 19 способов превратить его в жесткий граф:<br/>
+<img src="http://projecteuler.net/project/images/p434_rigid23.png" /></p>
+<p>Заметим, что в рамках этой задачи мы не рассматриваем изменение направления диагонального ребра или добавление двух диагональных ребер в ячейку как различные способы превращения в жесткий граф.
+</p>
+<p>Пусть <var>R</var>(<var>m</var>,<var>n</var>) будет количеством способов первращения графа-сетки <var>m</var> <img src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;' border='0' style='vertical-align:middle;' /> <var>n</var> в жесткий граф. <br/>
+Например, <var>R</var>(2,3) = 19 и <var>R</var>(5,5) = 23679901.
+</p>
+<p>Определим <var>S</var>(<var>N</var>) как <img src='http://projecteuler.net/images/symbol_sum.gif' width='11' height='14' alt='&sum;' border='0' style='vertical-align:middle;' /><var>R</var>(<var>i</var>,<var>j</var>) для 1 <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> <var>i</var>, <var>j</var> <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> <var>N</var>.<br/>
+Например, <var>S</var>(5) = 25021721.<br/>
+Найдите <var>S</var>(100), в качестве ответа приведите остаток от деления полученного числа на 1000000033.
+</p>
+
+</div>
