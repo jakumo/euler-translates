@@ -1,0 +1,24 @@
+﻿Subject:
+Шаги в алгоритме Евклида
+
+Body:
+<div class="problem_content">
+
+<p>
+Пусть E(<var>x</var><sub>0</sub>, <var>y</var><sub>0</sub>) будет числом шагов, необходимых для определения наибольшего общего делителя чисел <var>x</var><sub>0</sub> и <var>y</var><sub>0</sub>, используя <b>алгоритм Евклида</b>. Более формально:<br />
+<var>x</var><sub>1</sub> = <var>y</var><sub>0</sub>, <var>y</var><sub>1</sub> = <var>x</var><sub>0</sub> mod <var>y</var><sub>0</sub><br />
+<var>x<sub>n</sub></var> = <var>y</var><sub><var>n</var>-1</sub>, <var>y</var><sub><var>n</var></sub> = <var>x</var><sub><var>n</var>-1</sub> mod <var>y</var><sub><var>n</var>-1</sub><br />
+E(<var>x</var><sub>0</sub>, <var>y</var><sub>0</sub>) - это наименьшее <var>n</var> такое, что <var>y</var><sub><var>n</var></sub> = 0.
+</p>
+<p>
+Получаем E(1,1) = 1, E(10,6) = 3 и E(6,10) = 4.
+</p>
+<p>
+Определим S(N) как сумму E(<var>x,y</var>) для 1 <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> <var>x,y</var> <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> N.<br/>
+Имеем S(1) = 1, S(10) = 221 и S(100) = 39826.
+</p>
+<p>
+Найдите S(5&middot;10<sup>6</sup>).
+</p>
+
+</div>
