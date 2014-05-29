@@ -1,0 +1,38 @@
+﻿Subject:
+Функция Мебиуса и интервалы
+
+Body:
+<div class="problem_content">
+
+<p>
+<b>Функция Мебиуса</b>, обозначаемая <var>&mu;</var>(<var>n</var>), определена как:
+<ul>
+<li><var>&mu;</var>(<var>n</var>) = (-1)<sup><var>&omega;</var>(<var>n</var>)</sup> если <var>n</var> является бесквадратным (где <var>&omega;</var>(<var>n</var>) - количество различных простых множителей числа <var>n</var>)</li>
+<li><var>&mu;</var>(<var>n</var>) = 0 если <var>n</var> не является бесквадратным.</li>
+</ul>
+</p>
+
+<p>
+Пусть P(<var>a</var>,<var>b</var>) будет количеством целых <var>n</var> в интервале [<var>a</var>,<var>b</var>], таких что <var>&mu;</var>(<var>n</var>) = 1.<br/>
+Пусть N(<var>a</var>,<var>b</var>) будет количеством целых <var>n</var> в интервале [<var>a</var>,<var>b</var>], таких что <var>&mu;</var>(<var>n</var>) = -1.<br/>
+Например, P(2,10) = 2 и N(2,10) = 4.
+</p>
+
+<p>
+Пусть C(<var>n</var>) будет количеством пар целых чисел (<var>a</var>,<var>b</var>), таких что:
+<ul>
+<li> 1&nbsp;<img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' />&nbsp;<var>a</var>&nbsp;<img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' />&nbsp;<var>b</var>&nbsp;<img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' />&nbsp;<var>n</var>,</li>
+<li> 99&middot;N(<var>a</var>,<var>b</var>)&nbsp;<img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' />&nbsp;100&middot;P(<var>a</var>,<var>b</var>), и</li>
+<li> 99&middot;P(<var>a</var>,<var>b</var>)&nbsp;<img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' />&nbsp;100&middot;N(<var>a</var>,<var>b</var>).</li>
+</ul>
+</p>
+
+<p>
+Например, C(10)&nbsp;=&nbsp;13, C(500)&nbsp;=&nbsp;16676 и C(10&nbsp;000)&nbsp;=&nbsp;20155319.
+</p>
+
+<p>
+Найдите C(20&nbsp;000&nbsp;000).
+</p>
+
+</div>
