@@ -6,20 +6,24 @@ Body:
 
 <p>
 Для любого положительного целого <var>n</var>, <b><var>n</var>-тая слабая последовательность Гудштайна</b> {g<sub>1</sub>, g<sub>2</sub>, g<sub>3</sub>, ...} определяется следующим образом:
+</p>
 <ul>
-<li> g<sub>1</sub> = <var>n</var>
-<li> для <var>k</var> <img src='http://projecteuler.net/images/symbol_gt.gif' width='10' height='10' alt='&gt;' border='0' style='vertical-align:middle;' /> 1, g<sub><var>k</var></sub> находится, записывая g<sub><var>k</var>-1</sub> по основанию <var>k</var>, интерпретируя его как число по основанию <var>k</var> + 1 и вычитая 1.
+<li> g<sub>1</sub> = <var>n</var></li>
+<li> для <var>k</var> <img src='http://projecteuler.net/images/symbol_gt.gif' width='10' height='10' alt='&gt;' border='0' style='vertical-align:middle;' /> 1, g<sub><var>k</var></sub> находится, записывая g<sub><var>k</var>-1</sub> по основанию <var>k</var>, интерпретируя его как число по основанию <var>k</var> + 1 и вычитая 1.</li>
 </ul>
+<p>
 Последовательность завершается, когда g<sub><var>k</var></sub> принимает значение 0.
 </p>
 <p>
 Например, шестая слабая последовательность Гудштайна - {6, 11, 17, 25, ...}:
+</p>
 <ul>
-<li> g<sub>1</sub> = 6;
-<li> g<sub>2</sub> = 11, так как 6 = 110<sub>2</sub>, 110<sub>3</sub> = 12, и 12 - 1 = 11;
-<li> g<sub>3</sub> = 17, так как 11 = 102<sub>3</sub>, 102<sub>4</sub> = 18, и 18 - 1 = 17;
-<li> g<sub>4</sub> = 25, так как 17 = 101<sub>4</sub>, 101<sub>5</sub> = 26, и 26 - 1 = 25;
+<li> g<sub>1</sub> = 6;</li>
+<li> g<sub>2</sub> = 11, так как 6 = 110<sub>2</sub>, 110<sub>3</sub> = 12, и 12 - 1 = 11;</li>
+<li> g<sub>3</sub> = 17, так как 11 = 102<sub>3</sub>, 102<sub>4</sub> = 18, и 18 - 1 = 17;</li>
+<li> g<sub>4</sub> = 25, так как 17 = 101<sub>4</sub>, 101<sub>5</sub> = 26, и 26 - 1 = 25;</li>
 </ul>
+<p>
 и так далее.
 </p>
 <p>

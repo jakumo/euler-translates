@@ -3,56 +3,54 @@
 
 Body:
 <div class="problem_content">
-
+<p>
 Кубическая кривая Безье определяется четырьмя точками: P<sub>0</sub>, P<sub>1</sub>, P<sub>2</sub> и P<sub>3</sub>.
-</P>
+</p>
 
-<P>
-
+<p>
 Кривая строится следующим образом:
-<BR>
+<br />
 На отрезках P<sub>0</sub>P<sub>1</sub>, P<sub>1</sub>P<sub>2</sub> и P<sub>2</sub>P<sub>3</sub> выбираются точки Q<sub>0</sub>,Q<sub>1</sub> и Q<sub>2</sub> такие, что  P<sub>0</sub>Q<sub>0</sub>/P<sub>0</sub>P<sub>1</sub>=P<sub>1</sub>Q<sub>1</sub>/P<sub>1</sub>P<sub>2</sub>=P<sub>2</sub>Q<sub>2</sub>/P<sub>2</sub>P<sub>3</sub>=t (t находится в [0,1]).
-<BR>
+<br />
 На отрезках Q<sub>0</sub>Q<sub>1</sub> и Q<sub>1</sub>Q<sub>2</sub> выбираются точки R<sub>0</sub> и R<sub>1</sub> такие, что
 Q<sub>0</sub>R<sub>0</sub>/Q<sub>0</sub>Q<sub>1</sub>=Q<sub>1</sub>R<sub>1</sub>/Q<sub>1</sub>Q<sub>2</sub>=t для того же значения t.
-<BR>
+<br />
 На отрезке R<sub>0</sub>R<sub>1</sub> выбирается точка B такая, что R<sub>0</sub>B/R<sub>0</sub>R<sub>1</sub>=t для того же значения t.
-</BR>
+<br />
 Кривая Безье, заданная точками P<sub>0</sub>, P<sub>1</sub>, P<sub>2</sub>, P<sub>3</sub> - это геометрическое место точек B при всех возможных положениях Q<sub>0</sub> на отрезке P<sub>0</sub>P<sub>1</sub>. (Имейте в виду, что для всех точек значение t неизменно.) 
-<BR>
+<br />
 </p>
-<P><APPLET CODE=CabriJava.class WIDTH=390 HEIGHT=300 ALIGN=right hspace=20 archive=http://projecteuler.net/project/images/bezier/CabriJava.jar>
-   <PARAM NAME=lang VALUE=en>
-   <PARAM NAME=file VALUE=http://projecteuler.net/project/images/bezier/bezier.fig>
-   <param name=loop value=true>
-</APPLET></center>
+<p><applet code="CabriJava.class" width="390" height="300" align="right" hspace="20" archive="http://projecteuler.net/project/images/bezier/CabriJava.jar">
+   <param name="lang" value="ru" />
+   <param name="file" value="http://projecteuler.net/project/images/bezier/bezier.fig" />
+   <param name="loop" value="true" />
+</applet>
 </p>
 
-<P>
+<p>
 В приложении справа Вы можете премещать точки P<sub>0</sub>, P<sub>1</sub>, P<sub>2</sub> и P<sub>3</sub>, чтобы увидеть кривую Безье (зеленая кривая), определяемую этими точками. Вы также можете перемещать точку Q<sub>0</sub> по отрезку P<sub>0</sub>P<sub>1</sub>.
-</P>
-<P>
+</p>
+<p>
 Из построения ясно, что кривая Безье будет касаться отрезка P<sub>0</sub>P<sub>1</sub> в P<sub>0</sub> и отрезка P<sub>2</sub>P<sub>3</sub> в P<sub>3</sub>.
-</P>
-<P>
-<BR />
-<BR />
-<BR />
-</P>
-<P>
+</p>
+<p>
+<br />
+<br />
+<br />
+</p>
+<p>
 Кубическая кривая Безье с P<sub>0</sub>=(1,0), P<sub>1</sub>=(1,<var>v</var>), P<sub>2</sub>=(<var>v</var>,1) и P<sub>3</sub>=(0,1) используется, чтобы аппроксимировать дугу в четверть окружности.
-<BR />
-Значение <var>v</var></var>
+<br />
+Значение <var>v</var>
 <img src='http://projecteuler.net/images/symbol_gt.gif' width='10' height='10' alt='&gt;' border='0' style='vertical-align:middle;' />
 0 выбрано таким, что площадь, заключенная между линиями OP<sub>0</sub>, OP<sub>3</sub> и кривой равна <sup>&pi;</sup>/<sub>4</sub> (площадь четверти круга).
-</P>
-<P>
+</p>
+<p>
 На сколько процентов длина кривой отличается от длины дуги в четверть окружности?
-<BR />
-То есть, если L - длина дуги, найдите 100*<sup>(L-&pi;/2)</sup>/<sub>(&pi;/2)</sub>.
-<BR />
-Дайте ответ, округленный до 10 знаков после десятичной точки.
-
-
+<br />
+То есть, если L - длина дуги, найдите  100*<sup>(L-&pi;/2)</sup>/<sub>(&pi;/2)</sub>.
+<br />
+Дайте ответ, округленный до 10 знаков после запятой.
+</p>
 
 </div>
