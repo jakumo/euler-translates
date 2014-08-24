@@ -13,16 +13,12 @@ Body:
 <p>Пусть <var>d</var> - количество цифр числа <var>n</var>.<br />
 Если <var>d</var> нечетное число, <var>x</var><img src="" style="display:none;" alt="_(" /><sub>0</sub><img
 
-src="" style="display:none;" alt=")" /> = 2<img src='http://projecteuler.net/images/symbol_times.gif' width='9'
-
-height='9' alt='&times;' border='0' style='vertical-align:middle;' />10<img src="" style="display:none;" alt="^("
+src="" style="display:none;" alt=")" /> = 2×10<img src="" style="display:none;" alt="^("
 
 /><sup>(<var>d</var>-1)&frasl;2</sup><img src="" style="display:none;" alt=")" />.<br />
 Если <var>d</var> четное число, <var>x</var><img src="" style="display:none;" alt="_(" /><sub>0</sub><img src=""
 
-style="display:none;" alt=")" /> = 7<img src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9'
-
-alt='&times;' border='0' style='vertical-align:middle;' />10<img src="" style="display:none;" alt="^(" /><sup>
+style="display:none;" alt=")" /> = 7×10<img src="" style="display:none;" alt="^(" /><sup>
 
 (<var>d</var>-2)&frasl;2</sup><img src="" style="display:none;" alt=")" />.<br />
 Повторять цикл:</p>
@@ -36,15 +32,9 @@ style="display:none;" alt=")" /> =</td>
 <td style='font-size:220%'>&#8970;</td>
 <td style='text-align:center;'><var>x</var><img src="" style="display:none;" alt="_(" /><sub><var>k</var></sub><img
 
-src="" style="display:none;" alt=")" /> + <img src='http://projecteuler.net/images/symbol_lceil.gif' width='6'
+src="" style="display:none;" alt=")" /> + ⌈<var>n</var>&frasl;<var>x</var><img src=""
 
-height='16' alt='&lceil;' border='0' style='vertical-align:middle;' /><var>n</var>&frasl;<var>x</var><img src=""
-
-style="display:none;" alt="_(" /><sub><var>k</var></sub><img src="" style="display:none;" alt=")" /><img
-
-src='http://projecteuler.net/images/symbol_rceil.gif' width='6' height='16' alt='&rceil;' border='0'
-
-style='vertical-align:middle;' /><br />
+style="display:none;" alt="_(" /><sub><var>k</var></sub><img src="" style="display:none;" alt=")" />⌉<br />
 <img src='http://projecteuler.net/images/blackdot.gif' width='75' height='1' alt='' /><br />
 2</td><td><td style='font-size:220%'>&#8971;</td></tr>
 </table> -->
@@ -58,9 +48,7 @@ style='vertical-align:middle;' /><br />
 <p>В качестве примера, рассмотрим округленный квадратный корень <var>n</var> = 4321.<br />
 <var>n</var> состоит из 4 цифр, так что <var>x</var><img src="" style="display:none;" alt="_(" /><sub>0</sub><img
 
-src="" style="display:none;" alt=")" /> = 7<img src='http://projecteuler.net/images/symbol_times.gif' width='9'
-
-height='9' alt='&times;' border='0' style='vertical-align:middle;' />10<img src="" style="display:none;" alt="^("
+src="" style="display:none;" alt=")" /> = 7×10<img src="" style="display:none;" alt="^("
 
 /><sup>(4-2)&frasl;2</sup><img src="" style="display:none;" alt=")" /> = 70.<br />
 <img src='http://projecteuler.net/project/images/p_255_Example.gif' alt='' />
@@ -68,26 +56,14 @@ height='9' alt='&times;' border='0' style='vertical-align:middle;' />10<img src=
 
 /> = <img src='http://projecteuler.net/images/symbol_lfloor.gif' width='6' height='16' alt='&lfloor;' border='0'
 
-style='vertical-align:middle;' />(70 + <img src='http://projecteuler.net/images/symbol_lceil.gif' width='6'
-
-height='16' alt='&lceil;' border='0' style='vertical-align:middle;' />4321&frasl;70<img
-
-src='http://projecteuler.net/images/symbol_rceil.gif' width='6' height='16' alt='&rceil;' border='0'
-
-style='vertical-align:middle;' />)&frasl;2<img src='http://projecteuler.net/images/symbol_rfloor.gif' width='6'
+style='vertical-align:middle;' />(70 + ⌈4321&frasl;70⌉)&frasl;2<img src='http://projecteuler.net/images/symbol_rfloor.gif' width='6'
 
 height='16' alt='&rfloor;' border='0' style='vertical-align:middle;' /> = 66.<br />
 <var>x</var><img src="" style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;" alt=")" /> =
 
 <img src='http://projecteuler.net/images/symbol_lfloor.gif' width='6' height='16' alt='&lfloor;' border='0'
 
-style='vertical-align:middle;' />(66 + <img src='http://projecteuler.net/images/symbol_lceil.gif' width='6'
-
-height='16' alt='&lceil;' border='0' style='vertical-align:middle;' />4321&frasl;66<img
-
-src='http://projecteuler.net/images/symbol_rceil.gif' width='6' height='16' alt='&rceil;' border='0'
-
-style='vertical-align:middle;' />)&frasl;2<img src='http://projecteuler.net/images/symbol_rfloor.gif' width='6'
+style='vertical-align:middle;' />(66 + ⌈4321&frasl;66⌉)&frasl;2<img src='http://projecteuler.net/images/symbol_rfloor.gif' width='6'
 
 height='16' alt='&rfloor;' border='0' style='vertical-align:middle;' /> = 66.--><br />
 Поскольку <var>x</var><img src="" style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;"
@@ -100,13 +76,7 @@ alt=")" />, то здесь мы и останавливаемся.<br />
 равный 66 (точное значение корня составляет 65.7343137&hellip;).
 </p>
 <p>Число необходимых итераций для данного метода на удивление невелико.<br />
-К примеру, мы можем найти округленное значение квадратного корня для числа из 5 цифр (10 000 <img
-
-src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-
-
-align:middle;' /> <var>n</var> <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12'
-
-alt='&le;' border='0' style='vertical-align:middle;' /> 99 999), выполнив в среднем 3.2102888889 итераций
+К примеру, мы можем найти округленное значение квадратного корня для числа из 5 цифр (10 000 ≤ <var>n</var> ≤ 99 999), выполнив в среднем 3.2102888889 итераций
 
 (среднее значение округлено до 10 знаков после десятичной точки).
 </p>
@@ -114,30 +84,12 @@ alt='&le;' border='0' style='vertical-align:middle;' /> 99 999), выполни�
 
 значения квадратного корня для 14-значного числа (10<img src="" style="display:none;" alt="^(" /><sup>13</sup><img
 
-src="" style="display:none;" alt=")" /> <img src='http://projecteuler.net/images/symbol_le.gif' width='10'
-
-height='12' alt='&le;' border='0' style='vertical-align:middle;' /> <var>n</var> <img
-
-src='http://projecteuler.net/images/symbol_lt.gif' width='10' height='10' alt='&lt;' border='0' style='vertical-
-
-align:middle;' /> 10<img src="" style="display:none;" alt="^(" /><sup>14</sup><img src="" style="display:none;"
+src="" style="display:none;" alt=")" /> ≤ <var>n</var> < 10<img src="" style="display:none;" alt="^(" /><sup>14</sup><img src="" style="display:none;"
 
 alt=")" />)?<br />
 Ответ округлите с точностью до 10 знаков после десятичной точки.
 </p>
-<p>Примечание: Символами <img src='http://projecteuler.net/images/symbol_lfloor.gif' width='6' height='16'
-
-alt='&lfloor;' border='0' style='vertical-align:middle;' /><var>x</var><img
-
-src='http://projecteuler.net/images/symbol_rfloor.gif' width='6' height='16' alt='&rfloor;' border='0'
-
-style='vertical-align:middle;' /> и <img src='http://projecteuler.net/images/symbol_lceil.gif' width='6'
-
-height='16' alt='&lceil;' border='0' style='vertical-align:middle;' /><var>x</var><img
-
-src='http://projecteuler.net/images/symbol_rceil.gif' width='6' height='16' alt='&rceil;' border='0'
-
-style='vertical-align:middle;' /> обозначают функции <dfn title='Наибольшее целое число, не превышающее значение
+<p>Примечание: Символами ⌊<var>x</var>⌋ и ⌈<var>x</var>⌉ обозначают функции <dfn title='Наибольшее целое число, не превышающее значение
 
 x'>округления вниз</dfn> и <dfn title='Наименьшее целое число, не меньше чем x'>округления вверх</dfn>,
 

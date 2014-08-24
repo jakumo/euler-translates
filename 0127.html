@@ -3,65 +3,23 @@ abc-совпадения
 
 Body:
 <div class="problem_content">
-<p>Радикалом числа <i>n</i>, rad(<i>n</i>), называют произведение простых множителей этого числа. К примеру, 504 = 2<img src="" style="display:none;" alt="^(" /><sup>3</sup><img src=""
-
-style="display:none;" alt=")" /> <img src='http://projecteuler.net/images/symbol_times.gif'
-
-width='9' height='9' alt='&times;' border='0' style='vertical-align:middle;' /> 3<img src=""
-
-style="display:none;" alt="^(" /><sup>2</sup><img src="" style="display:none;" alt=")" /> <img
-
-src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;' border='0'
-
-style='vertical-align:middle;' /> 7, так что rad(504) = 2 <img
-
-src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;' border='0'
-
-style='vertical-align:middle;' /> 3 <img src='http://projecteuler.net/images/symbol_times.gif'
-
-width='9' height='9' alt='&times;' border='0' style='vertical-align:middle;' /> 7 = 42.</p>
-<p>Определим тройку положительных целых чисел (<i>a</i>, <i>b</i>, <i>c</i>) как abc-совпадение,
-
-если:</p>
+<p>Радикалом числа <i>n</i>, rad(<i>n</i>), называют произведение простых множителей этого числа. К примеру, 504 = 2<img src="" style="display:none;" alt="^(" /><sup>3</sup><img src="" style="display:none;" alt=")" /> × 3<img src="" style="display:none;" alt="^(" /><sup>2</sup><img src="" style="display:none;" alt=")" /> × 7, так что rad(504) = 2 × 3 × 7 = 42.</p>
+<p>Определим тройку положительных целых чисел (<i>a</i>, <i>b</i>, <i>c</i>) как abc-совпадение, если:</p>
 <ol>
 <li>НОД(<i>a,</i> <i>b</i>) = НОД(<i>a</i>, <i>c</i>) = НОД(<i>b</i>, <i>c</i>) = 1</li>
-<li><i>a</i> <img src='http://projecteuler.net/images/symbol_lt.gif' width='10' height='10'
-
-alt='&lt;' border='0' style='vertical-align:middle;' /> <i>b</i></li>
+<li><i>a</i> < <i>b</i></li>
 <li><i>a</i> + <i>b</i> = <i>c</i></li>
-<li>rad(<i>abc</i>) <img src='http://projecteuler.net/images/symbol_lt.gif' width='10' height='10'
-
-alt='&lt;' border='0' style='vertical-align:middle;' /> <i>c</i></li>
+<li>rad(<i>abc</i>) < <i>c</i></li>
 </ol>
 <p>К примеру, (5, 27, 32) является abc-совпадением, т.к.:</p>
 <ol>
 <li>НОД(5, 27) = НОД(5, 32) = НОД(27, 32) = 1</li>
-<li>5 <img src='http://projecteuler.net/images/symbol_lt.gif' width='10' height='10' alt='&lt;'
-
-border='0' style='vertical-align:middle;' /> 27</li>
+<li>5 < 27</li>
 <li>5 + 27 = 32</li>
-<li>rad(4320) = 30 <img src='http://projecteuler.net/images/symbol_lt.gif' width='10' height='10'
-
-alt='&lt;' border='0' style='vertical-align:middle;' /> 32</li>
+<li>rad(4320) = 30 < 32</li>
 </ol>
-<p>Оказывается, что abc-совпадения достаточно редки и существует всего тридцать одно abc-совпадение
-
-при значениях <i>c</i> <img src='http://projecteuler.net/images/symbol_lt.gif' width='10'
-
-height='10' alt='&lt;' border='0' style='vertical-align:middle;' /> 1000 с соответствующей <img
-
-src='http://projecteuler.net/images/symbol_sum.gif' width='11' height='14' alt='&sum;' border='0'
-
-style='vertical-align:middle;' /><i>c</i> = 12523.</p>
-<p>Найти <img src='http://projecteuler.net/images/symbol_sum.gif' width='11' height='14'
-
-alt='&sum;' border='0' style='vertical-align:middle;' /><i>c</i> при <i>c</i> <img
-
-src='http://projecteuler.net/images/symbol_lt.gif' width='10' height='10' alt='&lt;' border='0'
-
-style='vertical-align:middle;' /> 120000.</p>
+<p>Оказывается, что abc-совпадения достаточно редки и существует всего тридцать одно abc-совпадение при значениях <i>c</i> < 1000 с соответствующей <span style="font-family:times new roman;font-size:13pt;">∑</span><i>c</i> = 12523.</p>
+<p>Найдите <span style="font-family:times new roman;font-size:13pt;">∑</span><i>c</i> при <i>c</i> < 120000.</p>
 <p class="info">
-Примечание: Данная задача была недавно изменена. Убедитесь в том, что Вы используете верные
-
-параметры.</p>
+Примечание: Данная задача была недавно изменена. Убедитесь в том, что Вы используете верные параметры.</p>
 </div>

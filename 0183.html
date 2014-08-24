@@ -3,54 +3,20 @@
 
 Body:
 <div class="problem_content">
-<p>Пусть N - положительное целое число, и пусть N можно разбить на <var>k</var> равных частей <var>r</var> =
+<p>Пусть N - положительное целое число, и пусть N можно разбить на <var>k</var> равных частей <var>r</var> = N/<var>k</var>, таких, что N = <var>r</var> + <var>r</var> + ... + <var>r</var>.<br />
+Пусть P - произведение этих частей, P = <var>r</var> × <var>r</var> × ... × <var>r</var> = <var>r</var><img src="" style="display:none;" alt="^(" /><sup><var>k</var></sup><img src="" style="display:none;" alt=")" />.</p>
 
-N/<var>k</var>, таких, что N = <var>r</var> + <var>r</var> + ... + <var>r</var>.<br />
-Пусть P - произведение этих частей, P = <var>r</var> <img src='http://projecteuler.net/images/symbol_times.gif'
+<p>К примеру, если 11 разбить на пять равных частей, 11 = 2.2 + 2.2 + 2.2 + 2.2 + 2.2, то P = 2.2<img src="" style="display:none;" alt="^(" /><sup>5</sup><img src="" style="display:none;" alt=")" /> = 51.53632.</p>
 
-width='9' height='9' alt='&times;' border='0' style='vertical-align:middle;' /> <var>r</var> <img
+<p>Пусть M(N) = P<img src="" style="display:none;" alt="_(" /><sub>max</sub><img src="" style="display:none;" alt=")" /> при заданном значении N.</p>
 
-src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;' border='0'
+<p>Оказывается, что для N = 11 максимум можно найти, разбив число 11 на четыре равные части, что в итоге даст P<img src="" style="display:none;" alt="_(" /><sub>max</sub><img src="" style="display:none;" alt=")" /> = (11/4)<img src="" style="display:none;" alt="^(" /><sup>4</sup><img src="" style="display:none;" alt=")" />, т.е. M(11) = 14641/256 = 57.19140625 - получена непериодическая десятичная дробь.</p>
 
-style='vertical-align:middle;' /> ... <img src='http://projecteuler.net/images/symbol_times.gif' width='9'
+<p>Однако, при N = 8 максимум можно найти, разбив это число на три равные части, так что M(8) = 512/27. В итоге получена периодическая десятичная дробь.</p>
 
-height='9' alt='&times;' border='0' style='vertical-align:middle;' /> <var>r</var> = <var>r</var><img src=""
+<p>Пусть D(N) = N, если M(N) является периодической дробью и D(N) = -N, если M(N) является непериодической дробью.</p>
 
-style="display:none;" alt="^(" /><sup><var>k</var></sup><img src="" style="display:none;" alt=")" />.</p>
+<p>Например, &Sigma;D(N) для 5 ≤ N ≤ 100 равна 2438.</p>
 
-<p>К примеру, если 11 разбить на пять равных частей, 11 = 2.2 + 2.2 + 2.2 + 2.2 + 2.2, то P = 2.2<img src=""
-
-style="display:none;" alt="^(" /><sup>5</sup><img src="" style="display:none;" alt=")" /> = 51.53632.</p>
-
-<p>Пусть M(N) = P<img src="" style="display:none;" alt="_(" /><sub>max</sub><img src="" style="display:none;"
-
-alt=")" /> при заданном значении N.</p>
-
-<p>Оказывается, что для N = 11 максимум можно найти, разбив число 11 на четыре равные части, что в итоге даст P<img
-
-src="" style="display:none;" alt="_(" /><sub>max</sub><img src="" style="display:none;" alt=")" /> = (11/4)<img
-
-src="" style="display:none;" alt="^(" /><sup>4</sup><img src="" style="display:none;" alt=")" />, т.е. M(11) =
-
-14641/256 = 57.19140625 - получена непериодическая десятичная дробь.</p>
-
-<p>Однако, при N = 8 максимум можно найти, разбив это число на три равные части, так что M(8) = 512/27. В итоге
-
-получена периодическая десятичная дробь.</p>
-
-<p>Пусть D(N) = N, если M(N) является периодической дробью и D(N) = -N, если M(N) является непериодической
-
-дробью.</p>
-
-<p>Например,  &Sigma;D(N) для 5 <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12'
-
-alt='&le;' border='0' style='vertical-align:middle;' /> N <img src='http://projecteuler.net/images/symbol_le.gif'
-
-width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> 100 равна 2438.</p>
-
-<p>Найдите &Sigma;D(N), если 5 <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12'
-
-alt='&le;' border='0' style='vertical-align:middle;' /> N <img src='http://projecteuler.net/images/symbol_le.gif'
-
-width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> 10000.</p>
+<p>Найдите &Sigma;D(N), если 5 ≤ N ≤ 10000.</p>
 </div>

@@ -3,18 +3,12 @@
 
 Body:
 <div class="problem_content">
-<p>На квадратном поле расставлены <var>N</var><img src='http://projecteuler.net/images/symbol_times.gif' width='9'
-height='9' alt='&times;' border='0' style='vertical-align:middle;'
-/><var>N</var> фишек. У каждой фишки есть белая сторона и черная сторона.</p>
+<p>На квадратном поле расставлены <var>N</var>×<var>N</var> фишек. У каждой фишки есть белая сторона и черная сторона.</p>
 
 <p>Во время очередного хода происходит выбор фишки, после чего все фишки в соответствующем ряду и колонне
-переворачиваются: т.е. переворачивается 2<img src='http://projecteuler.net/images/symbol_times.gif' width='9'
-height='9'
-alt='&times;' border='0' style='vertical-align:middle;' /><var>N</var>-1 фишек.
+переворачиваются: т.е. переворачивается 2×<var>N</var>-1 фишек.
 Игра завершается, когда все фишки повернуты белой стороной к верху.
-Ниже представлен пример игры на поле размерами 5<img src='http://projecteuler.net/images/symbol_times.gif' width='9'
-height='9' alt='&times;' border='0'
-style='vertical-align:middle;' />5 клеток.</p>
+Ниже представлен пример игры на поле размерами 5×5 клеток.</p>
 
 <div align='center'><img
 src="http://projecteuler.net/project/images/p_331_crossflips3.gif" alt=""
@@ -22,15 +16,11 @@ src="http://projecteuler.net/project/images/p_331_crossflips3.gif" alt=""
 
 <p>Можно доказать, что 3 - минимальное число ходов, необходимое для завершения этой игры.</p>
 
-<p>На игровом поле размерами <var>N</var><img src='http://projecteuler.net/images/symbol_times.gif' width='9'
-height='9' alt='&times;' border='0' style='vertical-align:middle;'
-/><var>N</var> нижняя левая фишка имеет
+<p>На игровом поле размерами <var>N</var>×<var>N</var> нижняя левая фишка имеет
 координаты (0,0);<br />
 нижняя правая фишка - координаты (<var>N</var>-1,0), а верхняя левая - (0,<var>N</var>-1). </p>
 
-<p>Обозначим через C<sub><var>N</var></sub> следующую конфигурацию игрового поля размерами <var>N</var><img src='http://projecteuler.net/images/symbol_times.gif'
-width='9' height='9' alt='&times;'
-border='0' style='vertical-align:middle;' /><var>N</var> клеток:<br /> Фишка с координатами (<var>x</var>,<var>y</var>), удовлетворяющими неравенство <img style="vertical-align:middle"
+<p>Обозначим через C<sub><var>N</var></sub> следующую конфигурацию игрового поля размерами <var>N</var>×<var>N</var> клеток:<br /> Фишка с координатами (<var>x</var>,<var>y</var>), удовлетворяющими неравенство <img style="vertical-align:middle"
 src="http://projecteuler.net/project/images/p_331_crossflips1.gif" alt="" />, повернута кверху черной стороной, в противном случае - белой стороной. К примеру, конфигурация C<sub>5</sub> показана на рисунке выше.</p>
 
 <p>Пусть T(<var>N</var>) - минимальное число ходов, необходимых для завершения игры с исходной конфигурации поля C<sub><var>N</var></sub>.
