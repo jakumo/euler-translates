@@ -4,64 +4,32 @@
 Body:
 <div class="problem_content">
 <p>В треугольном массиве положительных и отрицательных целых чисел мы хотим найти такой под-треугольник, чтобы сумма всех чисел, из которых он состоит, была по возможности меньшей.</p>
-<p>В примере ниже отчетливо видно, что выделенный треугольник удовлетворяет условию, т.к. его сумма равна
-<img src='http://projecteuler.net/images/symbol_minus.gif' width='9'
-height='3' alt='&minus;' border='0' style='vertical-align:middle;' />42.</p>
+<p>В примере ниже отчетливо видно, что выделенный треугольник удовлетворяет условию, т.к. его сумма равна −42.</p>
 <div style="text-align:center;">
 <img src="http://projecteuler.net/project/images/p_150.gif" border="0" alt="" />
 </div>
-<p>Мы собираемся сделать такой треугольный массив с одной тысячей строк, поэтому нам необходимо
-сгенерировать 500500 псевдослучайных числа <span style="font-style: italic">s<img src="" style="display:none;" alt="_("
-/><sub>k</sub><img src="" style="display:none;" alt=")" /></span> в диапазоне <img
-src='http://projecteuler.net/images/symbol_plusmn.gif' width='11' height='11' alt='&plusmn;'
-border='0' style='vertical-align:middle;' />2<img src="" style="display:none;" alt="^("
-/><sup>19</sup><img src="" style="display:none;" alt=")" />, воспользовавшись определенным типом генератора случайных
-чисел (известен как "линейный конгруэнтный генератор") следующим образом:</p>
+<p>Мы собираемся сделать такой треугольный массив с одной тысячей строк, поэтому нам необходимо сгенерировать 500500 псевдослучайных числа <span style="font-style: italic">s<img src="" style="display:none;" alt="_(" /><sub>k</sub><img src="" style="display:none;" alt=")" /></span> в диапазоне ±2<img src="" style="display:none;" alt="^(" /><sup>19</sup><img src="" style="display:none;" alt=")" />, воспользовавшись определенным типом генератора случайных чисел (известен как "линейный конгруэнтный генератор") следующим образом:</p>
 <p style="margin-left:50px;"><span style="font-style: italic">t</span> := 0
 <br />
 при k = 1 до k = 500500:
 <br />
-&nbsp; &nbsp; <span style="font-style: italic">t</span> := (615949*<span style="font-style:
-italic">t</span> + 797807) modulo 2<img src="" style="display:none;" alt="^(" /><sup>20</sup><img
-src="" style="display:none;" alt=")" />
+&nbsp; &nbsp; <span style="font-style: italic">t</span> := (615949*<span style="font-style: italic">t</span> + 797807) modulo 2<img src="" style="display:none;" alt="^(" /><sup>20</sup><img src="" style="display:none;" alt=")" />
 <br />
-&nbsp; &nbsp; <span style="font-style: italic">s<img src="" style="display:none;" alt="_("
-/><sub>k</sub><img src="" style="display:none;" alt=")" /></span> := <span style="font-style:
-italic">t</span><img src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3'
-alt='&minus;' border='0' style='vertical-align:middle;' />2<img src="" style="display:none;"
-alt="^(" /><sup>19</sup><img src="" style="display:none;" alt=")" /></p>
-<p>Таким образом: <span style="font-style: italic">s<img src="" style="display:none;" alt="_("
-/><sub>1</sub><img src="" style="display:none;" alt=")" /></span> = 273519, <span style="font-
-style: italic">s<img src="" style="display:none;" alt="_(" /><sub>2</sub><img src=""
-style="display:none;" alt=")" /></span> = <img
-src='http://projecteuler.net/images/symbol_minus.gif' width='9' height='3' alt='&minus;' border='0'
-style='vertical-align:middle;' />153582, <span style="font-style: italic">s<img src=""
-style="display:none;" alt="_(" /><sub>3</sub><img src="" style="display:none;" alt=")" /></span> =
-450905 и т.д.</p>
+&nbsp; &nbsp; <span style="font-style: italic">s<img src="" style="display:none;" alt="_(" /><sub>k</sub><img src="" style="display:none;" alt=")" /></span> := <span style="font-style: italic">t</span>−2<img src="" style="display:none;" alt="^(" /><sup>19</sup><img src="" style="display:none;" alt=")" /></p>
+<p>Таким образом: <span style="font-style: italic">s<img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" /></span> = 273519, <span style="font-style: italic">s<img src="" style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;" alt=")" /></span> = −153582, <span style="font-style: italic">s<img src="" style="display:none;" alt="_(" /><sub>3</sub><img src="" style="display:none;" alt=")" /></span> = 450905 и т.д.</p>
 <p>После этого наш треугольный массив формируется из полученных псевдо-случайных чисел следующим образом:</p>
 <div style="text-align:center;font-style: italic;">
-s<img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")"
-/>
+s<img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" />
 <br />
-s<img src="" style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;" alt=")"
-/>&nbsp; s<img src="" style="display:none;" alt="_(" /><sub>3</sub><img src=""
-style="display:none;" alt=")" />
+s<img src="" style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;" alt=")" />&nbsp; s<img src="" style="display:none;" alt="_(" /><sub>3</sub><img src="" style="display:none;" alt=")" />
 <br />
-s<img src="" style="display:none;" alt="_(" /><sub>4</sub><img src="" style="display:none;" alt=")"
-/>&nbsp; s<img src="" style="display:none;" alt="_(" /><sub>5</sub><img src=""
-style="display:none;" alt=")" />&nbsp; s<img src="" style="display:none;" alt="_("
-/><sub>6</sub><img src="" style="display:none;" alt=")" />&nbsp;
+s<img src="" style="display:none;" alt="_(" /><sub>4</sub><img src="" style="display:none;" alt=")" />&nbsp; s<img src="" style="display:none;" alt="_(" /><sub>5</sub><img src="" style="display:none;" alt=")" />&nbsp; s<img src="" style="display:none;" alt="_(" /><sub>6</sub><img src="" style="display:none;" alt=")" />&nbsp;
 <br />
-s<img src="" style="display:none;" alt="_(" /><sub>7</sub><img src="" style="display:none;" alt=")"
-/>&nbsp; s<img src="" style="display:none;" alt="_(" /><sub>8</sub><img src=""
-style="display:none;" alt=")" />&nbsp; s<img src="" style="display:none;" alt="_("
-/><sub>9</sub><img src="" style="display:none;" alt=")" />&nbsp; s<img src="" style="display:none;"
-alt="_(" /><sub>10</sub><img src="" style="display:none;" alt=")" />
+s<img src="" style="display:none;" alt="_(" /><sub>7</sub><img src="" style="display:none;" alt=")" />&nbsp; s<img src="" style="display:none;" alt="_(" /><sub>8</sub><img src="" style="display:none;" alt=")" />&nbsp; s<img src="" style="display:none;" alt="_(" /><sub>9</sub><img src="" style="display:none;" alt=")" />&nbsp; s<img src="" style="display:none;" alt="_(" /><sub>10</sub><img src="" style="display:none;" alt=")" />
 <br />
 ...
 </div>
-<p>Под-треугольники можно начинать с любого элемента массива и продолжать их вниз настолько, насколько это необходимо
-(выбирая два элемента на следующей строке, три элемента на идущей через одну строке и т.д.).
+<p>Под-треугольники можно начинать с любого элемента массива и продолжать их вниз настолько, насколько это необходимо (выбирая два элемента на следующей строке, три элемента на идущей через одну строке и т.д.).
 <br />
 &quot;Сумма под-треугольника&quot; определяется как сумма всех его элементов.
 <br />

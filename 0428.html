@@ -11,11 +11,11 @@ Body:
 </p>
 
 <p>
-Тройка (<var>a</var>, <var>b</var>, <var>c</var>) называется <em>тройкой-ожерельем</em>, если возможно построить <var>k</var> <img src='http://projecteuler.net/images/symbol_ge.gif' width='10' height='12' alt='&ge;' border='0' style='vertical-align:middle;' /> 3 различных кругов C<sub>1</sub>, C<sub>2</sub>, ..., C<sub><var>k</var></sub> таких, что:
+Тройка (<var>a</var>, <var>b</var>, <var>c</var>) называется <em>тройкой-ожерельем</em>, если возможно построить <var>k</var> ≥ 3 различных кругов C<sub>1</sub>, C<sub>2</sub>, ..., C<sub><var>k</var></sub> таких, что:
 <ul>
-<li>C<sub><var>i</var></sub> не имеет общих внутренних точек с любым из C<sub><var>j</var></sub> для 1 <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> <var>i</var>, <var>j</var> <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> <var>k</var> и <var>i</var> <img src='http://projecteuler.net/images/symbol_ne.gif' width='11' height='10' alt='&ne;' border='0' style='vertical-align:middle;' /> <var>j</var>,
-<li>C<sub><var>i</var></sub> касается C<sub>in</sub> и C<sub>out</sub> для 1 <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> <var>i</var> <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> <var>k</var>,
-<li>C<sub><var>i</var></sub> касается C<sub><var>i</var>+1</sub> для 1 <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> <var>i</var> < <var>k</var>, и
+<li>C<sub><var>i</var></sub> не имеет общих внутренних точек с любым из C<sub><var>j</var></sub> для 1 ≤ <var>i</var>, <var>j</var> ≤ <var>k</var> и <var>i</var> ≠ <var>j</var>,
+<li>C<sub><var>i</var></sub> касается C<sub>in</sub> и C<sub>out</sub> для 1 ≤ <var>i</var> ≤ <var>k</var>,
+<li>C<sub><var>i</var></sub> касается C<sub><var>i</var>+1</sub> для 1 ≤ <var>i</var> < <var>k</var>, и
 <li>C<sub><var>k</var></sub> касается C<sub>1</sub>.
 </ul></p>
 
@@ -25,7 +25,7 @@ Body:
 <p align='center'><img src='http://projecteuler.net/project/images/p428_necklace.png'></p>
 
 <p>
-Пусть T(<var>n</var>) будет количеством троек-ожерелий (<var>a</var>, <var>b</var>, <var>c</var>) таких, что <var>a</var>, <var>b</var> и <var>c</var> - положительные числа и <var>b</var> <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> <var>n</var>.
+Пусть T(<var>n</var>) будет количеством троек-ожерелий (<var>a</var>, <var>b</var>, <var>c</var>) таких, что <var>a</var>, <var>b</var> и <var>c</var> - положительные числа и <var>b</var> ≤ <var>n</var>.
 Например, T(1)&nbsp;=&nbsp;9, T(20)&nbsp;=&nbsp;732 и T(3000)&nbsp;=&nbsp;438106.
 </p>
 <p>

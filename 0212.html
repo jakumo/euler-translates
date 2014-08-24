@@ -3,127 +3,21 @@
 
 Body:
 <div class="problem_content">
-<p><span style="font-style: italic">Выравненный по осям прямоугольный параллелепипед</span>, определяемый параметрами { (x<img src=""
+<p><span style="font-style: italic">Выравненный по осям прямоугольный параллелепипед</span>, определяемый параметрами { (x<img src="" style="display:none;" alt="_(" /><sub>0</sub><img src="" style="display:none;" alt=")" />,y<img src="" style="display:none;" alt="_(" /><sub>0</sub><img src="" style="display:none;" alt=")" />,z<img src="" style="display:none;" alt="_(" /><sub>0</sub><img src="" style="display:none;" alt=")" />), (dx,dy,dz) }, состоит из таких точек (X,Y,Z), для которых x<img src="" style="display:none;" alt="_(" /><sub>0</sub><img src="" style="display:none;" alt=")" /> ≤ X < x<img src="" style="display:none;" alt="_(" /><sub>0</sub><img src="" style="display:none;" alt=")" />+dx, y<img src="" style="display:none;" alt="_(" /><sub>0</sub><img src="" style="display:none;" alt=")" /> < Y ≤ y<img src="" style="display:none;" alt="_(" /><sub>0</sub><img src="" style="display:none;" alt=")" />+dy и z<img src="" style="display:none;" alt="_(" /><sub>0</sub><img src="" style="display:none;" alt=")" /> ≤ Z ≤ z<img src="" style="display:none;" alt="_(" /><sub>0</sub><img src="" style="display:none;" alt=")" />+dz.  Объем прямоугольного параллелепипеда есть произведение dx × dy × dz.  <span style="font-style: italic">Общий объем</span> набора прямоугольных параллелепипедов равен объему объединенных прямоугольных параллелепипедов, и, в случае их перекрытия, он будет меньше суммы отдельных объемов.</p>
 
-style="display:none;" alt="_(" /><sub>0</sub><img src="" style="display:none;" alt=")" />,y<img src=""
+<p>Пусть C<img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" />,...,C<img src="" style="display:none;" alt="_(" /><sub>50000</sub><img src="" style="display:none;" alt=")" /> - набор 50000 выравненных по осям прямоугольных параллелепипедов, параметры каждого прямоугольного параллелепипеда C<img src="" style="display:none;" alt="_(" /><sub><var>n</var></sub><img src="" style="display:none;" alt=")" /> представлены ниже:</p>
 
-style="display:none;" alt="_(" /><sub>0</sub><img src="" style="display:none;" alt=")" />,z<img src=""
-
-style="display:none;" alt="_(" /><sub>0</sub><img src="" style="display:none;" alt=")" />), (dx,dy,dz) }, состоит
-
-из таких точек (X,Y,Z), для которых x<img src="" style="display:none;" alt="_(" /><sub>0</sub><img src=""
-
-style="display:none;" alt=")" /> <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12'
-
-alt='&le;' border='0' style='vertical-align:middle;' /> X <img src='http://projecteuler.net/images/symbol_le.gif'
-
-width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> x<img src="" style="display:none;"
-
-alt="_(" /><sub>0</sub><img src="" style="display:none;" alt=")" />+dx, y<img src="" style="display:none;" alt="_("
-
-/><sub>0</sub><img src="" style="display:none;" alt=")" /> <img src='http://projecteuler.net/images/symbol_le.gif'
-
-width='10' height='12' alt='&le;' border='0' style='vertical-align:middle;' /> Y <img
-
-src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-
-
-align:middle;' /> y<img src="" style="display:none;" alt="_(" /><sub>0</sub><img src="" style="display:none;"
-
-alt=")" />+dy и z<img src="" style="display:none;" alt="_(" /><sub>0</sub><img src="" style="display:none;" alt=")"
-
-/> <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0'
-
-style='vertical-align:middle;' /> Z <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12'
-
-alt='&le;' border='0' style='vertical-align:middle;' /> z<img src="" style="display:none;" alt="_("
-
-/><sub>0</sub><img src="" style="display:none;" alt=")" />+dz.  Объем прямоугольного параллелепипеда есть произведение dx <img
-
-src='http://projecteuler.net/images/symbol_times.gif' width='9' height='9' alt='&times;' border='0'
-
-style='vertical-align:middle;' /> dy <img src='http://projecteuler.net/images/symbol_times.gif' width='9'
-
-height='9' alt='&times;' border='0' style='vertical-align:middle;' /> dz.  <span style="font-style: italic">Общий
-
-объем</span> набора прямоугольных параллелепипедов равен объему объединенных прямоугольных параллелепипедов, и, в случае их перекрытия, он будет меньше
-
-суммы отдельных объемов.</p>
-
-<p>Пусть C<img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")"
-
-/>,...,C<img src="" style="display:none;" alt="_(" /><sub>50000</sub><img src="" style="display:none;" alt=")" /> -
-
-набор 50000 выравненных по осям прямоугольных параллелепипедов, параметры каждого прямоугольного параллелепипеда C<img src="" style="display:none;" alt="_("
-
-/><sub><var>n</var></sub><img src="" style="display:none;" alt=")" /> представлены ниже:</p>
-
-<p style="margin-left:40px;">x<img src="" style="display:none;" alt="_(" /><sub>0</sub><img src=""
-
-style="display:none;" alt=")" /> = S<img src="" style="display:none;" alt="_(" /><sub>6<var>n</var>-5</sub><img
-
-src="" style="display:none;" alt=")" /> modulo 10000<br />y<img src="" style="display:none;" alt="_("
-
-/><sub>0</sub><img src="" style="display:none;" alt=")" /> = S<img src="" style="display:none;" alt="_("
-
-/><sub>6<var>n</var>-4</sub><img src="" style="display:none;" alt=")" /> modulo 10000<br />z<img src=""
-
-style="display:none;" alt="_(" /><sub>0</sub><img src="" style="display:none;" alt=")" /> = S<img src=""
-
-style="display:none;" alt="_(" /><sub>6<var>n</var>-3</sub><img src="" style="display:none;" alt=")" /> modulo
-
-10000<br />dx = 1 + (S<img src="" style="display:none;" alt="_(" /><sub>6<var>n</var>-2</sub><img src=""
-
-style="display:none;" alt=")" /> modulo 399)<br />dy = 1 + (S<img src="" style="display:none;" alt="_("
-
-/><sub>6<var>n</var>-1</sub><img src="" style="display:none;" alt=")" /> modulo 399)<br />dz = 1 + (S<img src=""
-
-style="display:none;" alt="_(" /><sub>6<var>n</var></sub><img src="" style="display:none;" alt=")" /> modulo 399)
+<p style="margin-left:40px;">x<img src="" style="display:none;" alt="_(" /><sub>0</sub><img src="" style="display:none;" alt=")" /> = S<img src="" style="display:none;" alt="_(" /><sub>6<var>n</var>-5</sub><img src="" style="display:none;" alt=")" /> modulo 10000<br />y<img src="" style="display:none;" alt="_(" /><sub>0</sub><img src="" style="display:none;" alt=")" /> = S<img src="" style="display:none;" alt="_(" /><sub>6<var>n</var>-4</sub><img src="" style="display:none;" alt=")" /> modulo 10000<br />z<img src="" style="display:none;" alt="_(" /><sub>0</sub><img src="" style="display:none;" alt=")" /> = S<img src="" style="display:none;" alt="_(" /><sub>6<var>n</var>-3</sub><img src="" style="display:none;" alt=")" /> modulo 10000<br />dx = 1 + (S<img src="" style="display:none;" alt="_(" /><sub>6<var>n</var>-2</sub><img src="" style="display:none;" alt=")" /> modulo 399)<br />dy = 1 + (S<img src="" style="display:none;" alt="_(" /><sub>6<var>n</var>-1</sub><img src="" style="display:none;" alt=")" /> modulo 399)<br />dz = 1 + (S<img src="" style="display:none;" alt="_(" /><sub>6<var>n</var></sub><img src="" style="display:none;" alt=")" /> modulo 399)
 
 </p>
 
-<p>где S<img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")"
+<p>где S<img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" />,...,S<img src="" style="display:none;" alt="_(" /><sub>300000</sub><img src="" style="display:none;" alt=")" /> получают с помощью &quot;генератора Фибоначчи с задержкой&quot;:</p>
 
-/>,...,S<img src="" style="display:none;" alt="_(" /><sub>300000</sub><img src="" style="display:none;" alt=")" />
+<p style="margin-left:40px;">For 1 ≤ <var>k</var> ≤ 55, S<img src="" style="display:none;" alt="_(" /><sub><var>k</var></sub><img src="" style="display:none;" alt=")" /> = [100003 - 200003<var>k</var> + 300007<var>k</var><img src="" style="display:none;" alt="^(" /><sup>3</sup><img src="" style="display:none;" alt=")" />] &nbsp; (modulo 1000000) <br />For 56 ≤ <var>k</var>, S<img src="" style="display:none;" alt="_(" /><sub><var>k</var></sub><img src="" style="display:none;" alt=")" /> = [S<img src="" style="display:none;" alt="_(" /><sub><var>k</var>-24</sub><img src="" style="display:none;" alt=")" /> + S<img src="" style="display:none;" alt="_(" /><sub><var>k</var>-55</sub><img src="" style="display:none;" alt=")" />] &nbsp; (modulo 1000000)</p>
 
-получают с помощью &quot;генератора Фибоначчи с задержкой&quot;:</p>
+<p>Таким образом, параметры C<img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" />: {(7,53,183),(94,369,56)}, параметры C<img src="" style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;" alt=")" />: {(2383,3563,5079),(42,212,344)}, и т.д.</p>
 
-<p style="margin-left:40px;">For 1 <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12'
+<p>Общий объем первых 100 прямоугольных параллелепипедов C<img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" />,...,C<img src="" style="display:none;" alt="_(" /><sub>100</sub><img src="" style="display:none;" alt=")" /> равен 723581599.</p>
 
-alt='&le;' border='0' style='vertical-align:middle;' /> <var>k</var> <img
-
-src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0' style='vertical-
-
-align:middle;' /> 55, S<img src="" style="display:none;" alt="_(" /><sub><var>k</var></sub><img src=""
-
-style="display:none;" alt=")" /> = [100003 - 200003<var>k</var> + 300007<var>k</var><img src=""
-
-style="display:none;" alt="^(" /><sup>3</sup><img src="" style="display:none;" alt=")" />] &nbsp; (modulo 1000000)
-
-<br />For 56 <img src='http://projecteuler.net/images/symbol_le.gif' width='10' height='12' alt='&le;' border='0'
-
-style='vertical-align:middle;' /> <var>k</var>, S<img src="" style="display:none;" alt="_("
-
-/><sub><var>k</var></sub><img src="" style="display:none;" alt=")" /> = [S<img src="" style="display:none;" alt="_
-
-(" /><sub><var>k</var>-24</sub><img src="" style="display:none;" alt=")" /> + S<img src="" style="display:none;"
-
-alt="_(" /><sub><var>k</var>-55</sub><img src="" style="display:none;" alt=")" />] &nbsp; (modulo 1000000)</p>
-
-<p>Таким образом, параметры C<img src="" style="display:none;" alt="_(" /><sub>1</sub><img src=""
-
-style="display:none;" alt=")" />: {(7,53,183),(94,369,56)}, параметры C<img src="" style="display:none;" alt="_("
-
-/><sub>2</sub><img src="" style="display:none;" alt=")" />: {(2383,3563,5079),(42,212,344)}, и т.д.</p>
-
-<p>Общий объем первых 100 прямоугольных параллелепипедов C<img src="" style="display:none;" alt="_(" /><sub>1</sub><img src=""
-
-style="display:none;" alt=")" />,...,C<img src="" style="display:none;" alt="_(" /><sub>100</sub><img src=""
-
-style="display:none;" alt=")" /> равен 723581599.</p>
-
-<p>Чему равен общий объем всех 50000 прямоугольных параллелепипедов C<img src="" style="display:none;" alt="_(" /><sub>1</sub><img
-
-src="" style="display:none;" alt=")" />,...,C<img src="" style="display:none;" alt="_(" /><sub>50000</sub><img
-
-src="" style="display:none;" alt=")" /> ?</p>
+<p>Чему равен общий объем всех 50000 прямоугольных параллелепипедов C<img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" />,...,C<img src="" style="display:none;" alt="_(" /><sub>50000</sub><img src="" style="display:none;" alt=")" />?</p>
 </div>
