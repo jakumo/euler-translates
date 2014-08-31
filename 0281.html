@@ -3,23 +3,11 @@
 
 Body:
 <div class="problem_content">
-<p>В вашем распоряжении одна пицца (идеальный круг), разрезанная на <var>m</var>&middot;<var>n</var> одинаковых кусков,
+<p>В вашем распоряжении одна пицца (идеальный круг), разрезанная на <var>m</var>&middot;<var>n</var> одинаковых кусков, и вы хотите, чтобы у каждого из кусков была своя начинка.</p>
 
-и вы хотите, чтобы у каждого из кусков была своя начинка.</p>
+<p>Пусть через <var>f</var>(<var>m</var>,<var>n</var>) обозначено число способов, которыми можно распределить между кусками пиццы <var>m</var> различные начинки (<var>m</var>&thinsp;≥&thinsp;2), используя каждую из них ровно на <var>n</var> кусках пиццы (<var>n</var>&thinsp;≥&thinsp;1). <br />Зеркальные отражения считаются отличающимися, однако повороты - нет. </p>
 
-<p>Пусть через <var>f</var>(<var>m</var>,<var>n</var>) обозначено число способов, которыми можно распределить между
+<p>Таким образом, например, <var>f</var>(2,1)&thinsp;=&thinsp;1, <var>f</var>(2,2)&thinsp;=&thinsp;<var>f</var>(3,1) &thinsp;=&thinsp;2 и <var>f</var>(3,2)&thinsp;=&thinsp;16. <br /><var>f</var>(3,2) показано на рисунке ниже:</p> <div align='center'><img src="http://projecteuler.net/project/images/p_281_pizza.gif" alt="" /></div>
 
-кусками пиццы <var>m</var> различные начинки (<var>m</var>&thinsp;≥&thinsp;2), используя каждую из них ровно на <var>n</var> кусках пиццы (<var>n</var>&thinsp;≥&thinsp;1). <br />Зеркальные отражения считаются отличающимися, однако повороты - нет. </p>
-
-<p>Таким образом, например, <var>f</var>(2,1)&thinsp;=&thinsp;1, <var>f</var>(2,2)&thinsp;=&thinsp;<var>f</var>(3,1)
-
-&thinsp;=&thinsp;2 и <var>f</var>(3,2)&thinsp;=&thinsp;16. <br /><var>f</var>(3,2) показано на рисунке ниже:</p>
-
-<div align='center'><img src="http://projecteuler.net/project/images/p_281_pizza.gif" alt="" /></div>
-
-<p>Найдите сумму всех <var>f</var>(<var>m</var>,<var>n</var>), таких, что <var>f</var>(<var>m</var>,<var>n</var>)
-
-&thinsp;≤&thinsp;10<img src="" style="display:none;" alt="^(" /><sup>15</sup><img src=""
-
-style="display:none;" alt=")" />.</p>
+<p>Найдите сумму всех <var>f</var>(<var>m</var>,<var>n</var>), таких, что <var>f</var>(<var>m</var>,<var>n</var>) &thinsp;≤&thinsp;10<img src="" style="display:none;" alt="^(" /><sup>15</sup><img src="" style="display:none;" alt=")" />.</p>
 </div>

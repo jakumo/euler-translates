@@ -1,0 +1,27 @@
+﻿Subject:
+Смеси
+
+Body:
+<div class="problem_content">
+<p>Рассмотрим <b>смеси</b> трех веществ: <b>A</b>, <b>B</b> и <b>C</b>. Смесь можно описать пропорцией количеств веществ <b>A</b>, <b>B</b> и <b>C</b> в ней, т.е. (<var>a</var>&nbsp;:&nbsp;<var>b</var>&nbsp;:&nbsp;<var>c</var>). Например, смесь, заданная пропорцией (2&nbsp;:&nbsp;3&nbsp;:&nbsp;5), содержит 20% <b>A</b>, 30% <b>B</b> и 50% <b>C</b>.</p>
+
+<p>В рамках этой задачи мы не можем разделить смесь на отдельные компоненты. Однако, мы можем смешивать разные количества различных смесей, чтобы создать смесь с другой пропорцией.</p>
+
+<p>Например: скажем, у нас есть три смеси с пропорциями (3&nbsp;:&nbsp;0&nbsp;:&nbsp;2), (3&nbsp;:&nbsp;6&nbsp;:&nbsp;11) и (3&nbsp;:&nbsp;3&nbsp;:&nbsp;4). Смешав 10 единиц первой, 20 единиц второй и 30 единиц третьей, мы получим новую смесь с пропорцией (6&nbsp;:&nbsp;5&nbsp;:&nbsp;9), так как:<br/>
+(10&middot;<sup>3</sup>/<sub>5</sub>&nbsp;+&nbsp;20&middot;<sup>3</sup>/<sub>20</sub>&nbsp;+&nbsp;30&middot;<sup>3</sup>/<sub>10</sub>&nbsp;:&nbsp;10&middot;<sup>0</sup>/<sub>5</sub>&nbsp;+&nbsp;20&middot;<sup>6</sup>/<sub>20</sub>&nbsp;+&nbsp;30&middot;<sup>3</sup>/<sub>10</sub>&nbsp;:&nbsp;10&middot;<sup>2</sup>/<sub>5</sub>&nbsp;+&nbsp;20&middot;<sup>11</sup>/<sub>20</sub>&nbsp;+&nbsp;30&middot;<sup>4</sup>/<sub>10</sub>) = (18&nbsp;:&nbsp;15&nbsp;:&nbsp;27) = (6&nbsp;:&nbsp;5&nbsp;:&nbsp;9)</p>
+
+<p>Однако, из тех же трех смесей невозможно создать смесь с пропорцией (3&nbsp;:&nbsp;2&nbsp;:&nbsp;1), так как количество <b>B</b> всегда будет меньше количества <b>C</b>.</p>
+
+<p>Пусть <var>n</var> будет положительным целым числом. Предположим, что для каждой тройки целых чисел (<var>a</var>, <var>b</var>, <var>c</var>) при 0 &le; <var>a</var>, <var>b</var>, <var>c</var> &le; <var>n</var> и НОД(<var>a</var>, <var>b</var>, <var>c</var>) = 1, мы имеем смесь с пропорцией (<var>a</var>&nbsp;:&nbsp;<var>b</var>&nbsp;:&nbsp;<var>c</var>). Пусть M(<var>n</var>) будет множестваом всех таких смесей.</p>
+
+<p>Например, M(2) содержит 19 смесей со следующими пропорциями:<br/>
+{(0&nbsp;:&nbsp;0&nbsp;:&nbsp;1), (0&nbsp;:&nbsp;1&nbsp;:&nbsp;0), (0&nbsp;:&nbsp;1&nbsp;:&nbsp;1), (0&nbsp;:&nbsp;1&nbsp;:&nbsp;2), (0&nbsp;:&nbsp;2&nbsp;:&nbsp;1), <br/>
+(1&nbsp;:&nbsp;0&nbsp;:&nbsp;0), (1&nbsp;:&nbsp;0&nbsp;:&nbsp;1), (1&nbsp;:&nbsp;0&nbsp;:&nbsp;2), (1&nbsp;:&nbsp;1&nbsp;:&nbsp;0), (1&nbsp;:&nbsp;1&nbsp;:&nbsp;1), <br/>
+(1&nbsp;:&nbsp;1&nbsp;:&nbsp;2), (1&nbsp;:&nbsp;2&nbsp;:&nbsp;0), (1&nbsp;:&nbsp;2&nbsp;:&nbsp;1), (1&nbsp;:&nbsp;2&nbsp;:&nbsp;2), (2&nbsp;:&nbsp;0&nbsp;:&nbsp;1), <br/>
+(2&nbsp;:&nbsp;1&nbsp;:&nbsp;0), (2&nbsp;:&nbsp;1&nbsp;:&nbsp;1), (2&nbsp;:&nbsp;1&nbsp;:&nbsp;2), (2&nbsp;:&nbsp;2&nbsp;:&nbsp;1)}.</p>
+
+<p>Пусть E(<var>n</var>) будет количеством подмножеств M(<var>n</var>), которые могут произвести смесь с пропорцией (1 : 1 : 1), т.е. смесь с равными частями <b>A</b>, <b>B</b> и <b>C</b>. <br/>
+Можно показать, что E(1) = 103, E(2) = 520447, E(10)&nbsp;mod&nbsp;11<sup>8</sup> = 82608406 и E(500)&nbsp;mod&nbsp;11<sup>8</sup> = 13801403.<br/>
+Найдите E(10&nbsp;000&nbsp;000)&nbsp;mod&nbsp;11<sup>8</sup>.</p>
+
+</div>
