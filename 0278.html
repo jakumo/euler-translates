@@ -3,57 +3,15 @@
 
 Body:
 <div class="problem_content">
-<p>Для заданных значений целых чисел 1 < <var>a</var><img src="" style="display:none;" alt="_("
-
-/><sub>1</sub><img src="" style="display:none;" alt=")" /> < <var>a</var><img src=""
-
-style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;" alt=")" /> <... < <var>a</var><img src="" style="display:none;" alt="_("
-
-/><sub><var>n</var></sub><img src="" style="display:none;" alt=")" />, рассмотрим линейную комбинацию<br />
-
-<var>q</var><img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")"
-
-/><var>a</var><img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" /> +
-
-<var>q</var><img src="" style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;" alt=")"
-
-/><var>a</var><img src="" style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;" alt=")" /> +
-
-... + <var>q</var><img src="" style="display:none;" alt="_(" /><sub><var>n</var></sub><img src="" style="display:none;"
-
-alt=")" /><var>a</var><img src="" style="display:none;" alt="_(" /><sub><var>n</var></sub><img src=""
-
-style="display:none;" alt=")" /> = <var>b</var>, используя для этого только целые значения <var>q</var><img src=""
-
-style="display:none;" alt="_(" /><sub><var>k</var></sub><img src="" style="display:none;" alt=")" /> ≥ 0.
+<p>Для заданных значений целых чисел 1 < <var>a</var><img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" /> < <var>a</var><img src="" style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;" alt=")" /> <... < <var>a</var><img src="" style="display:none;" alt="_(" /><sub><var>n</var></sub><img src="" style="display:none;" alt=")" />, рассмотрим линейную комбинацию<br /> <var>q</var><img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" /><var>a</var><img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" /> + <var>q</var><img src="" style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;" alt=")" /><var>a</var><img src="" style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;" alt=")" /> + ... + <var>q</var><img src="" style="display:none;" alt="_(" /><sub><var>n</var></sub><img src="" style="display:none;" alt=")" /><var>a</var><img src="" style="display:none;" alt="_(" /><sub><var>n</var></sub><img src="" style="display:none;" alt=")" /> = <var>b</var>, используя для этого только целые значения <var>q</var><img src="" style="display:none;" alt="_(" /><sub><var>k</var></sub><img src="" style="display:none;" alt=")" /> ≥ 0.
 </p>
 <p>
-Заметим, для заданного множества <var>a</var><img src="" style="display:none;" alt="_(" /><sub><var>k</var></sub><img
-
-src="" style="display:none;" alt=")" />, может случиться так, что не все значения <var>b</var> возможно найти.<br />
-Например, если <var>a</var><img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;"
-
-alt=")" /> = 5 и <var>a</var><img src="" style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;"
-
-alt=")" /> = 7, то не существует таких значений <var>q</var><img src="" style="display:none;" alt="_("
-
-/><sub>1</sub><img src="" style="display:none;" alt=")" /> ≥ 0 и <var>q</var><img src=""
-
-style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;" alt=")" /> ≥ 0, при которых <var>b</var> равно<br />
+Заметим, для заданного множества <var>a</var><img src="" style="display:none;" alt="_(" /><sub><var>k</var></sub><img src="" style="display:none;" alt=")" />, может случиться так, что не все значения <var>b</var> возможно найти.<br />
+Например, если <var>a</var><img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" /> = 5 и <var>a</var><img src="" style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;" alt=")" /> = 7, то не существует таких значений <var>q</var><img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" /> ≥ 0 и <var>q</var><img src="" style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;" alt=")" /> ≥ 0, при которых <var>b</var> равно<br />
 1, 2, 3, 4, 6, 8, 9, 11, 13, 16, 18 или 23.
 <br />
-Между прочим, 23 является наибольшим невозможным значением <var>b</var> при <var>a</var><img src="" style="display:none;"
-
-alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" /> = 5 и <var>a</var><img src="" style="display:none;"
-
-alt="_(" /><sub>2</sub><img src="" style="display:none;" alt=")" /> = 7.<br /> Поэтому, введем следующее обозначение:
-
-<var>f</var>(5, 7) = 23.<br /> Аналогичным образом можно показать, что <var>f</var>(6, 10, 15)=29 и <var>f</var>(14,
-
-22, 77) = 195.
+Между прочим, 23 является наибольшим невозможным значением <var>b</var> при <var>a</var><img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" /> = 5 и <var>a</var><img src="" style="display:none;" alt="_(" /><sub>2</sub><img src="" style="display:none;" alt=")" /> = 7.<br /> Поэтому, введем следующее обозначение: <var>f</var>(5, 7) = 23.<br /> Аналогичным образом можно показать, что <var>f</var>(6, 10, 15)=29 и <var>f</var>(14, 22, 77) = 195.
 </p>
 <p>
-Найдите <span style="font-family:times new roman;font-size:13pt;">∑</span> <var>f</var>(<var>p*q,p*r,q*r</var>), где <var>p</var>, <var>q</var> и <var>r</var>
-
-являются простыми числами, при этом  <var>p</var> &lt; <var>q</var> < <var>r</var> < 5000.</p>
+Найдите <span style="font-family:times new roman;font-size:13pt;">∑</span> <var>f</var>(<var>p*q,p*r,q*r</var>), где <var>p</var>, <var>q</var> и <var>r</var> являются простыми числами, при этом  <var>p</var> &lt; <var>q</var> < <var>r</var> < 5000.</p>
 </div>

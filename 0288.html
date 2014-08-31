@@ -4,46 +4,15 @@
 Body:
 <div class="problem_content">
 <p>
-Для любого простого числа <var>p</var> можно определить число
-N(<var>p</var>,<var>q</var>) = <span style="font-family:times new roman;font-size:13pt;">∑</span><img src="" style="display:none;"
-alt="_(" /><sub><var>n</var>=0 до <var>q</var></sub><img src=""
-style="display:none;" alt=")" /> T<img src="" style="display:none;"
-alt="_(" /><sub><var>n</var></sub><img src="" style="display:none;"
-alt=")" />*<var>p</var><img src="" style="display:none;" alt="^("
-/><sup><var>n</var></sup><img src="" style="display:none;" alt=")"
-/>,<br /> где T<img src="" style="display:none;" alt="_("
-/><sub><var>n</var></sub><img src="" style="display:none;" alt=")" />
-получают с помощью следующего генератора случайных чисел:</p>
+Для любого простого числа <var>p</var> можно определить число N(<var>p</var>,<var>q</var>) = <span style="font-family:times new roman;font-size:13pt;">∑</span><img src="" style="display:none;" alt="_(" /><sub><var>n</var>=0 до <var>q</var></sub><img src="" style="display:none;" alt=")" /> T<img src="" style="display:none;" alt="_(" /><sub><var>n</var></sub><img src="" style="display:none;" alt=")" />*<var>p</var><img src="" style="display:none;" alt="^(" /><sup><var>n</var></sup><img src="" style="display:none;" alt=")" />,<br /> где T<img src="" style="display:none;" alt="_(" /><sub><var>n</var></sub><img src="" style="display:none;" alt=")" /> получают с помощью следующего генератора случайных чисел:</p>
 <p>
-S<img src="" style="display:none;" alt="_(" /><sub>0</sub><img src=""
-style="display:none;" alt=")" /> = 290797<br />
-S<img src="" style="display:none;" alt="_("
-/><sub><var>n</var>+1</sub><img src="" style="display:none;" alt=")"
-/> = S<img src="" style="display:none;" alt="_("
-/><sub><var>n</var></sub><img src="" style="display:none;" alt=")"
-/><img src="" style="display:none;" alt="^(" /><sup>2</sup><img src=""
-style="display:none;" alt=")" /> mod 50515093<br />
-T<img src="" style="display:none;" alt="_("
-/><sub><var>n</var></sub><img src="" style="display:none;" alt=")" />
-= S<img src="" style="display:none;" alt="_("
-/><sub><var>n</var></sub><img src="" style="display:none;" alt=")" />
-mod p
+S<img src="" style="display:none;" alt="_(" /><sub>0</sub><img src="" style="display:none;" alt=")" /> = 290797<br /> S<img src="" style="display:none;" alt="_(" /><sub><var>n</var>+1</sub><img src="" style="display:none;" alt=")" /> = S<img src="" style="display:none;" alt="_(" /><sub><var>n</var></sub><img src="" style="display:none;" alt=")" /><img src="" style="display:none;" alt="^(" /><sup>2</sup><img src="" style="display:none;" alt=")" /> mod 50515093<br /> T<img src="" style="display:none;" alt="_(" /><sub><var>n</var></sub><img src="" style="display:none;" alt=")" /> = S<img src="" style="display:none;" alt="_(" /><sub><var>n</var></sub><img src="" style="display:none;" alt=")" /> mod p
 </p>
 <p>
-Пусть Nfac(<var>p</var>,<var>q</var>) является факториалом
-N(<var>p</var>,<var>q</var>).<br />
-Пусть NF(<var>p</var>,<var>q</var>) является числом множителей
-<var>p</var> в Nfac(<var>p</var>,<var>q</var>).
+Пусть Nfac(<var>p</var>,<var>q</var>) является факториалом N(<var>p</var>,<var>q</var>).<br /> Пусть NF(<var>p</var>,<var>q</var>) является числом множителей <var>p</var> в Nfac(<var>p</var>,<var>q</var>).
 </p>
-<p>
-Дано, что NF(3,10000) mod 3<img src="" style="display:none;"
-alt="^(" /><sup>20</sup><img src="" style="display:none;" alt=")"
-/>=624955285.
+<p> Дано, что NF(3,10000) mod 3<img src="" style="display:none;" alt="^(" /><sup>20</sup><img src="" style="display:none;" alt=")" />=624955285.
 </p>
-<p>
-Найдите NF(61,10<img src="" style="display:none;" alt="^("
-/><sup>7</sup><img src="" style="display:none;" alt=")" />) mod 61<img
-src="" style="display:none;" alt="^(" /><sup>10</sup><img src=""
-style="display:none;" alt=")" />.
+<p> Найдите NF(61,10<img src="" style="display:none;" alt="^(" /><sup>7</sup><img src="" style="display:none;" alt=")" />) mod 61<img src="" style="display:none;" alt="^(" /><sup>10</sup><img src="" style="display:none;" alt=")" />.
 </p>
 </div>
