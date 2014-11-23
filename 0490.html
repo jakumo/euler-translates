@@ -1,0 +1,39 @@
+﻿Subject:
+Прыгающая лягушка
+
+Body:
+<div class="problem_content">
+
+<p>В пруду лежат в ряд <var>n</var> камней, пронумерованные от 1 до <var>n</var>. Номера последовательно лежащих камней различаются на единицу.</p>
+
+<p>На камне № 1 сидит лягушка. Она хочет посетить каждый камень ровно один раз и в конце концов оказаться на камне № <var>n</var>. Однако, она может допрыгнуть только до камня, находящегося не дальше, чем за три единицы от ее текущего местоположения. Другими словами, с камня № <var>i</var> она может попасть на камень № <var>j</var>, если 1 &le; <var>j</var> &le; <var>n</var> и <var>j</var> является элементом множества {<var>i</var>-3, <var>i</var>-2, <var>i</var>-1, <var>i</var>+1, <var>i</var>+2, <var>i</var>+3}.</p>
+
+<p>Пусть f(<var>n</var>) будет количеством способов, какими лягушка может достичь своей цели. Например, f(6) = 14, как показано ниже:<br/>
+1 &rarr; 2 &rarr; 3 &rarr; 4 &rarr; 5 &rarr; 6 <br/>
+1 &rarr; 2 &rarr; 3 &rarr; 5 &rarr; 4 &rarr; 6 <br/>
+1 &rarr; 2 &rarr; 4 &rarr; 3 &rarr; 5 &rarr; 6 <br/>
+1 &rarr; 2 &rarr; 4 &rarr; 5 &rarr; 3 &rarr; 6 <br/>
+1 &rarr; 2 &rarr; 5 &rarr; 3 &rarr; 4 &rarr; 6 <br/>
+1 &rarr; 2 &rarr; 5 &rarr; 4 &rarr; 3 &rarr; 6 <br/>
+1 &rarr; 3 &rarr; 2 &rarr; 4 &rarr; 5 &rarr; 6 <br/>
+1 &rarr; 3 &rarr; 2 &rarr; 5 &rarr; 4 &rarr; 6 <br/>
+1 &rarr; 3 &rarr; 4 &rarr; 2 &rarr; 5 &rarr; 6 <br/>
+1 &rarr; 3 &rarr; 5 &rarr; 2 &rarr; 4 &rarr; 6 <br/>
+1 &rarr; 4 &rarr; 2 &rarr; 3 &rarr; 5 &rarr; 6 <br/>
+1 &rarr; 4 &rarr; 2 &rarr; 5 &rarr; 3 &rarr; 6 <br/>
+1 &rarr; 4 &rarr; 3 &rarr; 2 &rarr; 5 &rarr; 6 <br/>
+1 &rarr; 4 &rarr; 5 &rarr; 2 &rarr; 3 &rarr; 6</p>
+
+<p>Другие примеры: f(10) = 254 и f(40) = 1439682432976.</p>
+
+<p>Пусть S(<var>L</var>) = &sum; f(<var>n</var>)<sup>3</sup> для 1 &le; <var>n</var> &le; <var>L</var>.<br/>
+Примеры:<br/>
+S(10) = 18230635<br/>
+S(20) = 104207881192114219<br/>
+S(1 000) mod 10<sup>9</sup> = 225031475<br/>
+S(1 000 000) mod 10<sup>9</sup> = 363486179</p>
+
+<p>Найдите S(10<sup>14</sup>) mod 10<sup>9</sup>.</p>
+
+
+</div>
