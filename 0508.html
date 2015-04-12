@@ -1,0 +1,32 @@
+﻿Subject:
+Целые по основанию i-1
+
+Body:
+<div class="problem_content">
+
+<p>Рассмотрим Гауссово целое число i-1. <b>Представлением по основанию i-1</b> для Гауссова целого <var>a</var>+<var>b</var>i является конечная последовательность цифр <var>d</var><sub><var>n</var>-1</sub><var>d</var><sub><var>n</var>-2</sub>...<var>d</var><sub>1</sub><var>d</var><sub>0</sub>, таких что:</p>
+
+<ul>
+<li><var>a</var>+<var>b</var>i = <var>d</var><sub><var>n</var>-1</sub>(i-1)<sup><var>n</var>-1</sup> + <var>d</var><sub><var>n</var>-2</sub>(i-1)<sup><var>n</var>-2</sup> + ... + <var>d</var><sub>1</sub>(i-1) + <var>d</var><sub>0</sub></li>
+<li>Каждое <var>d</var><sub><var>k</var></sub> принадлежит {0,1}</li>
+<li>Отсутствуют ведущие нули, т.е. <var>d</var><sub>n-1</sub> ≠ 0, если только само <var>a</var>+<var>b</var>i не равно 0</li>
+</ul>
+
+
+<p>Ниже приведены представления нескольких Гауссовых целых по основанию i-1:<br /><br />
+11+24i → 111010110001101<br />
+24-11i → 110010110011<br />
+8+0i → 111000000<br />
+-5+0i → 11001101<br />
+0+0i → 0</p>
+
+<p>Заметим, что каждое Гауссово целое имеет уникальное представление по основанию i-1.<br /><br />
+
+Определим <var>f</var>(<var>a</var>+<var>b</var>i) как количество единиц в уникальном представлении числа <var>a</var>+<var>b</var>i по основанию i-1. Например, <var>f</var>(11+24i) = 9 и <var>f</var>(24-11i) = 7.<br /><br />
+
+Определим <var>B</var>(<var>L</var>) как сумму <var>f</var>(<var>a</var>+<var>b</var>i) для всех целых <var>a</var>, <var>b</var>, таких что |<var>a</var>| ≤ <var>L</var> и |<var>b</var>| ≤ <var>L</var>. Например, <var>B</var>(500) = 10795060.<br /><br />
+
+Найдите <var>B</var>(10<sup>15</sup>) mod 1 000 000 007.
+</p>
+
+</div>
