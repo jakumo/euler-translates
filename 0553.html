@@ -1,0 +1,28 @@
+﻿Subject:
+Булеан булеанов
+
+Body:
+<div class="problem_content">
+
+<p>Пусть <var>P</var>(<var>n</var>) будет множеством первых <var>n</var> положительных целых чисел {1, 2, ..., <var>n</var>}.<br />
+Пусть <var>Q</var>(<var>n</var>) будет множеством всех непустых подмножеств <var>P</var>(<var>n</var>).<br />
+Пусть <var>R</var>(<var>n</var>) будет множеством всех непустых подмножеств <var>Q</var>(<var>n</var>).</p>
+
+<p>Элемент <var>X</var> ∈ <var>R</var>(<var>n</var>) является непустым подмножеством <var>Q</var>(<var>n</var>), поэтому он сам по себе является множеством.<br />
+Из <var>X</var> мы можем построить граф следующим образом:</p>
+
+<ul><li>Каждый элемент <var>Y</var> ∈ <var>X</var> соответствует вершине графа и обозначается <var>Y</var>;</li>
+<li>Две вершины <var>Y</var><sub>1</sub> и <var>Y</var><sub>2</sub> соединены, если <var>Y</var><sub>1</sub> ∩ <var>Y</var><sub>2</sub> ≠ ∅.</li>
+</ul><p>Например, из <var>X</var> = {{1}, {1,2,3}, {3}, {5,6}, {6,7}} получается следующий граф:</p>
+
+<div align="center"><img src="https://projecteuler.net/project/images/p553-power-sets.gif" alt="p553-power-sets.gif" /></div>
+
+<p>Этот граф имеет две <b>компоненты связности</b>.</p>
+
+<p>Пусть <var>C</var>(<var>n</var>,<var>k</var>) будет количеством элементов <var>R</var>(<var>n</var>), которые имеют ровно <var>k</var> компонент связности в своем графе.<br />
+Вам дано, что <var>C</var>(2,1) = 6, <var>C</var>(3,1) = 111, <var>C</var>(4,2) = 486, <var>C</var>(100,10) mod 1 000 000 007 = 728209718.</p>
+
+<p>Найдите <var>C</var>(10<sup>4</sup>,10) mod 1 000 000 007.</p>
+
+
+</div>

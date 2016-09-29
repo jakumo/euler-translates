@@ -1,0 +1,25 @@
+﻿Subject:
+Китайские остатки II
+
+Body:
+<div class="problem_content">
+
+<p>
+Пусть <var>A<sub>n</sub></var> будет наименьшим положительным целым числом, удовлетворяющим условию <var>A<sub>n</sub></var> mod <var>p<sub>i</sub></var> = <var>i</var> для всех 1 ≤ <var>i</var> ≤ <var>n</var>, где <var>p<sub>i</sub></var> - <var>i</var>-тое простое число.
+<br />Например, <var>A</var><sub>2</sub> = 5, так как это - наименьшее положительное решение системы уравнений</p>
+<ul style="list-style-type:none;margin-left:2cm;"><li> <var>A</var><sub>2</sub> mod 2 = 1 </li>
+<li> <var>A</var><sub>2</sub> mod 3 = 2</li></ul><p>
+Система уравнений для <var>A</var><sub>3</sub> добавляет еще одно ограничение. То есть, <var>A</var><sub>3</sub> является наименьшим положительным решением для системы</p>
+<ul style="list-style-type:none;margin-left:2cm;"><li> <var>A</var><sub>3</sub> mod 2 = 1 </li>
+<li> <var>A</var><sub>3</sub> mod 3 = 2</li>
+<li> <var>A</var><sub>3</sub> mod 5 = 3</li></ul><p>
+и потому <var>A</var><sub>3</sub> = 23. Таким же образом можно получить <var>A</var><sub>4</sub> = 53 и <var>A</var><sub>5</sub> = 1523.
+</p>
+<p>
+Пусть S(<var>n</var>) будет суммой всех простых чисел до <var>n</var> включительно, которые являются делителями хотя бы одного элемента последовательности <var>A</var>.
+<br />Например, S(50) = 69 = 5 + 23 + 41, так как 5 является делителем <var>A</var><sub>2</sub>, 23 является делителем <var>A</var><sub>3</sub> и 41 является делителем <var>A</var><sub>10</sub> = 5765999453. Ни одно другое простое число до 50 включительно не является делителем элемента последовательности <var>A</var>.
+</p>
+<p>
+Найдите S(300000).</p>
+
+</div>
