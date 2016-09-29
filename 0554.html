@@ -1,0 +1,20 @@
+﻿Subject:
+Кентавры на шахматной доске
+
+Body:
+<div class="problem_content">
+
+<p>Кентавр может перемещаться по шахматной доске как король или конь. Рисунок ниже показывает разрешенные ходы кентавра (обозначенного перевернутым символом короля) на доске 8x8:</p>
+
+<div align="center"><img src="https://projecteuler.net/project/images/p554-centaurs.png" alt="p554-centaurs.png" /></div>
+
+
+<p>Можно показать, что на доске размером 2<var>n</var>×2<var>n</var> можно расположить не больше <var>n</var><sup>2</sup> ненаходящихся под боем друг друга кентавров.<br />
+Пусть <var>C</var>(<var>n</var>) будет количеством способов расположения <var>n</var><sup>2</sup> кентавров на доске размером 2<var>n</var>×2<var>n</var> так, чтобы ни один кентавр не находится под боем любого другого.<br />
+Например, <var>C</var>(1) = 4, <var>C</var>(2) = 25, <var>C</var>(10) = 1477721.</p>
+
+<p>Пусть <var>F<sub>i</sub></var> будет <var>i</var>-тым числом Фибоначчи, определенным как <var>F</var><sub>1</sub> = <var>F</var><sub>2</sub> = 1 и <var>F</var><sub>i</sub> = <var>F</var><sub><var>i</var>-1</sub> + <var>F</var><sub><var>i</var>-2</sub> для <var>i</var> &gt; 2.</p>
+
+<p>Найдите $\displaystyle \left( \sum_{i=2}^{90} C(F_i) \right) \text{mod } (10^8+7)$.</p>
+
+</div>

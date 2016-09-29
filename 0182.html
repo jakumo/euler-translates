@@ -7,7 +7,7 @@ Body:
 <p>Генерация двух различных простых чисел <var>p</var> и <var>q</var>.<br /> Вычисление <var>n=pq</var> и &phi;=(<var>p</var>-1)(<var>q</var>-1).<br />
 Поиск целого числа <var>e</var>, 1<<var>e</var><&phi;, такого, что НОД(<var>e</var>,&phi;)=1.</p>
 <p>Сообщение в этой системе представлено в виде числа, принадлежащего интервалу [0,<var>n</var>-1].<br />
-Шифруемый текст каким-нибудь способом преобразовывается в  такие сообщения (числа, принадлежащие интервалу [0,<var>n</var>-1]).<br />
+Шифруемый текст каким-нибудь способом преобразовывается в такие сообщения (числа, принадлежащие интервалу [0,<var>n</var>-1]).<br />
 Чтобы зашифровать текст, для каждого сообщения <var>m</var>, необходимо вычислить <var>c</var>=<var>m</var><img src="" style="display:none;" alt="^(" /><sup><var>e</var></sup><img src="" style="display:none;" alt=")" /> mod <var>n</var>.</p>
 <p>Для дешифровки текста выполняется следующая процедура: найти такое <var>d</var>, чтобы <var>ed</var>=1 mod &phi;, затем для каждого зашифрованного сообщения <var>c</var> вычислить <var>m=c<img src="" style="display:none;" alt="^(" /><sup>d</sup><img src="" style="display:none;" alt=")" /></var> mod <var>n</var>.</p>
 <p>Существуют такие значения <var>e</var> и <var>m</var>, что <var>m<img src="" style="display:none;" alt="^(" /><sup>e</sup><img src="" style="display:none;" alt=")" /></var> mod <var>n=m</var>.<br />Сообщения <var>m</var>, для которых <var>m<img src="" style="display:none;" alt="^(" /><sup>e</sup><img src="" style="display:none;" alt=")" /></var> mod <var>n=m</var>, будем называть открытыми.</p>

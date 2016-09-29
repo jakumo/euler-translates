@@ -1,0 +1,23 @@
+﻿Subject:
+Иррациональное основание
+
+Body:
+<div class="problem_content">
+
+<p>Пусть <var>r</var> будет вещетсвенным корнем уравнения <var>x</var><sup>3</sup> = <var>x</var><sup>2</sup> + 1.<br />
+Каждое положительное целое число может быть записано как сумма различных увеличивающихся степеней числа <var>r</var>.<br />
+Если мы потребуем, чтобы количество членов было конечно и разница между любыми двумя показателями степени была не меньше трех, тогда такое представление будет уникальным.<br />
+Например, 3 = <var>r</var><sup> -10</sup> + <var>r</var><sup> -5</sup> + <var>r</var><sup> -1</sup> + <var>r</var><sup> 2</sup> и 10 = <var>r</var><sup> -10</sup> + <var>r</var><sup> -7</sup> + <var>r</var><sup> 6</sup>.<br />
+Любопытно, что это соотношение сохраняется и для комплексных корней уравнения.</p>
+
+<p>Пусть <var>w</var>(<var>n</var>) будет количеством членов в таком уникальном представлении числа <var>n</var>. Таким образом, <var>w</var>(3) = 4 и <var>w</var>(10) = 3.</p>
+
+<p>Более строго говоря, для всех положительных целых чисел <var>n</var> мы имеем:<br /><var>n</var> = $\displaystyle \sum_{k=-\infty}^{\infty}$ <var>b<sub>k</sub> r<sup>k</sup></var><br />
+при следующих условиях:<br /><var>b<sub>k</sub></var> равно 0 или 1 для всех <var>k</var>;<br /><var>b<sub>k</sub></var> + <var>b</var><sub><var>k</var>+1</sub> + <var>b</var><sub><var>k</var>+2</sub> ≤ 1 для всех <var>k</var>;<br /><var>w</var>(<var>n</var>) = $\displaystyle \sum_{k=-\infty}^{\infty}$ <var>b<sub>k</sub></var> конечно.</p>
+
+<p>Пусть S(<var>m</var>) = $\displaystyle \sum_{j=1}^{m}$ <var>w</var>(<var>j</var><sup>2</sup>).<br />
+Вам дано, что S(10) = 61 и S(1000) = 19403.</p>
+
+<p>Найдите S(5 000 000).</p>
+
+</div>
