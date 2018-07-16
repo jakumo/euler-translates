@@ -3,26 +3,26 @@
 
 Body:
 <div class="problem_content">
-<p>Модифицированную последовательность Коллатца, состояющую из целых чисел, получают из начального значения a<img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" /> следующим образом:</p>
+<p>Модифицированную последовательность Коллатца, состояющую из целых чисел, получают из начального значения a<sub>1</sub> следующим образом:</p>
 <p>
-<var>a<img src="" style="display:none;" alt="_(" /><sub>n+1</sub><img src="" style="display:none;" alt=")" /></var> = <var>a<img src="" style="display:none;" alt="_(" /><sub>n</sub><img src="" style="display:none;" alt=")" /></var>/3 если <var>a<img src="" style="display:none;" alt="_(" /><sub>n</sub><img src="" style="display:none;" alt=")" /></var> делится на 3 без остатка. Обозначим это событие большим шагом вниз, "D".</p>
+<var>a<sub>n+1</sub></var> = <var>a<sub>n</sub></var>/3 если <var>a<sub>n</sub></var> делится на 3 без остатка. Обозначим это событие большим шагом вниз, "D".</p>
 <p>
-<var>a<img src="" style="display:none;" alt="_(" /><sub>n+1</sub><img src="" style="display:none;" alt=")" /></var> = (4<var>a<img src="" style="display:none;" alt="_(" /><sub>n</sub><img src="" style="display:none;" alt=")" /></var> + 2)/3 если, при делении на 3, <var>a<img src="" style="display:none;" alt="_(" /><sub>n</sub><img src="" style="display:none;" alt=")" /></var> дает в остатке 1. Обозначим это событие шагом вверх, "U".
+<var>a<sub>n+1</sub></var> = (4<var>a<sub>n</sub></var> + 2)/3 если, при делении на 3, <var>a<sub>n</sub></var> дает в остатке 1. Обозначим это событие шагом вверх, "U".
 </p>
 <p>
-<var>a<img src="" style="display:none;" alt="_(" /><sub>n+1</sub><img src="" style="display:none;" alt=")" /></var> = (2<var>a<img src="" style="display:none;" alt="_(" /><sub>n</sub><img src="" style="display:none;" alt=")" /></var> - 1)/3 если, при делении на 3, <var>a<img src="" style="display:none;" alt="_(" /><sub>n</sub><img src="" style="display:none;" alt=")" /></var> дает в остатке 2. Обозначим это событие малым шагом вниз, "d".
+<var>a<sub>n+1</sub></var> = (2<var>a<sub>n</sub></var> - 1)/3 если, при делении на 3, <var>a<sub>n</sub></var> дает в остатке 2. Обозначим это событие малым шагом вниз, "d".
 </p>
 <p>
-Последовательность завершается на элементе <var>a<img src="" style="display:none;" alt="_(" /><sub>n</sub><img src="" style="display:none;" alt=")" /></var> = 1.</p>
+Последовательность завершается на элементе <var>a<sub>n</sub></var> = 1.</p>
 <p>
 Для любого заданного целого числа мы можем перечислить последовательность всех шагов.<br />
-Например, если <var>a</var><img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" />=231, то последовательности {<var>a<img src="" style="display:none;" alt="_(" /><sub>n</sub><img src="" style="display:none;" alt=")" /></var>}={231,77,51,17,11,7,10,14,9,3,1} соответствуют шаги "DdDddUUdDD".
+Например, если <var>a</var><sub>1</sub>=231, то последовательности {<var>a<sub>n</sub></var>}={231,77,51,17,11,7,10,14,9,3,1} соответствуют шаги "DdDddUUdDD".
 </p>
 <p>
 Разумеется, существуют другие последовательности, начало которых совпадает с упомянутой выше "DdDddUUdDD....".<br />
-например, если <var>a</var><img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" />=1004064, то получится следующая последовательность шагов DdDddUUdDDDdUDUUUdDdUUDDDUdDD.<br />
-Между прочим, 1004064 является наименьшим возможным значением <var>a</var><img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" /> > 10<img src="" style="display:none;" alt="^(" /><sup>6</sup><img src="" style="display:none;" alt=")" />, соответствующая которому последовательность шагов начинается с DdDddUUdDD.
+например, если <var>a</var><sub>1</sub>=1004064, то получится следующая последовательность шагов DdDddUUdDDDdUDUUUdDdUUDDDUdDD.<br />
+Между прочим, 1004064 является наименьшим возможным значением <var>a</var><sub>1</sub> > 10<sup>6</sup>, соответствующая которому последовательность шагов начинается с DdDddUUdDD.
 </p>
 <p>
-Чему равно наименьшее значение <var>a</var><img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" /> > 10<img src="" style="display:none;" alt="^(" /><sup>15</sup><img src="" style="display:none;" alt=")" />, которому соответствует последовательность шагов, начинающаяся с "UDDDUdddDDUDDddDdDddDDUDDdUUDd"?
+Чему равно наименьшее значение <var>a</var><sub>1</sub> > 10<sup>15</sup>, которому соответствует последовательность шагов, начинающаяся с "UDDDUdddDDUDDddDdDddDDUDDdUUDd"?
 </p></div>

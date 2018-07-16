@@ -14,10 +14,10 @@ Body:
 
 <p>Для начала, сгенерируем четыре миллиона псевдо-случайных чисел с помощью особой формы "запаздывающего генератора Фибоначчи":</p>
 
-<p>Для 1 ≤ <i>k</i> ≤ 55, <i>s</i><img src="" style="display:none;" alt="_(" /><sub><i>k</i></sub><img src="" style="display:none;" alt=")" /> = [100003 − 200003<i>k</i> + 300007<i>k</i><img src="" style="display:none;" alt="^(" /><sup>3</sup><img src="" style="display:none;" alt=")" />] (modulo 1000000) − 500000.<br />
-Для 56 ≤ <i>k</i> ≤ 4000000, <i>s</i><img src="" style="display:none;" alt="_(" /><sub><i>k</i></sub><img src="" style="display:none;" alt=")" /> = [<i>s</i><img src="" style="display:none;" alt="_(" /><sub><i>k−24</i></sub><img src="" style="display:none;" alt=")" /> + <i>s</i><img src="" style="display:none;" alt="_(" /><sub><i>k−55</i></sub><img src="" style="display:none;" alt=")" /> + 1000000] (modulo 1000000) − 500000.</p>
+<p>Для 1 ≤ <i>k</i> ≤ 55, <i>s</i><sub><i>k</i></sub> = [100003 − 200003<i>k</i> + 300007<i>k</i><sup>3</sup>] (modulo 1000000) − 500000.<br />
+Для 56 ≤ <i>k</i> ≤ 4000000, <i>s</i><sub><i>k</i></sub> = [<i>s</i><sub><i>k−24</i></sub> + <i>s</i><sub><i>k−55</i></sub> + 1000000] (modulo 1000000) − 500000.</p>
 
-<p>Таким образом, <i>s</i><img src="" style="display:none;" alt="_(" /><sub>10</sub><img src="" style="display:none;" alt=")" /> = −393027 и <i>s</i><img src="" style="display:none;" alt="_(" /><sub>100</sub><img src="" style="display:none;" alt=")" /> = 86613.</p>
+<p>Таким образом, <i>s</i><sub>10</sub> = −393027 и <i>s</i><sub>100</sub> = 86613.</p>
 
 <p>Затем члены <i>s</i> упорядочиваются в виде таблицы размерами 2000×2000, при этом первыми 2000 числами последовательно заполняется первая строка, следущими 2000 числами - вторая строка, и т.д.</p>
 

@@ -4,17 +4,17 @@
 Body:
 <div class="problem_content">
 <p>Кодирование квадрадерева позволяет нам представить черно-белое изображение размерами 2<img src=""
-style="display:none;" alt="^(" /><sup><var>N</var></sup><img src="" style="display:none;" alt=")" />×2<img src="" style="display:none;" alt="^(" /><sup><var>N</var></sup><img
+style="display:none;" alt="^(" /><sup><var>N</var></sup>×2<sup><var>N</var></sup><img
 src="" style="display:none;" alt=")" /> в виде последовательности битов (0 и 1). Такие последовательности
 считываются слева направо следующим образом:</p>
 <ul><li>первый бит относится ко всему блоку размерами 2<img src="" style="display:none;" alt="^("
-/><sup><var>N</var></sup><img src="" style="display:none;" alt=")" />×2<img src="" style="display:none;" alt="^(" /><sup><var>N</var></sup><img
+/><sup><var>N</var></sup>×2<sup><var>N</var></sup><img
 src="" style="display:none;" alt=")" />;</li>
 <li>"0" используется в качестве разделителя:<br />обрабатываемый блок размерами 2<img src=""
-style="display:none;" alt="^(" /><sup><var>n</var></sup><img src="" style="display:none;" alt=")" />×2<img src="" style="display:none;" alt="^(" /><sup><var>n</var></sup><img
+style="display:none;" alt="^(" /><sup><var>n</var></sup>×2<sup><var>n</var></sup><img
 src="" style="display:none;" alt=")" /> делится на 4 подблока размерами 2<img src=""
-style="display:none;" alt="^(" /><sup><var>n</var>-1</sup><img src="" style="display:none;" alt=")" />×2<img src="" style="display:none;" alt="^(" /><sup><var>n</var>-
-1</sup><img src="" style="display:none;" alt=")" /> каждый,<br />
+style="display:none;" alt="^(" /><sup><var>n</var>-1</sup>×2<sup><var>n</var>-
+1</sup> каждый,<br />
 а последующие биты описывают верхний левый, верхний правый, нижний левый и нижний правый под-блоки -
 причем, именно в указанном порядке;</li><li>"10" указывает на то, что текущий блок содержит только черные
 пиксели;</li>
@@ -29,20 +29,20 @@ style='color:green;'><b>0</b></span>1011111011<span style='color:orange;'><b>0</
 "<span style='color:red;'><b>0</b></span>10<span style='color:green;'><b>0</b></span>101111101110",
 длиною 16 символов, и это - самая короткая возможная последовательность для заданного изображения.</p>
 <p>Для положительного целого числа <var>N</var> определим <var>D<img src="" style="display:none;" alt="_("
-/><sub>N</sub><img src="" style="display:none;" alt=")" /></var>, как изображение размерами 2<img src=""
-style="display:none;" alt="^(" /><sup><var>N</var></sup><img src="" style="display:none;" alt=")" />×2<img src="" style="display:none;" alt="^(" /><sup><var>N</var></sup><img
+/><sub>N</sub></var>, как изображение размерами 2<img src=""
+style="display:none;" alt="^(" /><sup><var>N</var></sup>×2<sup><var>N</var></sup><img
 src="" style="display:none;" alt=")" /> со следующей цветовой палитрой:</p>
 <ul><li>пиксель с координатами <var>x</var>&thinsp;=&thinsp;0, <var>y</var>&thinsp;=&thinsp;0
 соответствует самому нижнеми левому пикселю,</li>
-<li>если (<var>x</var>&thinsp;-&thinsp;2<img src="" style="display:none;" alt="^(" /><sup><var>N</var>-
-1</sup><img src="" style="display:none;" alt=")" />)<img src="" style="display:none;" alt="^("
-/><sup>2</sup><img src="" style="display:none;" alt=")" />&thinsp;+&thinsp;(<var>y</var>&thinsp;-
-&thinsp;2<img src="" style="display:none;" alt="^(" /><sup><var>N</var>-1</sup><img src=""
-style="display:none;" alt=")" />)<img src="" style="display:none;" alt="^(" /><sup>2</sup><img src=""
+<li>если (<var>x</var>&thinsp;-&thinsp;2<sup><var>N</var>-
+1</sup>)<img src="" style="display:none;" alt="^("
+/><sup>2</sup>&thinsp;+&thinsp;(<var>y</var>&thinsp;-
+&thinsp;2<sup><var>N</var>-1</sup><img src=""
+style="display:none;" alt=")" />)<sup>2</sup><img src=""
 style="display:none;" alt=")" />&thinsp;≤&thinsp;2<img src=""
-style="display:none;" alt="^(" /><sup>2<var>N</var>-2</sup><img src="" style="display:none;" alt=")" /> то
+style="display:none;" alt="^(" /><sup>2<var>N</var>-2</sup> то
 пиксель окрашен в черный цвет,</li>
 <li>в противном случае пиксель окрашен в белый цвет.</li></ul>
 <p>Какова длина самой короткой последовательности, описывающей изображение <var>D</var><img src=""
-style="display:none;" alt="_(" /><sub>24</sub><img src="" style="display:none;" alt=")" />&thinsp;?</p>
+style="display:none;" alt="_(" /><sub>24</sub>&thinsp;?</p>
 </div>
