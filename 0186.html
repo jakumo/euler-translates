@@ -14,10 +14,10 @@ Body:
 <tr><td align='center'>...</td><td align='center'>...</td><td align='center'>...</td></tr>
 </table>
 </div>
-<p>В строке № n телефонный номер звонящего и вызываемый номер являются Caller(n) = S<img src="" style="display:none;" alt="_(" /><sub>2n-1</sub><img src="" style="display:none;" alt=")" /> и Called(n) = S<img src="" style="display:none;" alt="_(" /><sub>2n</sub><img src="" style="display:none;" alt=")" /> соответственно, где S<img src="" style="display:none;" alt="_(" /><sub>1,2,3,...</sub><img src="" style="display:none;" alt=")" /> образуются "Генератором Фибоначчи с задержкой":</p>
+<p>В строке № n телефонный номер звонящего и вызываемый номер являются Caller(n) = S<sub>2n-1</sub> и Called(n) = S<sub>2n</sub> соответственно, где S<sub>1,2,3,...</sub> образуются "Генератором Фибоначчи с задержкой":</p>
 
-<p>При 1 ≤ k ≤ 55, S<img src="" style="display:none;" alt="_(" /><sub>k</sub><img src="" style="display:none;" alt=")" /> = [100003 - 200003k + 300007k<img src="" style="display:none;" alt="^(" /><sup>3</sup><img src="" style="display:none;" alt=")" />] (modulo 1000000)<br />
-При 56 ≤ k, S<img src="" style="display:none;" alt="_(" /><sub>k</sub><img src="" style="display:none;" alt=")" /> = [S<img src="" style="display:none;" alt="_(" /><sub>k-24</sub><img src="" style="display:none;" alt=")" /> + S<img src="" style="display:none;" alt="_(" /><sub>k-55</sub><img src="" style="display:none;" alt=")" />] (modulo 1000000)</p>
+<p>При 1 ≤ k ≤ 55, S<sub>k</sub> = [100003 - 200003k + 300007k<sup>3</sup>] (modulo 1000000)<br />
+При 56 ≤ k, S<sub>k</sub> = [S<sub>k-24</sub> + S<sub>k-55</sub>] (modulo 1000000)</p>
 
 <p>Если Caller(n) = Called(n), то предполагается, что пользователь ошибся в наборе номера, и вызов не происходит. В противном случае вызов происходит успешно.</p>
 

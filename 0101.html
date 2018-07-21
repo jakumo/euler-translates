@@ -4,12 +4,12 @@
 Body:
 <div class="problem_content">
 <p>Если нам известны первые <var>k</var> членов некоторой последовательности, то это еще не значит, что мы сможем с уверенностью определить значение следующего члена, поскольку существует бесконечное множество полиномиальных функций, которыми можно описать такую последовательность.</p>
-<p>К примеру, рассмотрим последовательность чисел-кубов. Такую последовательность можно определить образующей функцией: <br /><var>u</var><img src="" style="display:none;" alt="_(" /><sub><var>n</var></sub><img src="" style="display:none;" alt=")" /> = <var>n</var><img src="" style="display:none;" alt="^(" /><sup>3</sup><img src="" style="display:none;" alt=")" />: 1, 8, 27, 64, 125, 216, ...</p>
+<p>К примеру, рассмотрим последовательность чисел-кубов. Такую последовательность можно определить образующей функцией: <br /><var>u</var><sub><var>n</var></sub> = <var>n</var><sup>3</sup>: 1, 8, 27, 64, 125, 216, ...</p>
 <p>Предположим, что нам известны только два первых члена такой последовательности. Руководствуясь принципом &quot;чем проще, тем лучше&quot;, мы предполагаем линейную зависимость и предсказываем следующее значение равным 15 (общая разность равна 7). Даже если нам известны первые три члена последовательности, согласно тому же принципу простоты, следует предположить квадратичную зависимость.</p>
 
 <p>Определим OP(<var>k</var>, <var>n</var>) как <var>n</var>-ый член оптимальной полиномиальной образующей функции для первых <var>k</var> членов последовательности. Очевидно, что OP(<var>k</var>, <var>n</var>) даст точные значения членов последовательности при <var>n</var> ≤ <var>k</var>, а <i>первым неверным членом</i> будет OP(<var>k</var>, <var>k</var>+1). В таком случае полиномиальную функцию назовем <i>плохой</i>.</p>
 
-<p>В частности, если бы нам был известен только первый член последовательности, наиболее разумным было бы предположить постоянство; т.е. при <var>n</var> ≥ 2, OP(1, <var>n</var>) = <var>u</var><img src="" style="display:none;" alt="_(" /><sub>1</sub><img src="" style="display:none;" alt=")" />.</p>
+<p>В частности, если бы нам был известен только первый член последовательности, наиболее разумным было бы предположить постоянство; т.е. при <var>n</var> ≥ 2, OP(1, <var>n</var>) = <var>u</var><sub>1</sub>.</p>
 <p>Таким образом, получим следующие значения OP(<var>k</var>, <var>n</var>) для последовательности кубов:</p>
 <div style='margin-left:50px;'>
 <table>
@@ -22,11 +22,11 @@ Body:
 <td>1, 8, <span style='color:red;'><b>15</b></span>, ...</td>
 </tr>
 <tr>
-<td>OP(3, <var>n</var>) = 6<var>n</var><img src="" style="display:none;" alt="^(" /><sup>2</sup><img src="" style="display:none;" alt=")" />−11<var>n</var>+6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>OP(3, <var>n</var>) = 6<var>n</var><sup>2</sup>−11<var>n</var>+6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 <td>1, 8, 27, <span style='color:red;'><b>58</b></span>, ...</td>
 </tr>
 <tr>
-<td>OP(4, <var>n</var>) = <var>n</var><img src="" style="display:none;" alt="^(" /><sup>3</sup><img src="" style="display:none;" alt=")" /></td>
+<td>OP(4, <var>n</var>) = <var>n</var><sup>3</sup></td>
 <td>1, 8, 27, 64, 125, ...</td>
 </tr>
 </table>
@@ -34,6 +34,6 @@ Body:
 <p>Понятно, что при <var>k</var> ≥ 4 не существует ни одной плохой полиномиальной функции.</p>
 <p>Рассмотрим сумму значений первых неверных членов, которые образованы плохими полиномиальными функциями (отмечены выше <span style='color:red;'><b>красным</b></span>). Получим: 1 + 15 + 58 = 74.</p>
 <p>Дана следующая полиномиальная образующая функция 10-й степени:</p>
-<p style='text-align:center;'><var>u</var><img src="" style="display:none;" alt="_(" /><sub><var>n</var></sub><img src="" style="display:none;" alt=")" /> = 1 − <var>n</var> + <var>n</var><img src="" style="display:none;" alt="^(" /><sup>2</sup><img src="" style="display:none;" alt=")" /> − <var>n</var><img src="" style="display:none;" alt="^(" /><sup>3</sup><img src="" style="display:none;" alt=")" /> + <var>n</var><img src="" style="display:none;" alt="^(" /><sup>4</sup><img src="" style="display:none;" alt=")" /> − <var>n</var><img src="" style="display:none;" alt="^(" /><sup>5</sup><img src="" style="display:none;" alt=")" /> + <var>n</var><img src="" style="display:none;" alt="^(" /><sup>6</sup><img src="" style="display:none;" alt=")" /> − <var>n</var><img src="" style="display:none;" alt="^(" /><sup>7</sup><img src="" style="display:none;" alt=")" /> + <var>n</var><img src="" style="display:none;" alt="^(" /><sup>8</sup><img src="" style="display:none;" alt=")" /> − <var>n</var><img src="" style="display:none;" alt="^(" /><sup>9</sup><img src="" style="display:none;" alt=")" /> + <var>n</var><img src="" style="display:none;" alt="^(" /><sup>10</sup><img src="" style="display:none;" alt=")" /></p>
+<p style='text-align:center;'><var>u</var><sub><var>n</var></sub> = 1 − <var>n</var> + <var>n</var><sup>2</sup> − <var>n</var><sup>3</sup> + <var>n</var><sup>4</sup> − <var>n</var><sup>5</sup> + <var>n</var><sup>6</sup> − <var>n</var><sup>7</sup> + <var>n</var><sup>8</sup> − <var>n</var><sup>9</sup> + <var>n</var><sup>10</sup></p>
 <p>Найдите сумму значений первых неверных членов, которые образованы плохими полиномиальными функциями.</p>
 </div>
