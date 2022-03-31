@@ -7,78 +7,51 @@ Body:
 <p>Радикалом числа <i>n</i>, rad(<i>n</i>), является произведение уникальных простых множителей числа <i>n</i>. К примеру, 504 = 2<sup>3</sup> × 3<sup>2</sup> × 7, таким образом, rad(504) = 2 × 3 × 7 = 42.</p>
 
 <p>Если подсчитать rad(<i>n</i>) для <i>1</i> ≤ <i>n</i> ≤ 10 и упорядочить их по rad(<i>n</i>), а затем по <i>n</i> для одинаковых значений радикалов, получим</p>
-<table cellpadding='2' cellspacing='0' border='0' align='center'>
 
-<tr>
-<td colspan='2'><div style='text-align:center;'><b>Неупорядоченная функция</b></div></td>
-<td>&nbsp;</td>
-<td colspan='3'><div style='text-align:center;'><b>Упорядоченная функция</b></div></td>
-</tr>
-<tr>
-<td><div style='text-align:center;'><img src='https://projecteuler.net/images/spacer.gif' width='50' height='1' alt='' /><br /><b><i>n</i></b></div></td>
-<td><div style='text-align:center;'><img src='https://projecteuler.net/images/spacer.gif' width='50' height='1' alt='' /><br /><b>rad(<i>n</i>)</b></div></td>
-<td><img src='https://projecteuler.net/images/spacer.gif' width='50' height='1' alt='' /><br /></td>
-<td><div style='text-align:center;'><img src='https://projecteuler.net/images/spacer.gif' width='50' height='1' alt='' /><br /><b><i>n</i></b></div></td>
 
-<td><div style='text-align:center;'><img src='https://projecteuler.net/images/spacer.gif' width='50' height='1' alt='' /><br /><b>rad(<i>n</i>)</b></div></td>
-<td><div style='text-align:center;'><img src='https://projecteuler.net/images/spacer.gif' width='50' height='1' alt='' /><br /><b>k</b></div></td>
-</tr>
-<tr>
-<td><div style='text-align:center;'>1</div></td><td><div style='text-align:center;'>1</div></td>
-<td>&nbsp;</td>
-<td><div style='text-align:center;'>1</div></td><td><div style='text-align:center;'>1</div></td><td><div style='text-align:center;'>1</div></td>
-</tr>
+<table style="margin-left: auto; margin-right: auto; text-align: center !important;">
+  <tbody><tr><th colspan="2">Неупорядоченная функция</th>
+   <td style="width:25px">&nbsp;</td>
+   <th colspan="3">Упорядоченная функция</th>
+</tr><tr><th style="width:50px"><i>n</i></th>
+   <th style="width:50px">rad(<i>n</i>)</th>
+   <td>&nbsp;</td>
+   <th style="width:50px"><i>n</i></th>
+   <th style="width:50px">rad(<i>n</i>)</th>
+   <th style="width:50px">k</th>
+</tr><tr><td>1</td><td>1</td>
+   <td>&nbsp;</td>
+   <td>1</td><td>1</td><td>1</td>
+</tr><tr><td>2</td><td>2</td>
+   <td>&nbsp;</td>
+   <td>2</td><td>2</td><td>2</td>
+</tr><tr><td>3</td><td>3</td>
+   <td>&nbsp;</td>
+   <td>4</td><td>2</td><td>3</td>
+</tr><tr><td>4</td><td>2</td>
+   <td>&nbsp;</td>
+   <td>8</td><td>2</td><td>4</td>
+</tr><tr><td>5</td><td>5</td>
+   <td>&nbsp;</td>
+   <td>3</td><td>3</td><td>5</td>
+</tr><tr><td>6</td><td>6</td>
+   <td>&nbsp;</td>
+   <td>9</td><td>3</td><td>6</td>
+</tr><tr><td>7</td><td>7</td>
+   <td>&nbsp;</td>
+   <td>5</td><td>5</td><td>7</td>
+</tr><tr><td>8</td><td>2</td>
+   <td>&nbsp;</td>
+   <td>6</td><td>6</td><td>8</td>
+</tr><tr><td>9</td><td>3</td>
+   <td>&nbsp;</td>
+   <td>7</td><td>7</td><td>9</td>
+</tr><tr><td>10</td><td>10</td>
+   <td>&nbsp;</td>
+   <td>10</td><td>10</td><td>10</td>
+</tr></tbody></table>
 
-<tr>
-<td><div style='text-align:center;'>2</div></td><td><div style='text-align:center;'>2</div></td>
-<td>&nbsp;</td>
-<td><div style='text-align:center;'>2</div></td><td><div style='text-align:center;'>2</div></td><td><div style='text-align:center;'>2</div></td>
-</tr>
-<tr>
-<td><div style='text-align:center;'>3</div></td><td><div style='text-align:center;'>3</div></td>
-<td>&nbsp;</td>
-<td><div style='text-align:center;'>4</div></td><td><div style='text-align:center;'>2</div></td><td><div style='text-align:center;'>3</div></td>
 
-</tr>
-<tr>
-<td><div style='text-align:center;'>4</div></td><td><div style='text-align:center;'>2</div></td>
-<td>&nbsp;</td>
-<td><div style='text-align:center;'>8</div></td><td><div style='text-align:center;'>2</div></td><td><div style='text-align:center;'>4</div></td>
-</tr>
-<tr>
-<td><div style='text-align:center;'>5</div></td><td><div style='text-align:center;'>5</div></td>
-<td>&nbsp;</td>
-<td><div style='text-align:center;'>3</div></td><td><div style='text-align:center;'>3</div></td><td><div style='text-align:center;'>5</div></td>
-
-</tr>
-<tr>
-<td><div style='text-align:center;'>6</div></td><td><div style='text-align:center;'>6</div></td>
-<td>&nbsp;</td>
-<td><div style='text-align:center;'>9</div></td><td><div style='text-align:center;'>3</div></td><td><div style='text-align:center;'>6</div></td>
-</tr>
-<tr>
-<td><div style='text-align:center;'>7</div></td><td><div style='text-align:center;'>7</div></td>
-<td>&nbsp;</td>
-<td><div style='text-align:center;'>5</div></td><td><div style='text-align:center;'>5</div></td><td><div style='text-align:center;'>7</div></td>
-
-</tr>
-<tr>
-<td><div style='text-align:center;'>8</div></td><td><div style='text-align:center;'>2</div></td>
-<td>&nbsp;</td>
-<td><div style='text-align:center;'>6</div></td><td><div style='text-align:center;'>6</div></td><td><div style='text-align:center;'>8</div></td>
-</tr>
-<tr>
-<td><div style='text-align:center;'>9</div></td><td><div style='text-align:center;'>3</div></td>
-<td>&nbsp;</td>
-<td><div style='text-align:center;'>7</div></td><td><div style='text-align:center;'>7</div></td><td><div style='text-align:center;'>9</div></td>
-
-</tr>
-<tr>
-<td><div style='text-align:center;'>10</div></td><td><div style='text-align:center;'>10</div></td>
-<td>&nbsp;</td>
-<td><div style='text-align:center;'>10</div></td><td><div style='text-align:center;'>10</div></td><td><div style='text-align:center;'>10</div></td>
-</tr>
-</table>
 <p>Пусть E(<i>k</i>) будет <i>k</i>-м элементом в упорядоченной колонне <i>n</i>; к примеру, E(4) = 8, а E(6) = 9.</p>
 
 <p>Найдите E(10000), если функция rad(<i>n</i>) упорядочена для 1 ≤ <i>n</i> ≤ 100000.</p>
